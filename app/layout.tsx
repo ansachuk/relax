@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 import { Nothing_You_Could_Do, Montserrat, Cormorant } from "next/font/google";
-import "./globals.css";
 
-const nothing = Nothing_You_Could_Do({ weight: "400" });
-const montserrat = Montserrat();
-const cormorant = Cormorant();
+const nothing = Nothing_You_Could_Do({ subsets: ["latin"], weight: "400" });
+const montserrat = Montserrat({ subsets: ["cyrillic", "latin"] });
+const cormorant = Cormorant({ subsets: ["cyrillic", "latin"] });
 
 export const metadata: Metadata = {
 	title: "Create Next App",
