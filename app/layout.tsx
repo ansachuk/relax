@@ -2,6 +2,7 @@ import { Nothing_You_Could_Do, Montserrat, Cormorant } from "next/font/google";
 
 import Header from "@/components/Header/Header";
 import Nav from "@/components/Nav/Nav";
+import Container from "@/components/Container/Container";
 
 import type { Metadata } from "next";
 
@@ -21,13 +22,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 		<html lang="en">
 			<body className={montserrat.className}>
 				<header>
-					<Header />
-					<Nav />
+					<Container>
+						<Header />
+						<Nav />
+					</Container>
 				</header>
-				<main>{children}</main>
+				<main>
+					<Container>{children}</Container>
+				</main>
 				<footer>
-					<Nav />
-					<Header />
+					<Container>
+						<Nav />
+						<Header />
+					</Container>
 				</footer>
 			</body>
 		</html>
