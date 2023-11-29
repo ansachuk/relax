@@ -2,12 +2,16 @@ import Image from "next/image";
 import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
 import { getScopedI18n } from "@/locales/server";
 
-export default async function Header() {
+type Props = {
+	styleProp: string;
+};
+
+export default async function Header({ styleProp }: Props) {
 	const t = await getScopedI18n("test");
 	return (
-		<div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 120 }}>
-			<Image priority width={172} height={98} alt="logo" src="/logo.svg" />
-			<h1>{t("translate")}</h1>
+		<div className={styleProp}>
+			<p style={{ color: "red", fontWeight: 600 }}>{t("translate")}</p>
+			<Image priority width={172} height={91} style={{ paddingTop: 14, paddingBottom: 14 }} alt="logo" src="/logo.svg" />
 			<LanguageSwitcher />
 		</div>
 	);

@@ -1,18 +1,28 @@
 import { Nothing_You_Could_Do, Montserrat, Cormorant } from "next/font/google";
 
+import type { Metadata } from "next";
+
 import Header from "@/components/Header/Header";
 import Nav from "@/components/Nav/Nav";
 import Container from "@/components/Container/Container";
 import Map from "@/components/Map/Map";
 
-import type { Metadata } from "next";
-
 import { locales } from "@/static/static";
-import "../../scss/global.scss";
+import headerCss from "@/components/Header/Header.module.scss";
 
-const nothing = Nothing_You_Could_Do({ subsets: ["latin"], weight: "400" });
-const montserrat = Montserrat({ subsets: ["cyrillic", "latin"] });
-const cormorant = Cormorant({ subsets: ["cyrillic", "latin"] });
+import "@/scss/global.scss";
+
+const nothing = Nothing_You_Could_Do({
+	subsets: ["latin"],
+	weight: "400",
+});
+const montserrat = Montserrat({
+	subsets: ["cyrillic", "latin"],
+	weight: ["400", "500"],
+});
+const cormorant = Cormorant({
+	subsets: ["cyrillic", "latin"],
+});
 
 export const metadata: Metadata = {
 	title: "Relax",
@@ -35,7 +45,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 			<body className={montserrat.className}>
 				<header>
 					<Container>
-						<Header />
+						<Header styleProp={headerCss.header} />
 						<Nav />
 					</Container>
 				</header>
@@ -48,7 +58,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 				<footer>
 					<Container>
 						<Nav />
-						<Header />
+						<Header styleProp={headerCss.footer} />
 					</Container>
 				</footer>
 			</body>

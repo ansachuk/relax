@@ -1,0 +1,34 @@
+.block {
+	position: relative;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&::after {
+		content: "";
+
+		position: absolute;
+
+		left: -150%;
+		width: 300%;
+		height: 1.5px;
+		background-color: #282828;
+	}
+}
+
+.header {
+	composes: block;
+
+	&::after {
+		bottom: 0;
+	}
+}
+
+.footer {
+	composes: block;
+
+	&::after {
+		top: 0px;
+	}
+}

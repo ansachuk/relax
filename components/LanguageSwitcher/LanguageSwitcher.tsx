@@ -2,29 +2,20 @@
 
 import { useChangeLocale, useCurrentLocale } from "@/locales/client";
 
+import css from "./LanguageSwitcher.module.scss";
+
 export default function LanguageSwitcher() {
 	const changeLocale = useChangeLocale();
 	const currentLocale = useCurrentLocale();
 
 	return (
-		<div style={{ display: "flex", gap: 20 }}>
-			<button
-				style={{
-					fontSize: 30,
-					backgroundColor: currentLocale === "uk" ? "red" : "gray",
-				}}
-				onClick={() => changeLocale("uk")}
-			>
-				ua
+		<div className={css.switcher}>
+			<button className={currentLocale === "uk" ? css.current : css.btn} onClick={() => changeLocale("uk")}>
+				ukr
 			</button>
-			<button
-				style={{
-					fontSize: 30,
-					backgroundColor: currentLocale === "en" ? "red" : "gray",
-				}}
-				onClick={() => changeLocale("en")}
-			>
-				en
+			/
+			<button className={currentLocale === "en" ? css.current : css.btn} onClick={() => changeLocale("en")}>
+				eng
 			</button>
 		</div>
 	);
