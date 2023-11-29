@@ -1,1 +1,5 @@
-export default {} as const;
+export default {
+	test: {
+		translate: "Text to translate",
+	},
+} as const;
