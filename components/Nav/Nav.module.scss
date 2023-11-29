@@ -1,6 +1,17 @@
+@import "@/scss/";
+
 .nav {
 	padding: 22px 0;
 	display: flex;
 	justify-content: center;
 	gap: 50px;
+}
+
+.currentLink {
+	color: $hoverColor;
+
+	&::after {
+		background-color: $hoverColor;
+		width: 100%;
+	}
 }

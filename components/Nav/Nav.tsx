@@ -1,16 +1,28 @@
+"use client";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 
 import css from "./Nav.module.scss";
 
+enum NavLinks {
+	"/" = "Головна",
+	"/restaurant" = "Ресторан",
+	"/hotel" = "Готель",
+	"/spa" = "Лазні/Сауни",
+	"/pool" = "Басейн",
+	"/contacts" = "Контакти",
+}
+
 export default function Nav() {
+	const pathname = usePathname();
+
 	return (
 		<nav className={css.nav}>
-			<Link href="/ ">Головна</Link>
-			<Link href="/restaurant">Ресторан</Link>
-			<Link href="/hotel">Готель</Link>
-			<Link href="/spa">Лазні/Сауни</Link>
-			<Link href="/pool">Басейн</Link>
-			<Link href="/contacts">Контакти</Link>
+			{Object.entries(NavLinks).map(([path, label]) => (
+				<Link className={pathname === path ? css.currentLink : ""} key={path} href={path}>
+					{label}
+				</Link>
+			))}
 		</nav>
 	);
 }
