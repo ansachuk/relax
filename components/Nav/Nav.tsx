@@ -42,7 +42,7 @@ function Navigation() {
 	];
 
 	const pathname = fullPath.split("/")[2] ? "/" + fullPath.split("/")[2] : "/";
-	console.log("pathname", pathname);
+
 	return (
 		<nav className={css.nav}>
 			{NavLinks.map(({ path, label }) => (
