@@ -1,0 +1,27 @@
+@import "@/scss/";
+
+.benefits {
+	width: 100%;
+	padding: 22px 0;
+
+	color: $bgColor;
+	font-size: 20px;
+	background-color: $hoverColor;
+
+	display: flex;
+	justify-content: center;
+	// gap: 100px;
+	.benefit {
+		display: flex;
+		gap: 16px;
+
+		padding: 12px 90px;
+		&:not(:last-child) {
+			border-right: 1.5px solid $bgColor;
+		}
+
+		.icon {
+			fill: $bgColor;
+		}
+	}
+}

@@ -1,7 +1,4 @@
 export default {
-	test: {
-		translate: "Текст для перекладу",
-	},
 	navigation: {
 		main: "Головна",
 		restaurant: "Ресторан",
@@ -9,5 +6,11 @@ export default {
 		spa: "Лазні/Сауни",
 		pool: "Басейн",
 		contacts: "Контакти",
+	},
+	benefits: {
+		proffesionalism: "Професіоналізм",
+		atmosphere: "Атмосфера",
+		tasty: "Смачна їжа",
+		price: "Приємні ціни",
 	},
 } as const;
