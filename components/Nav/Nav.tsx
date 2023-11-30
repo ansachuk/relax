@@ -8,7 +8,6 @@ import { useScopedI18n } from "@/locales/client";
 import I18nSubLayout from "../I18nSubLayout/I18nSubLayout";
 
 import css from "./Nav.module.scss";
-
 type Props = { position: "top" | "bottom" };
 
 function Navigation({ position }: Props) {
@@ -48,7 +47,7 @@ function Navigation({ position }: Props) {
 	return (
 		<nav className={position === "top" ? css.top : css.bottom}>
 			{NavLinks.map(({ path, label }) => (
-				<Link className={pathname === path ? css.currentLink : ""} key={path} href={path}>
+				<Link scroll={position !== "top"} className={pathname === path ? css.currentLink : css.link} key={path} href={path}>
 					{label}
 				</Link>
 			))}

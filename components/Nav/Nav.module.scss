@@ -20,7 +20,12 @@
 	border-bottom: 1.5px solid $mainFontcolor;
 }
 
+.link {
+	font-size: 20px;
+}
+
 .currentLink {
+	composes: link;
 	color: $hoverColor;
 
 	&::after {

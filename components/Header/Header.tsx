@@ -10,14 +10,14 @@ export default function Header() {
 				<a href="https://www.instagram.com/relax_complex_/" target="_blank" rel="noopener noreferrer" className={css.icon}>
 					<Inst className={css.icon} width={32} height={32} />
 				</a>
-				<a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className={css.icon}>
+				<a href="https://www.facebook.com/profile.php?id=100094666534025" target="_blank" rel="noopener noreferrer" className={css.icon}>
 					<Facebook className={css.icon} width={32} height={32} />
 				</a>
-				<a href="tel:+380123123123" target="_blank" rel="noopener noreferrer" className={css.icon}>
+				<a href="tel:+380983337700" target="_blank" rel="noopener noreferrer" className={css.icon}>
 					<Phone className={css.icon} width={32} height={32} />
 				</a>
 			</div>
-			<Logo className={css.icon} width={172} height={91} />
+			<Logo className={css.logo} width={172} height={91} />
 			<LanguageSwitcher />
 		</div>
 	);
