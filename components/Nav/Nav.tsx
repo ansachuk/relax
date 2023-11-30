@@ -9,7 +9,9 @@ import I18nSubLayout from "../I18nSubLayout/I18nSubLayout";
 
 import css from "./Nav.module.scss";
 
-function Navigation() {
+type Props = { position: "top" | "bottom" };
+
+function Navigation({ position }: Props) {
 	const fullPath = usePathname();
 
 	const t = useScopedI18n("navigation");
@@ -44,7 +46,7 @@ function Navigation() {
 	const pathname = fullPath.split("/")[2] ? "/" + fullPath.split("/")[2] : "/";
 
 	return (
-		<nav className={css.nav}>
+		<nav className={position === "top" ? css.top : css.bottom}>
 			{NavLinks.map(({ path, label }) => (
 				<Link className={pathname === path ? css.currentLink : ""} key={path} href={path}>
 					{label}
@@ -54,10 +56,10 @@ function Navigation() {
 	);
 }
 
-export default function Nav() {
+export default function Nav({ position }: Props) {
 	return (
 		<I18nSubLayout>
-			<Navigation />
+			<Navigation position={position} />
 		</I18nSubLayout>
 	);
 }

@@ -8,6 +8,18 @@
 	// outline: 1px solid red;
 }
 
+.top {
+	composes: nav;
+	// outline: 1px solid red;
+
+	border-top: 1.5px solid $mainFontcolor;
+}
+
+.bottom {
+	composes: nav;
+	border-bottom: 1.5px solid $mainFontcolor;
+}
+
 .currentLink {
 	color: $hoverColor;
 

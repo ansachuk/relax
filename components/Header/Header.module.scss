@@ -1,47 +1,16 @@
-.block {
-	position: relative;
-
+.header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
 
-	&::after {
-		content: "";
+.wrapper {
+	display: flex;
+	gap: 12px;
 
-		position: absolute;
-
-		left: -150%;
-		width: 300%;
-		height: 1.5px;
-		background-color: #282828;
+	.icon {
+		&::after {
+			width: 0;
+		}
 	}
-}
-
-.header {
-	composes: block;
-
-	&::after {
-		bottom: 0;
-	}
-}
-
-.footer {
-	composes: block;
-
-	&::after {
-		top: 0px;
-	}
-}
-
-.translate {
-	color: red;
-	font-weight: 600;
-}
-
-.icon {
-	fill: red;
-}
-
-.str {
-	stroke: red;
 }

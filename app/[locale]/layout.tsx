@@ -6,10 +6,11 @@ import Header from "@/components/Header/Header";
 import Nav from "@/components/Nav/Nav";
 import Container from "@/components/Container/Container";
 import Map from "@/components/Map/Map";
+import Hero from "@/components/Hero/Hero";
 
-import { locales } from "@/static/static";
+import { getCurrentLocale } from "@/locales/server";
+
 import headerCss from "@/components/Header/Header.module.scss";
-
 import "@/scss/global.scss";
 
 const nothing = Nothing_You_Could_Do({
@@ -27,12 +28,12 @@ const cormorant = Cormorant({
 export const metadata: Metadata = {
 	title: "Relax",
 	description: "Spa-Relax Complex",
-	icons: {},
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+	const locale = await getCurrentLocale();
 	return (
-		<html lang={locales[0]}>
+		<html lang={locale}>
 			<head>
 				<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon.png" />
 				<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
@@ -45,20 +46,21 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 			<body className={montserrat.className}>
 				<header>
 					<Container>
-						<Header styleProp={headerCss.header} />
-						<Nav />
+						<Header />
 					</Container>
+					<Nav position="top" />
 				</header>
 				<main>
+					<Hero />
 					<Container>
 						{children}
 						<Map></Map>
 					</Container>
 				</main>
 				<footer>
+					<Nav position="bottom" />
 					<Container>
-						<Nav />
-						<Header styleProp={headerCss.footer} />
+						<Header />
 					</Container>
 				</footer>
 			</body>
