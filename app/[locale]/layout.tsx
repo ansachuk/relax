@@ -11,7 +11,6 @@ import Hero from "@/components/Hero/Hero";
 import { getCurrentLocale } from "@/locales/server";
 
 import "@/scss/global.scss";
-// import Script from "next/script";
 
 const nothing = Nothing_You_Could_Do({
 	subsets: ["latin"],
@@ -30,7 +29,7 @@ export const metadata: Metadata = {
 	description: "Spa-Relax Complex",
 	manifest: "/site.webmanifest",
 	icons: [
-		{ rel: "apple-touch-icon", type: "", url: "/favicon/apple-icon.png", sizes: "180x180" },
+		{ rel: "apple-touch-icon", type: "image/png", url: "/favicon/apple-icon.png", sizes: "180x180" },
 		{ rel: "icon", type: "image/png", url: "/favicon/favicon-32x32.png", sizes: "32x32" },
 		{ rel: "icon", type: "image/png", url: "/favicon/favicon-16x16.png", sizes: "16x16" },
 		{ rel: "mask-icon", type: "image/png", url: "/favicon/safari-pinned-tab.svg", color: "#5bbad5" },
@@ -39,6 +38,7 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
 	const locale = await getCurrentLocale();
+
 	return (
 		<html lang={locale}>
 			<head>
@@ -66,7 +66,6 @@ export default async function RootLayout({ children }: { children: React.ReactNo
 					</Container>
 				</footer>
 			</body>
-			{/* <Script id="scroll">{"document.scrollBy({ top: 0 })"}</Script> */}
 		</html>
 	);
 }

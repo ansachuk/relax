@@ -8,7 +8,10 @@ import { useScopedI18n } from "@/locales/client";
 import I18nSubLayout from "../I18nSubLayout/I18nSubLayout";
 
 import css from "./Nav.module.scss";
-type Props = { position: "top" | "bottom" };
+
+import { Position } from "@/@types/types";
+
+type Props = { position: Position };
 
 function Navigation({ position }: Props) {
 	const fullPath = usePathname();
@@ -47,7 +50,17 @@ function Navigation({ position }: Props) {
 	return (
 		<nav className={position === "top" ? css.top : css.bottom}>
 			{NavLinks.map(({ path, label }) => (
-				<Link scroll={position !== "top"} className={pathname === path ? css.currentLink : css.link} key={path} href={path}>
+				<Link
+					scroll={false}
+					onClick={() => {
+						if (position === "bottom") {
+							window.scrollTo({ top: 0 });
+						}
+					}}
+					className={pathname === path ? css.currentLink : css.link}
+					key={path}
+					href={path}
+				>
 					{label}
 				</Link>
 			))}

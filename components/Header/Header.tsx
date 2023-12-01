@@ -1,6 +1,7 @@
 import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
 
 import { Facebook, Inst, Logo, Phone } from "@/static/svg";
+
 import css from "./Header.module.scss";
 
 export default function Header() {
