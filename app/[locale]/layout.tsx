@@ -8,20 +8,25 @@ import Container from "@/components/Container/Container";
 import Map from "@/components/Map/Map";
 import Hero from "@/components/Hero/Hero";
 
-import { getCurrentLocale } from "@/locales/server";
+import { getCurrentLocale, getScopedI18n } from "@/locales/server";
 
 import "@/scss/global.scss";
+import Section from "@/components/Section/Section";
+import Reviews from "@/components/Reviews/Reviews";
 
-const nothing = Nothing_You_Could_Do({
-	subsets: ["latin"],
-	weight: "400",
-});
 const montserrat = Montserrat({
 	subsets: ["cyrillic", "latin"],
 	weight: ["400", "500"],
 });
-const cormorant = Cormorant({
+
+export const nothing = Nothing_You_Could_Do({
+	subsets: ["latin"],
+	weight: "400",
+});
+
+export const cormorant = Cormorant({
 	subsets: ["cyrillic", "latin"],
+	weight: ["600"],
 });
 
 export const metadata: Metadata = {
@@ -37,6 +42,7 @@ export const metadata: Metadata = {
 };
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
+	const t = await getScopedI18n("titles");
 	const locale = await getCurrentLocale();
 
 	return (
@@ -56,6 +62,9 @@ export default async function RootLayout({ children }: { children: React.ReactNo
 					<Hero />
 					<Container>
 						{children}
+						<Section title={t("reviews")}>
+							<Reviews />
+						</Section>
 						<Map></Map>
 					</Container>
 				</main>
