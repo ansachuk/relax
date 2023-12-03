@@ -13,6 +13,8 @@ import { getCurrentLocale, getScopedI18n } from "@/locales/server";
 import "@/scss/global.scss";
 import Section from "@/components/Section/Section";
 import Reviews from "@/components/Reviews/Reviews";
+import FAQ from "@/components/FAQ/FAQ";
+import Feedback from "@/components/Feedback/Feedback";
 
 const montserrat = Montserrat({
 	subsets: ["cyrillic", "latin"],
@@ -65,7 +67,13 @@ export default async function RootLayout({ children }: { children: React.ReactNo
 						<Section title={t("reviews")}>
 							<Reviews />
 						</Section>
-						<Map></Map>
+						<Section title={t("faq")}>
+							<FAQ />
+						</Section>
+						<Section title={t("feedback")}>
+							<Feedback />
+						</Section>
+						<Map />
 					</Container>
 				</main>
 				<footer>

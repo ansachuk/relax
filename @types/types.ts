@@ -4,3 +4,8 @@ export interface IReview {
 	img: string;
 	text: string;
 }
+
+export interface IFAQ {
+	title: string;
+	content: string;
+}

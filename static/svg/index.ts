@@ -8,3 +8,4 @@ export { default as Inst } from "./inst.svg";
 export { default as Logo } from "./logo.svg";
 export { default as Mail } from "./mail.svg";
 export { default as Phone } from "./phone.svg";
+export { default as ArrowSm } from "./arrowSm.svg";

@@ -15,6 +15,8 @@ export default {
 	},
 	titles: {
 		reviews: "our reviews:",
+		faq: "faq",
+		feedback: "Do you have any questions?",
 	},
 	reviews: {
 		description:
@@ -27,5 +29,14 @@ export default {
 			review3:
 				"We recently rested as a family with a small child. We liked everything very much, cozy rooms, delicious cuisine, pleasant fresh air for a walk and a beautiful veranda for morning coffee",
 		},
+	},
+	faq: {
+		1: { question: "What time is check-out?", answer: "Check-in is until 14:00. Check-out is until 12:00" },
+		2: {
+			question: "What services are included in the price of the room?",
+			answer: "The room price includes accommodation, and breakfast can be ordered for an additional fee.",
+		},
+		3: { question: "Is there free Wi-Fi?", answer: "Yes, free Wi-Fi is available on the complex's territory." },
+		4: { question: "Is it possible to plan a festive event?", answer: "Of course, we can quickly resolve all details by phone." },
 	},
 } as const;

@@ -8,7 +8,7 @@ type Props = {
 
 export default function Section({ title, children }: Props) {
 	return (
-		<section>
+		<section className={css.section}>
 			<h1 className={`${cormorant.className} ${css.title}`}>{title}</h1>
 			{children}
 		</section>
