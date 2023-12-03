@@ -9,7 +9,7 @@ type Props = {
 export default function Section({ title, children }: Props) {
 	return (
 		<section className={css.section}>
-			<h1 className={`${cormorant.className} ${css.title}`}>{title}</h1>
+			<h2 className={`${cormorant.className} ${css.title}`}>{title}</h2>
 			{children}
 		</section>
 	);

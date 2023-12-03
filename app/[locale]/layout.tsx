@@ -2,19 +2,19 @@ import { Nothing_You_Could_Do, Montserrat, Cormorant } from "next/font/google";
 
 import type { Metadata } from "next";
 
-import Header from "@/components/Header/Header";
-import Nav from "@/components/Nav/Nav";
+import Header from "@/components/Layout/Header/Header";
+import Nav from "@/components/Layout/Nav/Nav";
 import Container from "@/components/Container/Container";
-import Map from "@/components/Map/Map";
+import Map from "@/components/Layout/Map/Map";
 import Hero from "@/components/Hero/Hero";
 
 import { getCurrentLocale, getScopedI18n } from "@/locales/server";
 
 import "@/scss/global.scss";
 import Section from "@/components/Section/Section";
-import Reviews from "@/components/Reviews/Reviews";
-import FAQ from "@/components/FAQ/FAQ";
-import Feedback from "@/components/Feedback/Feedback";
+import Reviews from "@/components/Layout/Reviews/Reviews";
+import FAQ from "@/components/Layout/FAQ/FAQ";
+import Feedback from "@/components/Layout/Feedback/Feedback";
 
 const montserrat = Montserrat({
 	subsets: ["cyrillic", "latin"],

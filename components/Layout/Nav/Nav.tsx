@@ -5,7 +5,7 @@ import Link from "next/link";
 
 import { useScopedI18n } from "@/locales/client";
 
-import I18nSubLayout from "../I18nSubLayout/I18nSubLayout";
+import I18nSubLayout from "../../I18nSubLayout/I18nSubLayout";
 
 import css from "./Nav.module.scss";
 

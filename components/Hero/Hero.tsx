@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import Benefits from "../Benefits/Benefits";
+import Benefits from "../Layout/Benefits/Benefits";
 
 import img from "@/static/images/hero/main@2x.webp";
 

@@ -15,7 +15,7 @@ export default {
 	},
 	titles: {
 		reviews: "our reviews:",
-		faq: "faq",
+		faq: "faq:",
 		feedback: "Do you have any questions?",
 	},
 	reviews: {
@@ -38,5 +38,15 @@ export default {
 		},
 		3: { question: "Is there free Wi-Fi?", answer: "Yes, free Wi-Fi is available on the complex's territory." },
 		4: { question: "Is it possible to plan a festive event?", answer: "Of course, we can quickly resolve all details by phone." },
+	},
+	feedback: {
+		desc: "Plan your vacation simply and quickly! Fill out the form and get an answer to your question  soon",
+		address: "Boryspil,2 Darvina street ",
+		phone_pool: "restaurant, pool",
+		phone_spa: "spa, vats, banquet halls, hotel",
+		phonePl: "Mobile number",
+		namePl: "Name",
+		messagePl: "Your message:",
+		sendPL: "Send message",
 	},
 } as const;
