@@ -61,7 +61,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
 					</Container>
 					<Nav position="top" />
 				</header>
-				<main style={{ position: "relative" }}>
+				<main>
 					<Hero />
 					<Container>
 						{children}

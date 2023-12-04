@@ -12,13 +12,18 @@
 
 	button {
 		color: $bgColor;
+
+		transition-property: color;
+		transition-duration: $trDuration;
+		transition-timing-function: $trTimeFunc;
 		.icon {
 			&.next {
 				transform: rotate(180deg);
 			}
-			&.prev {
-				// transform: rotate(-90deg);
-			}
+		}
+
+		&:hover {
+			color: $hoverColor;
 		}
 	}
 }

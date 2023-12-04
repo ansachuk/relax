@@ -1,7 +1,7 @@
 const nextConfig = {
-	image: {
-		formates: ["image/avif", "image/webp", "image/jpg"],
-	},
+	// image: {
+	// 	formates: ["image/avif", "image/webp", "image/jpg"],
+	// },
 	webpack(config) {
 		config.module.rules.push({
 			test: /\.svg$/,

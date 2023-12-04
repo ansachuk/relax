@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import Benefits from "../Layout/Benefits/Benefits";
 
-import img from "@/static/images/hero/main@2x.webp";
+import img from "@/static/images/hero/main.webp";
 
 import css from "./Hero.module.scss";
 
