@@ -1,9 +1,10 @@
-import { getScopedI18n } from "@/locales/server";
 import { Cake, Cup, Dollar, Food } from "@/static/svg";
 import css from "./Benefits.module.scss";
+import { useScopedI18n } from "@/locales/client";
+import I18nSubLayout from "@/components/I18nSubLayout/I18nSubLayout";
 
-export default async function Benefits() {
-	const t = await getScopedI18n("benefits");
+export function SubBenefits() {
+	const t = useScopedI18n("benefits");
 
 	const benefits = [
 		{
@@ -32,5 +33,13 @@ export default async function Benefits() {
 				</div>
 			))}
 		</div>
+	);
+}
+
+export default function Benefits() {
+	return (
+		<I18nSubLayout>
+			<SubBenefits />
+		</I18nSubLayout>
 	);
 }
