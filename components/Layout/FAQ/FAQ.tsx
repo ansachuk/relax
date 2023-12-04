@@ -1,8 +1,10 @@
-import { IFAQ } from "@/@types/types";
 import Accordion from "../Accordion/Accordion";
 
-import css from "../Accordion/Accordion.module.scss";
 import { getScopedI18n } from "@/locales/server";
+
+import { IFAQ } from "@/@types/types";
+
+import css from "../Accordion/Accordion.module.scss";
 
 export default async function FAQ() {
 	const t = await getScopedI18n("faq");

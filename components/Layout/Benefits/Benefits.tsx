@@ -1,7 +1,10 @@
-import { Cake, Cup, Dollar, Food } from "@/static/svg";
-import css from "./Benefits.module.scss";
 import { useScopedI18n } from "@/locales/client";
+
 import I18nSubLayout from "@/components/I18nSubLayout/I18nSubLayout";
+
+import { Cake, Cup, Dollar, Food } from "@/static/svg";
+
+import css from "./Benefits.module.scss";
 
 export function SubBenefits() {
 	const t = useScopedI18n("benefits");
