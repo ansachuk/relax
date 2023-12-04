@@ -12,11 +12,13 @@ html {
 	padding: 0;
 }
 
+*:focus {
+	outline: 2px solid $hoverColor;
+}
+
 body {
 	background-color: $bgColor;
 	color: $mainFontcolor;
-
-	// overflow-x: hidden;
 }
 
 ol,
@@ -49,7 +51,8 @@ a {
 	transition-duration: $trDuration;
 	transition-timing-function: $trTimeFunc;
 
-	&:hover {
+	&:hover,
+	&:focus {
 		color: $hoverColor;
 
 		&::after {

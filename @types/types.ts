@@ -9,3 +9,9 @@ export interface IFAQ {
 	title: string;
 	content: string;
 }
+
+export interface IFeedback {
+	name: string;
+	phone: string;
+	message: string;
+}

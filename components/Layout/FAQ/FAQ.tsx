@@ -23,6 +23,14 @@ export default async function FAQ() {
 			title: t("4.question"),
 			content: t("4.answer"),
 		},
+		{
+			title: t("5.question"),
+			content: t("5.answer"),
+		},
+		{
+			title: t("6.question"),
+			content: t("6.answer"),
+		},
 	];
 	return (
 		<div className={css.wrapper}>

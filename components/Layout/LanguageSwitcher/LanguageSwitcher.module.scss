@@ -24,7 +24,8 @@
 	transition-duration: $trDuration;
 	transition-timing-function: $trTimeFunc;
 
-	&:hover {
+	&:hover,
+	&:focus {
 		color: $hoverColor;
 
 		&::after {

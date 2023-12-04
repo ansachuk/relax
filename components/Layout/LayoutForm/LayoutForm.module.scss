@@ -15,11 +15,15 @@
 		font-family: inherit;
 		font-size: 16px;
 
-		text-transform: capitalize;
-
 		border: 1px solid $mainFontcolor;
 		border-radius: 10px;
 		padding: 20px 22px;
+
+		outline: 1.5px solid transparent;
+
+		transition-property: outline;
+		transition-duration: $trDuration;
+		transition-timing-function: 100ms;
 
 		&::placeholder {
 			font-family: inherit;
@@ -27,6 +31,10 @@
 			font-size: 16px;
 
 			line-height: 125%;
+		}
+
+		&:focus {
+			outline: 1.5px solid $hoverColor;
 		}
 	}
 
@@ -45,7 +53,8 @@
 		transition-duration: $trDuration;
 		transition-timing-function: $trTimeFunc;
 
-		&:hover {
+		&:hover,
+		&:focus {
 			background-color: $hoverColor;
 			border: 1px solid transparent;
 			color: $bgColor;
@@ -56,5 +65,11 @@
 			border: 1px solid transparent;
 			color: $bgColor;
 		}
+	}
+
+	.error {
+		font-size: 12px;
+		font-weight: 500;
+		color: red;
 	}
 }
