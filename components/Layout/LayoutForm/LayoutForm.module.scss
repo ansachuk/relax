@@ -53,8 +53,7 @@
 		transition-duration: $trDuration;
 		transition-timing-function: $trTimeFunc;
 
-		&:hover,
-		&:focus {
+		&:hover {
 			background-color: $hoverColor;
 			border: 1px solid transparent;
 			color: $bgColor;

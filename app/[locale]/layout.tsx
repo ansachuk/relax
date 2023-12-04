@@ -1,4 +1,5 @@
 import { Nothing_You_Could_Do, Montserrat, Cormorant } from "next/font/google";
+import "swiper/css";
 
 import type { Metadata } from "next";
 

@@ -25,9 +25,9 @@ export default {
 			review1:
 				"We recently rested as a family with a small child. We liked everything very much, cozy rooms, delicious cuisine, pleasant fresh air for a walk and a beautiful veranda for morning coffee",
 			review2:
-				"We recently rested as a family with a small child. We liked everything very much, cozy rooms, delicious cuisine, pleasant fresh air for a walk and a beautiful veranda for morning coffee",
+				"We recently rested as a family with a small child. We liked everything very much, cozy rooms, delicious cuisine, pleasant fresh air for a walk and a beautiful veranda for morning coffee2",
 			review3:
-				"We recently rested as a family with a small child. We liked everything very much, cozy rooms, delicious cuisine, pleasant fresh air for a walk and a beautiful veranda for morning coffee",
+				"We recently rested as a family with a small child. We liked everything very much, cozy rooms, delicious cuisine, pleasant fresh air for a walk and a beautiful veranda for morning coffee3",
 		},
 	},
 	faq: {
