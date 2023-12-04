@@ -1,16 +1,17 @@
 "use client";
 
+import { useState } from "react";
 import { Swiper, SwiperClass, SwiperSlide } from "swiper/react";
 
 import I18nSubLayout from "@/components/I18nSubLayout/I18nSubLayout";
-import Review from "../../Review/Review";
-
 import { useScopedI18n } from "@/locales/client";
+
+import Review from "../../Review/Review";
+import SliderCtrls from "@/components/SliderCtrls/SliderCtrls";
+
 import { IReview } from "@/@types/types";
 
 import css from "../Reviews.module.scss";
-import { ArrowSm } from "@/static/svg";
-import { useState } from "react";
 
 export function SubSlider() {
 	const [swiper, setSwiper] = useState<SwiperClass | null>(null);
@@ -29,14 +30,7 @@ export function SubSlider() {
 					<Review text={text} img={img} />
 				</SwiperSlide>
 			))}
-			<div className={css.ctrls}>
-				<button onClick={() => swiper?.slidePrev()}>
-					<ArrowSm width={25} height={25} className={`${css.icon} ${css.prev}`} />
-				</button>
-				<button onClick={() => swiper?.slideNext()}>
-					<ArrowSm width={25} height={25} className={`${css.icon} ${css.next}`} />
-				</button>
-			</div>
+			<SliderCtrls swiper={swiper} />
 		</Swiper>
 	);
 }

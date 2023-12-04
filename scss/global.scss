@@ -12,10 +12,6 @@ html {
 	padding: 0;
 }
 
-*:focus {
-	outline: 2px solid $hoverColor;
-}
-
 body {
 	background-color: $bgColor;
 	color: $mainFontcolor;

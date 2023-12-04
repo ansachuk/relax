@@ -10,29 +10,6 @@
 
 .slider {
 	position: relative;
-
-	.ctrls {
-		position: absolute;
-		bottom: 50px;
-		left: 50%;
-		transform: translateX(-50%);
-		z-index: 1;
-
-		display: flex;
-		gap: 30px;
-
-		button {
-			color: $bgColor;
-			.icon {
-				&.next {
-					transform: rotate(90deg);
-				}
-				&.prev {
-					transform: rotate(-90deg);
-				}
-			}
-		}
-	}
 }
 
 .wrapper {

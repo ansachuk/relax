@@ -9,3 +9,4 @@ export { default as Logo } from "./logo.svg";
 export { default as Mail } from "./mail.svg";
 export { default as Phone } from "./phone.svg";
 export { default as ArrowSm } from "./arrowSm.svg";
+export { default as ArrowLg } from "./arrowLg.svg";
