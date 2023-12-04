@@ -1,14 +1,13 @@
 "use client";
 
 import Image, { StaticImageData } from "next/image";
+import { usePathname } from "next/navigation";
 
 import Benefits from "../Layout/Benefits/Benefits";
 
 import { main, restaurant, hotel } from "@/static/images/hero";
 
 import css from "./Hero.module.scss";
-import { usePathname } from "next/navigation";
-import { useEffect } from "react";
 
 export default function Hero() {
 	const fullPathname = usePathname();

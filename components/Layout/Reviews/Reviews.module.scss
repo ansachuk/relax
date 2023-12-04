@@ -21,16 +21,13 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	gap: 40px;
+	gap: 35px;
 
 	background-color: $reviewColor;
 }
 
 .img {
-	width: 120px;
-	height: 120px;
 	border-radius: 50%;
-	background-color: #fff;
 }
 
 .text {

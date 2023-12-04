@@ -1,7 +1,9 @@
+import { StaticImageData } from "next/image";
+
 export type Position = "top" | "bottom";
 
 export interface IReview {
-	img: string;
+	img: StaticImageData;
 	text: string;
 }
 

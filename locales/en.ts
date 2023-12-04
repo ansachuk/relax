@@ -25,9 +25,11 @@ export default {
 			review1:
 				"We recently rested as a family with a small child. We liked everything very much, cozy rooms, delicious cuisine, pleasant fresh air for a walk and a beautiful veranda for morning coffee",
 			review2:
-				"We recently rested as a family with a small child. We liked everything very much, cozy rooms, delicious cuisine, pleasant fresh air for a walk and a beautiful veranda for morning coffee2",
+				"I really enjoyed the complex. The rooms are spacious and comfortable, the staff is polite and attentive. The restaurant offers a wide selection of delicious dishes. Overall, we were very satisfied with our stay.",
 			review3:
-				"We recently rested as a family with a small child. We liked everything very much, cozy rooms, delicious cuisine, pleasant fresh air for a walk and a beautiful veranda for morning coffee3",
+				"We spent the weekend at the Relax complex. We really enjoyed the sauna, the cocktails in the restaurant, and the delicious food. We especially want to mention the staff, who were always willing to help and make our stay as comfortable as possible.",
+			review4:
+				"My wife and I recently stayed at the Relax hotel and restaurant complex in Boryspil. The rooms were clean and secure with modern locks, the staff was polite. There are saunas and baths to warm up, a spacious area, parking, and we liked that there is everything you need for a relaxing stay for visitors with children. We want to come back again, next time with children.",
 		},
 	},
 	faq: {

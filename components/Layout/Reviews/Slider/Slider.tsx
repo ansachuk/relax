@@ -9,6 +9,8 @@ import { useScopedI18n } from "@/locales/client";
 import Review from "../../Review/Review";
 import SliderCtrls from "@/components/SliderCtrls/SliderCtrls";
 
+import { review1, review2, review3, review4 } from "@/static/images/reviews";
+
 import { IReview } from "@/@types/types";
 
 import css from "../Reviews.module.scss";
@@ -18,9 +20,10 @@ export function SubSlider() {
 	const t = useScopedI18n("reviews.reviews");
 
 	const reviews: IReview[] = [
-		{ img: "", text: t("review1") },
-		{ img: "", text: t("review2") },
-		{ img: "", text: t("review3") },
+		{ img: review1, text: t("review1") },
+		{ img: review2, text: t("review2") },
+		{ img: review3, text: t("review3") },
+		{ img: review4, text: t("review4") },
 	];
 
 	return (
