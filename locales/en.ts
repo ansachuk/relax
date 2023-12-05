@@ -59,4 +59,21 @@ export default {
 			notValid: "Not valid!",
 		},
 	},
+	pages: {
+		main: {
+			intro:
+				"we are a modern hotel and restaurant complex that has a spacious area and a large outdoor pool, dry saunas and various baths, open traditional spa-hot tubs",
+			aboutUs: {
+				title: "About us",
+				par1: "Our complex is suitable both for family vacations and for a fun friendly company or a romantic dinner for two lovers. We have everything you need for a full rest after a hard day's work or restoration of emotional and physical strength, as well as for a pleasant rest of the body and release from everyday stress, which everyone needs now.",
+				par2: "On the territory of the Relax complex you will find a children's playground, a beautiful green lawn for an open-air wedding ceremony, restaurant halls and a comfortable hotel.There is everything you need for a comfortable stay.",
+			},
+			benefits: {
+				title: "Our benefits",
+				sub1: "Photo-zone for guests",
+				sub2: "Spacious area",
+				sub3: "Playground",
+			},
+		},
+	},
 } as const;

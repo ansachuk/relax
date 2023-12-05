@@ -1,7 +1,8 @@
+import { ArrowSm } from "@/static/svg";
+
 import { IFAQ } from "@/@types/types";
 
 import css from "./Accordion.module.scss";
-import { ArrowSm } from "@/static/svg";
 
 export default function Accordion({ title, content }: IFAQ) {
 	return (
@@ -16,17 +17,3 @@ export default function Accordion({ title, content }: IFAQ) {
 		</div>
 	);
 }
-
-// export default function Accordion({ title, content }: IFAQ) {
-// 	const [isShown, setIsShown] = useState(false);
-
-// 	return (
-// 		<div className={css.faq}>
-// 			<button className={css.button} onClick={() => setIsShown(!isShown)}>
-// 				{title}
-// 				<span>x</span>
-// 			</button>
-// 			{isShown && <p className={css.content}>{content}</p>}
-// 		</div>
-// 	);
-// }

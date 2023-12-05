@@ -7,6 +7,11 @@ export interface IReview {
 	text: string;
 }
 
+export interface IBenefit {
+	img: StaticImageData;
+	title: string;
+}
+
 export interface IFAQ {
 	title: string;
 	content: string;

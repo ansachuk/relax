@@ -4,8 +4,8 @@ import { ErrorMessage, Field, Form, Formik } from "formik";
 import { object, string } from "yup";
 
 import I18nSubLayout from "@/components/I18nSubLayout/I18nSubLayout";
-
 import { useScopedI18n } from "@/locales/client";
+
 import { IFeedback } from "@/@types/types";
 
 import css from "./LayoutForm.module.scss";

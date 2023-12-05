@@ -1,0 +1,19 @@
+.wrapper {
+	display: flex;
+	gap: 36px;
+
+	.benefit {
+		display: flex;
+		flex-direction: column;
+		gap: 50px;
+	}
+
+	.text {
+		display: flex;
+		justify-content: center;
+		gap: 12px;
+
+		font-size: 28px;
+		font-weight: 500;
+	}
+}

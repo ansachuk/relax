@@ -1,0 +1,26 @@
+.wrapper {
+	width: 100%;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 23px;
+
+	margin-bottom: 120px;
+
+	.title {
+		text-align: center;
+		font-size: 45px;
+		font-weight: 400;
+
+		width: 350px;
+	}
+
+	.desc {
+		text-align: center;
+		font-size: 24px;
+		font-weight: 500;
+		line-height: 133.333%;
+		max-width: 908px;
+	}
+}

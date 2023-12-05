@@ -3,19 +3,20 @@ import "swiper/css";
 
 import type { Metadata } from "next";
 
+import Container from "@/components/Container/Container";
+import Hero from "@/components/Hero/Hero";
+import Section from "@/components/Section/Section";
+
 import Header from "@/components/Layout/Header/Header";
 import Nav from "@/components/Layout/Nav/Nav";
-import Container from "@/components/Container/Container";
 import Map from "@/components/Layout/Map/Map";
-import Hero from "@/components/Hero/Hero";
+import Reviews from "@/components/Layout/Reviews/Reviews";
+import FAQ from "@/components/Layout/FAQ/FAQ";
+import Feedback from "@/components/Layout/Feedback/Feedback";
 
 import { getCurrentLocale, getScopedI18n } from "@/locales/server";
 
 import "@/scss/global.scss";
-import Section from "@/components/Section/Section";
-import Reviews from "@/components/Layout/Reviews/Reviews";
-import FAQ from "@/components/Layout/FAQ/FAQ";
-import Feedback from "@/components/Layout/Feedback/Feedback";
 
 const montserrat = Montserrat({
 	subsets: ["cyrillic", "latin"],
@@ -52,7 +53,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
 		<html lang={locale}>
 			<head>
 				<meta name="msapplication-TileColor" content="#da532c" />
-				<meta name="theme-color" content="#ffffff"></meta>
+				<meta name="theme-color" content="#CDA075" />
 			</head>
 			<body className={montserrat.className}>
 				<header>

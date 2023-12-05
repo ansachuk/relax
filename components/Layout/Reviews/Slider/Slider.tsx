@@ -9,7 +9,7 @@ import { useScopedI18n } from "@/locales/client";
 import Review from "../../Review/Review";
 import SliderCtrls from "@/components/SliderCtrls/SliderCtrls";
 
-import { review1, review2, review3, review4 } from "@/static/images/reviews";
+import { review1, review2, review3, review4 } from "@/static/images/layout/reviews";
 
 import { IReview } from "@/@types/types";
 
