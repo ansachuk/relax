@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 
 import Benefits from "../Layout/Benefits/Benefits";
 
-import { main, restaurant, hotel } from "@/static/images/hero";
+import { main, restaurant, hotel, spa } from "@/static/images/hero";
 
 import css from "./Hero.module.scss";
 
@@ -24,6 +24,9 @@ export default function Hero() {
 
 			case "hotel":
 				return hotel;
+
+			case "spa":
+				return spa;
 
 			default:
 				return main;
