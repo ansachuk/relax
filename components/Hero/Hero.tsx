@@ -42,7 +42,7 @@ export default function Hero() {
 	img = getHeroImg();
 	return (
 		<>
-			<Image priority height={712} sizes="100vw" className={css.heroImg} quality={100} src={img} alt="Complex big image" />
+			<Image priority placeholder="blur" height={712} sizes="100vw" className={css.heroImg} quality={100} src={img} alt="Complex big image" />
 			<Benefits />
 		</>
 	);

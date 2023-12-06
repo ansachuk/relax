@@ -1,6 +1,6 @@
 import Benefits from "@/components/Benefits/Benefits";
 import Section from "@/components/Section/Section";
-import { AboutUs, Intro } from "@/components/pages/main";
+import { AboutUs, Intro, WhatWeOffer } from "@/components/pages/main";
 
 import { getScopedI18n } from "@/locales/server";
 
@@ -22,6 +22,9 @@ export default async function Home() {
 			<AboutUs />
 			<Section title={t("benefits.title")}>
 				<Benefits benefits={benefits} />
+			</Section>
+			<Section title={t("whatWeOffer.title")}>
+				<WhatWeOffer />
 			</Section>
 		</>
 	);

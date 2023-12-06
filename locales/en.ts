@@ -74,6 +74,15 @@ export default {
 				sub2: "Spacious area",
 				sub3: "Playground",
 			},
+			whatWeOffer: {
+				title: "What we offer:",
+				restaurant: "restaurant",
+				banquet: "banquet halls",
+				hotel: "hotel",
+				spa: "spa",
+				pool: "pool",
+				vats: "vats",
+			},
 		},
 	},
 } as const;

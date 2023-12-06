@@ -74,6 +74,15 @@ export default {
 				sub2: "Простора територія",
 				sub3: "Дитячий майданчик",
 			},
+			whatWeOffer: {
+				title: "Ми пропонуємо:",
+				restaurant: "Ресторан",
+				banquet: "Банкетні зали",
+				hotel: "Готель",
+				spa: "Лазні/Сауни",
+				pool: "Басейн",
+				vats: "Чани",
+			},
 		},
 	},
 } as const;
