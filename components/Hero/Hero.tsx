@@ -1,8 +1,9 @@
 "use client";
 
-import Image, { StaticImageData } from "next/image";
+import { StaticImageData } from "next/image";
 import { usePathname } from "next/navigation";
 
+import MainImage from "../MainImage/MainImage";
 import Benefits from "../Layout/Benefits/Benefits";
 
 import { main, restaurant, hotel, spa, pool, contacts } from "@/static/images/layout/hero";
@@ -42,7 +43,7 @@ export default function Hero() {
 	img = getHeroImg();
 	return (
 		<>
-			<Image priority placeholder="blur" height={712} sizes="100vw" className={css.heroImg} quality={100} src={img} alt="Complex big image" />
+			<MainImage priority placeholder="blur" height={712} className={css.heroImg} quality={100} src={img} alt="Complex big image" />
 			<Benefits />
 		</>
 	);
