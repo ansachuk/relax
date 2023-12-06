@@ -1,0 +1,57 @@
+@import "@/scss/";
+
+.article {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.wrapper {
+	width: 500px;
+
+	.subwrapper {
+		display: flex;
+		justify-content: space-between;
+		font-size: 20px;
+		font-weight: 600;
+		text-transform: uppercase;
+
+		margin-bottom: 50px;
+	}
+
+	.text {
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 140%;
+
+		margin-bottom: 50px;
+	}
+
+	.phone {
+		padding-bottom: 4px;
+	}
+
+	.link {
+		padding: 10px;
+
+		display: inline-flex;
+		align-items: center;
+		gap: 12px;
+
+		.icon {
+			width: 40px;
+			height: 40px;
+			background-color: currentColor;
+			border-radius: 50%;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			svg {
+				stroke: $bgColor;
+				transform: rotate(-180deg);
+			}
+		}
+	}
+}

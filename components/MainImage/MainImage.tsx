@@ -13,7 +13,7 @@ type Props = {
 	src: string | StaticImport;
 };
 
-export default function MainImage({ width, height, alt, src, priority, placeholder, className, quality, sizes = "100vw" }: Props) {
+export default function MainImage({ width, height, alt, src, priority, placeholder = "blur", className, quality, sizes = "100vw" }: Props) {
 	return (
 		<Image
 			src={src}
@@ -25,6 +25,7 @@ export default function MainImage({ width, height, alt, src, priority, placehold
 			className={className}
 			sizes={sizes}
 			quality={quality}
+			style={{ userSelect: "none" }}
 		/>
 	);
 }

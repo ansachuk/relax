@@ -22,3 +22,12 @@ export interface IFeedback {
 	phone: string;
 	message: string;
 }
+
+export interface IMainSection {
+	img: StaticImageData;
+	title: string;
+	subtitle: string;
+	phone: string;
+	text: string;
+	link: string;
+}
