@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
 
 import { Facebook, Inst, Logo, Phone } from "@/static/svg";
@@ -18,7 +20,9 @@ export default function Header() {
 					<Phone className={css.icon} width={32} height={32} />
 				</a>
 			</div>
-			<Logo className={css.logo} width={172} height={91} />
+			<Link className={css.logo} href="/#top">
+				<Logo width={172} height={91} />
+			</Link>
 			<LanguageSwitcher />
 		</div>
 	);

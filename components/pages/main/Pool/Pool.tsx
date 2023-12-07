@@ -5,6 +5,7 @@ import { nothing } from "@/app/[locale]/layout";
 
 import ImageGrid from "@/components/ImageGrid/ImageGrid";
 
+import { pool1, pool2, pool3 } from "@/static/images/main";
 import { ArrowLg } from "@/static/svg";
 
 import css from "./Pool.module.scss";
@@ -35,7 +36,7 @@ export default async function Pool() {
 					</Link>
 				</div>
 			</div>
-			<ImageGrid />
+			<ImageGrid img1={pool1} img2={pool2} img3={pool3} />
 		</article>
 	);
 }

@@ -1,15 +1,21 @@
-import MainImage from "../MainImage/MainImage";
+import { StaticImageData } from "next/image";
 
-import { pool1, pool2, pool3 } from "@/static/images/main";
+import MainImage from "../MainImage/MainImage";
 
 import css from "./ImageGrid.module.scss";
 
-export default function ImageGrid() {
+type Props = {
+	img1: StaticImageData;
+	img2: StaticImageData;
+	img3: StaticImageData;
+};
+
+export default function ImageGrid({ img1, img2, img3 }: Props) {
 	return (
 		<div className={css.wrapper}>
-			<MainImage src={pool1} width={390} height={530} alt="pool image" />
-			<MainImage src={pool2} width={500} height={600} alt="pool image" />
-			<MainImage src={pool3} width={390} height={530} alt="pool image" />
+			<MainImage src={img1} width={390} height={530} alt="pool image" />
+			<MainImage src={img2} width={500} height={600} alt="pool image" />
+			<MainImage src={img3} width={390} height={530} alt="pool image" />
 		</div>
 	);
 }

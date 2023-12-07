@@ -6,6 +6,10 @@
 
 .logo {
 	padding: 8px 0;
+
+	&::after {
+		display: none;
+	}
 }
 
 .wrapper {
