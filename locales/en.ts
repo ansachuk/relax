@@ -45,7 +45,7 @@ export default {
 	},
 	feedback: {
 		desc: "Plan your vacation simply and quickly! Fill out the form and get an answer to your question  soon",
-		address: "Boryspil,2 Darvina street ",
+		address: "Boryspil, 2 Darvina street ",
 		phone_pool: "restaurant, pool",
 		phone_spa: "spa, vats, banquet halls, hotel",
 		phonePl: "Mobile number *",
@@ -99,6 +99,18 @@ export default {
 					title: "hotel",
 					subtitle: "10.00-22.00 HOURS",
 					text: "At the Relax hotel, everything speaks of a comfortable rest. Cozy standard and economy class rooms, exquisite LUX rooms, each of which is bright and cozy at the same time. Neutral accents, modern equipment, staff ready to help at any moment when needed. Enjoy a light and peaceful rest in a spacious bed and a comfortable, soft bathrobe, while we make sure that nothing spoils your rest",
+				},
+			},
+			sectionLg: {
+				section1: {
+					title: "spa",
+					subtitle: "10.00-22.00 hours",
+					text: "In the our complex  you can relax in the sauna and the tub. Relaxation is offered by the steam bath or  sauna. And what could be pleasanter  for your soul and body than relaxing in a jacuzzi or a steam bath. A qualified bathhouse attendant will 'steer clear' you according to all the rules of his science. In the saunas  for you a cooling swimming pool and relaxation zone.",
+				},
+				section2: {
+					title: "vats",
+					subtitle: "price : 5000 uah / 3 hours",
+					text: "Our visitors have the opportunity to immerse themselves in the vat, the most relaxing form of recreation. After experiencing hot water mixed with natural oils and fresh flowers, your body will experience unparalleled emotions and aesthetic pleasure",
 				},
 			},
 		},

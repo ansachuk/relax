@@ -5,12 +5,12 @@ import { getScopedI18n } from "@/locales/server";
 import MainImage from "@/components/MainImage/MainImage";
 import { ArrowLg } from "@/static/svg";
 
-import { IMainSection } from "@/@types/types";
+import { ISectionSm } from "@/@types/types";
 
 import css from "./SectionSm.module.scss";
 
 type Props = {
-	sectionData: IMainSection;
+	sectionData: ISectionSm;
 };
 
 export default async function SectionSm({ sectionData: { img, subtitle, phone, text, link, title } }: Props) {
@@ -25,10 +25,10 @@ export default async function SectionSm({ sectionData: { img, subtitle, phone, t
 					</Link>
 				</div>
 				<p className={css.text}>{text}</p>
-				<Link href={link} className={css.link}>
+				<Link href={`${link}#top`} className={css.link}>
 					{t("linkText")}
 					<span className={css.icon}>
-						<ArrowLg />
+						<ArrowLg width={18} />
 					</span>
 				</Link>
 			</div>

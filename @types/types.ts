@@ -23,8 +23,23 @@ export interface IFeedback {
 	message: string;
 }
 
-export interface IMainSection {
+export interface ISectionSm {
 	img: StaticImageData;
+	title: string;
+	subtitle: string;
+	phone: string;
+	text: string;
+	link: string;
+}
+
+export interface ISectionLg {
+	images: {
+		img1: StaticImageData;
+		img2: StaticImageData;
+		img3: StaticImageData;
+		img4: StaticImageData;
+	};
+	nothingTitle: string;
 	title: string;
 	subtitle: string;
 	phone: string;

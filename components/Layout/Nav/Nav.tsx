@@ -7,9 +7,9 @@ import { useScopedI18n } from "@/locales/client";
 
 import I18nSubLayout from "../../I18nSubLayout/I18nSubLayout";
 
-import css from "./Nav.module.scss";
-
 import { Position } from "@/@types/types";
+
+import css from "./Nav.module.scss";
 
 type Props = { position: Position };
 
