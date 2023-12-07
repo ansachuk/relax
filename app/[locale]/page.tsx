@@ -7,6 +7,7 @@ import { AboutUs, Intro, SectionLg, SectionSm, WhatWeOffer } from "@/components/
 import { benefit1, benefit2, benefit3, halls, hotel, restaurant, spa1, spa2, spa3, spa4, vats1, vats2, vats3, vats4 } from "@/static/images/main";
 
 import { IBenefit, ISectionLg, ISectionSm } from "@/@types/types";
+import Pool from "@/components/pages/main/Pool/Pool";
 
 export default async function Home() {
 	const t = await getScopedI18n("pages.main");
@@ -90,12 +91,14 @@ export default async function Home() {
 					<SectionSm sectionData={el} />
 				</Section>
 			))}
-
 			{sectionLg.map(el => (
 				<Section key={el.title} title={el.title}>
 					<SectionLg sectionData={el} />
 				</Section>
 			))}
+			<Section title={t("pool.title")}>
+				<Pool />
+			</Section>
 		</>
 	);
 }

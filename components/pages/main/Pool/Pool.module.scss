@@ -3,7 +3,6 @@
 .article {
 	display: flex;
 	flex-direction: column;
-	// justify-content: space-between;
 	align-items: center;
 	gap: 50px;
 
@@ -54,6 +53,13 @@
 		margin-bottom: 50px;
 	}
 
+	.subtitle {
+		color: #fd2626;
+		font-size: 20px;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+
 	.phone {
 		padding-bottom: 4px;
 	}
@@ -81,27 +87,6 @@
 		svg {
 			color: $bgColor;
 			transform: rotate(-180deg);
-		}
-	}
-}
-
-.images {
-	width: 100%;
-	height: 580px;
-
-	display: flex;
-	justify-content: space-between;
-	gap: 20px;
-
-	.wrapper {
-		width: 630px;
-		display: flex;
-		flex-direction: column;
-		gap: 20px;
-
-		.subwrapper {
-			display: flex;
-			gap: 20px;
 		}
 	}
 }

@@ -20,3 +20,7 @@ export { default as vats1 } from "./vats1.webp";
 export { default as vats2 } from "./vats2.webp";
 export { default as vats3 } from "./vats3.webp";
 export { default as vats4 } from "./vats4.webp";
+
+export { default as pool1 } from "./pool1.webp";
+export { default as pool2 } from "./pool2.webp";
+export { default as pool3 } from "./pool3.webp";

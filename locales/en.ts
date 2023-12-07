@@ -113,6 +113,12 @@ export default {
 					text: "Our visitors have the opportunity to immerse themselves in the vat, the most relaxing form of recreation. After experiencing hot water mixed with natural oils and fresh flowers, your body will experience unparalleled emotions and aesthetic pleasure",
 				},
 			},
+			pool: {
+				linkText: "Learn more",
+				title: "summer pool",
+				subtitle: "works only in summer!",
+				text: "Lounging at the large pool 25*10 m and depth of 2 meters is always nice. Water elements are very important in your life, and relaxing around the pool will create a feeling of calm when you are tired of all daily activities.   Near the pools where you can swim, lie on a sun lounger, investing in your mood with ice cocktails. The pool is surrounded by tiles, so you can sit comfortably on sunbeds, that can hold 140 people. Also our pool area boasts a waterfall.",
+			},
 		},
 	},
 } as const;
