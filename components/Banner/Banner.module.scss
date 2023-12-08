@@ -20,18 +20,29 @@
 		text-transform: uppercase;
 	}
 	.link {
-		text-align: center;
-		font-size: 16px;
-		font-weight: 500;
-		line-height: 125%;
-
 		padding: 12px 16px;
 
 		border-radius: 10px;
-		border: 1px solid $bgColor;
+		border: 1px solid currentColor;
+
+		transition-property: border, background-color, color;
+		transition-duration: $trDuration;
+		transition-timing-function: $trTimeFunc;
 
 		&::after {
 			width: 0;
+		}
+
+		&:hover {
+			background-color: $hoverColor;
+			border: 1px solid transparent;
+			color: $bgColor;
+		}
+
+		&:active {
+			background-color: $activeColor;
+			border: 1px solid transparent;
+			color: $bgColor;
 		}
 	}
 }

@@ -19,3 +19,11 @@ export { default as menu3 } from "./menu3.webp";
 export { default as QR } from "./QR.webp";
 
 export { default as hunting1 } from "./hunting1.webp";
+
+export { default as kolyba1 } from "./kolyba1.webp";
+
+export { default as veranda1 } from "./veranda1.webp";
+
+export { default as venetian1 } from "./venetian1.webp";
+
+export { default as sea1 } from "./sea1.webp";

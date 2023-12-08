@@ -10,7 +10,20 @@ import Menu from "@/components/pages/restaurant/Menu/Menu";
 import OurTeam from "@/components/pages/restaurant/OurTeam/OurTeam";
 import RestSection from "@/components/pages/restaurant/RestSection/RestSection";
 
-import { about1, about2, about3, benefit1, benefit2, benefit3, hunting1, offer } from "@/static/images/restaurant";
+import {
+	about1,
+	about2,
+	about3,
+	benefit1,
+	benefit2,
+	benefit3,
+	hunting1,
+	kolyba1,
+	offer,
+	sea1,
+	venetian1,
+	veranda1,
+} from "@/static/images/restaurant";
 
 import { IAbout, IBenefit, IOffer } from "@/@types/types";
 
@@ -42,25 +55,25 @@ export default async function Restaurant() {
 			title: t("sections.2.title"),
 			subtitle: t("sections.2.subtitle"),
 			text: t("sections.2.text"),
-			imgs: [hunting1, hunting1, hunting1],
+			imgs: [veranda1, veranda1, veranda1],
 		},
 		{
 			title: t("sections.3.title"),
 			subtitle: t("sections.3.subtitle"),
 			text: t("sections.3.text"),
-			imgs: [hunting1, hunting1, hunting1],
+			imgs: [kolyba1, kolyba1, kolyba1],
 		},
 		{
 			title: t("sections.4.title"),
 			subtitle: t("sections.4.subtitle"),
 			text: t("sections.4.text"),
-			imgs: [hunting1, hunting1, hunting1],
+			imgs: [venetian1, venetian1, venetian1],
 		},
 		{
 			title: t("sections.5.title"),
 			subtitle: t("sections.5.subtitle"),
 			text: t("sections.5.text"),
-			imgs: [hunting1, hunting1, hunting1],
+			imgs: [sea1, sea1, sea1],
 		},
 	];
 

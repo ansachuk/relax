@@ -91,7 +91,7 @@ export default {
 					text: "In the RELAX Complex restaurant, everyone will be able to choose the hall that he likes the most, and our chefs will surely impress and treat you with their classic dishes of European cuisine. Our bar is a comfortable, welcoming center of communication, where you can enjoy your morning coffee, a cocktail before dinner or a glass of wine to relax. For us, the most important thing is that this evening becomes truly unsurpassed for you and your quests.",
 				},
 				section2: {
-					title: "banquet halls",
+					title: "10.00-22.00 HOURS",
 					subtitle: "quantity of guests",
 					text: "The Relax complex will help in the organization of any holiday: party, wedding, business meeting, anniversary, family evening, romantic evening of lovers or a fun meeting of friends.You can choose the hall you like, and our chefs will impress you with classic european dishes. Any event that you want to celebrate in the restaurant will be accompanied by music, and for special events we will definitely select the best musicians and presenters for you.",
 				},

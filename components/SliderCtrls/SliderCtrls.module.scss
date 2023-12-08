@@ -9,6 +9,7 @@
 
 	display: flex;
 	gap: 90px;
+	color: currentColor;
 }
 
 .ctrls {
@@ -20,6 +21,7 @@
 
 	display: flex;
 	gap: 30px;
+	color: $bgColor;
 }
 
 .ctrl {
