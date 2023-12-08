@@ -120,5 +120,37 @@ export default {
 				text: "Lounging at the large pool 25*10 m and depth of 2 meters is always nice. Water elements are very important in your life, and relaxing around the pool will create a feeling of calm when you are tired of all daily activities.   Near the pools where you can swim, lie on a sun lounger, investing in your mood with ice cocktails. The pool is surrounded by tiles, so you can sit comfortably on sunbeds, that can hold 140 people. Also our pool area boasts a waterfall.",
 			},
 		},
+		restaurant: {
+			about: {
+				title: "About restaurant",
+				p1: "In the restaurant of the RELAX complex, you can choose the hall you like, and our chefs will impress you with classic european dishes. Any event that you want to celebrate in the restaurant will be accompanied by music, and for special events we will definitely select the best musicians and presenters for you.",
+				p2: "The Relax complex will help in the organization of any holiday: party, wedding, business meeting, anniversary, family evening, romantic evening of lovers or a fun meeting of friends. For us, the most important thing is that this evening becomes best for you and your guests.",
+			},
+			benefits: {
+				title: "Bennefits of the restaurant",
+				sub1: "Proffessional cheffs",
+				sub2: "Food for kids",
+				sub3: "Smart equipment",
+			},
+			offers: {
+				title: "Banquet halls",
+				text: "Any event you want to celebrate at our establishment will be accompanied by musical compositions, and for special occasions, we can recommend the best musicians and hosts for you. Each banquet hall is designed for a certain number of guests and is equipped with a different interior.",
+				offers: {
+					1: "Husting hall",
+					2: "Veranda hall",
+					3: "Kolyba",
+					4: "Venetian hall",
+					5: "Sea hall",
+				},
+			},
+			menu: {
+				title: "our menu:",
+				download: "Download",
+			},
+			ourTeam: {
+				title: "Our team",
+				text: "Our team is made up of true masters of their craft who love their work. We are always ready to delight you with delicious food and drinks, as well as pleasant service. We want you to feel at home in our restaurant, so we do everything possible to make you feel comfortable and cozy.",
+			},
+		},
 	},
 } as const;

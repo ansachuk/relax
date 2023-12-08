@@ -46,3 +46,18 @@ export interface ISectionLg {
 	text: string;
 	link: string;
 }
+
+export interface IAbout {
+	title: string;
+	p1: string;
+	p2: string;
+	img1: StaticImageData;
+	img2: StaticImageData;
+	img3: StaticImageData;
+}
+
+export interface IOffer {
+	img: StaticImageData;
+	text: string;
+	offers: Array<string>;
+}
