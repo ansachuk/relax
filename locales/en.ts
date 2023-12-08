@@ -143,6 +143,38 @@ export default {
 					5: "Sea hall",
 				},
 			},
+			sections: {
+				linkText: "Contact us",
+				1: {
+					title: "hunting hall",
+					subtitle: "Quantity of guests : 20 people",
+					text: "The restaurant offers traditional European cuisine. This is a beautiful hunters holl, which serves as a private banquet room. All can able to plunge into the  atmosphere of the adventures here.",
+				},
+				2: {
+					title: "VERANDA HALL",
+					subtitle: "Quantity of guests : 10 PEOPLE",
+					text: "In Banquet hall 'Veranda' you can make it a beautiful evening. Here  reeks of romance, wine and  delicious dishes. It has relaxing atmosphere and fresh air and light music  will make a pleasant mood for you.",
+				},
+				3: {
+					title: "KOLYBA",
+					subtitle: "Quantity of guests : 25 PEOPLE",
+					text: "On the territory there is a separate kolyba for banquets. A special, incomparable atmosphere can create a fireplace - a symbol of a home in the modern world. Everything looks so nice that it makes one simply enjoy the atmosphere of a pleasant evening.",
+				},
+				4: {
+					title: "Venetian Hall",
+					subtitle: "Quantity of guests : 50 PEOPLE",
+					text: "The ornate interior of the Venetian Hall is perfect for the most significant event with unique aesthetic.  In addition there are searchlights used for demonstration of the moving. The hall  have a private entrance and access to an inner courtyard, where there the beautiful glades covered with soft green grass. This glades  is an ideal place for an off-site registration of marriage and a wedding celebration.",
+				},
+				5: {
+					title: "Sea Hall",
+					subtitle: "Quantity of guests : 70 PEOPLE",
+					text: "Restaurant hall in a nautical theme. The hall also has a bar. Atmospheric fireplace. Sound system, light music, projector screen, karaoke.",
+				},
+			},
+			banner: {
+				text: "Trust us with your holiday!",
+				link: "Contact us",
+			},
 			menu: {
 				title: "our menu:",
 				download: "Download",
