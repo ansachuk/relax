@@ -91,8 +91,8 @@ export default {
 					text: "In the RELAX Complex restaurant, everyone will be able to choose the hall that he likes the most, and our chefs will surely impress and treat you with their classic dishes of European cuisine. Our bar is a comfortable, welcoming center of communication, where you can enjoy your morning coffee, a cocktail before dinner or a glass of wine to relax. For us, the most important thing is that this evening becomes truly unsurpassed for you and your quests.",
 				},
 				section2: {
-					title: "10.00-22.00 HOURS",
-					subtitle: "quantity of guests",
+					title: "BANQUET HALLS",
+					subtitle: "10.00-22.00 HOURS",
 					text: "The Relax complex will help in the organization of any holiday: party, wedding, business meeting, anniversary, family evening, romantic evening of lovers or a fun meeting of friends.You can choose the hall you like, and our chefs will impress you with classic european dishes. Any event that you want to celebrate in the restaurant will be accompanied by music, and for special events we will definitely select the best musicians and presenters for you.",
 				},
 				section3: {
@@ -143,6 +143,10 @@ export default {
 					5: "Sea hall",
 				},
 			},
+			banner: {
+				text: "Trust us with your holiday!",
+				link: "Contact us",
+			},
 			sections: {
 				linkText: "Contact us",
 				1: {
@@ -171,10 +175,6 @@ export default {
 					text: "Restaurant hall in a nautical theme. The hall also has a bar. Atmospheric fireplace. Sound system, light music, projector screen, karaoke.",
 				},
 			},
-			banner: {
-				text: "Trust us with your holiday!",
-				link: "Contact us",
-			},
 			menu: {
 				title: "our menu:",
 				download: "Download",
@@ -182,6 +182,34 @@ export default {
 			ourTeam: {
 				title: "Our team",
 				text: "Our team is made up of true masters of their craft who love their work. We are always ready to delight you with delicious food and drinks, as well as pleasant service. We want you to feel at home in our restaurant, so we do everything possible to make you feel comfortable and cozy.",
+			},
+		},
+		hotel: {
+			about: {
+				title: "ABOUT HOTEL",
+				p1: "The Relax Complex Hotel is a modern building with elegant interiors, a restaurant and well-equipped rooms of various categories – Single room, Standard, Suite,  VIP - each of which is equipped with everything necessary for a comfortable stay. Here use electronic lock systems for better security.",
+				p2: "The hotel's VIP rooms are equipped with a cozy large bed, decorated in a minimalist style that combines wild tones, natural wood furniture and design elements reminiscent of hunting culture. The room has everything you need for a comfortable stay: a large comfortable bed, a wardrobe, a table with chairs, a TV and a refrigerator. If necessary, it is possible to include an extra bed for a child.",
+			},
+			benefits: {
+				title: "BENEFITS OF THE HOTEL",
+				sub1: "Veranda for smoking",
+				sub2: "Cleaning",
+				sub3: "Security system",
+			},
+			offers: {
+				title: "APARTMENTS",
+				text: "At the Relax hotel, everything speaks of comfortable relaxation.Cozy standard and economy class rooms, sophisticated LUX rooms, each of which is bright and cozy at the same time. Enjoy a relaxing break on a spacious bed and in a pleasant-to-the-body, soft bathrobe, and we will take care of everything so that nothing spoils your vacation.",
+				offers: {
+					1: "SINGLE ROOM",
+					2: "Standart room",
+					3: "Suite",
+					4: "Double suite",
+					5: "VIP-room",
+				},
+			},
+			banner: {
+				text: "WOULD YOU LIKE TO BOOK A ROOM IN HOTEL?",
+				link: "Contact us",
 			},
 		},
 	},
