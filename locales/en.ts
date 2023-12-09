@@ -211,6 +211,34 @@ export default {
 				text: "WOULD YOU LIKE TO BOOK A ROOM IN HOTEL?",
 				link: "Contact us",
 			},
+			sections: {
+				linkText: "Booking",
+				1: {
+					title: "single room",
+					subtitle: "price : 1600 uah",
+					text: "A light single room is to accommodate one guest. For your comfort, the room has a comfortable bed,  a bedside night  table, a table, a chair, a frige, a bathroom, a shower cabin and availability of toiletries. Free WiFi. Single bed: 1,4*2,0m",
+				},
+				2: {
+					title: "STANDART ROOM",
+					subtitle: "price : 1600 uah",
+					text: "Modern comfort in the comfortable 2-bed rooms. Simplicity and restraint of the classical interior, light wood combined with warm beige tones, a large double bed, an armchair, bedside tabeles, TV, a  frige create a pleasant atmosphere of home comfort. Standard Room has a shower cabin and an availability of toiletries Free WiFi. Double bed: 1,4*2,0m",
+				},
+				3: {
+					title: "SUITE",
+					subtitle: "PRICE : 2000 uah",
+					text: "Treat yourself to a stay in one of our spacious suites of Relax hotel. The rooms are bright and spacious, therefore it is possible to put an extra bed for child in the room if necessary.The elegantly furnished suites  feature sleek interior design. The feeling of lightness and purity gives white furniture. Here is a two-seat bed, big closet, magazine dinner-wagon, arm-chair, bedside tables, TV and a frige. Free WiFi. Double bed: 1,6* 2,0м",
+				},
+				4: {
+					title: "Double Suite",
+					subtitle: "PRICE : 2000 uah",
+					text: "Treat yourself to a stay in one of our spacious suites of Relax hotel. The rooms are bright and spacious, therefore it is possible to put an extra bed for child in the room if necessary.The elegantly furnished suites feature sleek interior design. The feeling of lightness and purity gives white furniture. Here is a two-seat bed, big closet, magazine dinner-wagon, arm-chair, bedside tables, TV and a frige. Free WiFi. Double bed: 1,6* 2,0м",
+				},
+				5: {
+					title: "VIP-ROOM",
+					subtitle: "price : 2500 uah",
+					text: "The Relax Complex hotel VIP-rooms come with a cozy big-sized bed, and are laid out in a minimalist decor that combines wild tones, natural wood furnishings and design elements that evoke hunter cultural. Here is a two-seat bed, big closet, table, arm-chair, TV and a frige. It is possible to put an extra bed for child in the room if necessary. It has a shower cabin and an availability of toiletries.  Free WiFi. Double bed: 1,6* 2,0м",
+				},
+			},
 		},
 	},
 } as const;
