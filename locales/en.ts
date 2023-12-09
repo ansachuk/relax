@@ -240,5 +240,31 @@ export default {
 				},
 			},
 		},
+		spa: {
+			about: {
+				title: "About spa",
+				p1: "In the our complex  you can relax in the sauna and the tub. Relaxation is offered by the steam bath or  sauna. And what could be pleasanter  for your soul and body than relaxing in a jacuzzi or a steam bath. A qualified bathhouse attendant will 'steer clear' you according to all the rules of his science. ",
+				p2: "And of course, we have refreshing pools with colored lighting, perfect for relaxation and recharging. The pool and loungers are located indoors, along with the saunas.",
+			},
+			benefits: {
+				title: "BENEFITS OF THE SPA",
+				sub1: "Enterteinment area",
+				sub2: "Places to relax",
+				sub3: "Good lightning",
+			},
+			offers: {
+				title: "bath and saunas",
+				text: "Our complex has two Old Slavic baths and two saunas. Each one has everything you need for a relaxing and rejuvenating experience, including: A steam room with high heat and humidity A pool or jacuzzi A relaxation room",
+				offers: {
+					1: "Bath with pool and jacuzzi",
+					2: "Bath with pool",
+					3: "Finnish sauna",
+				},
+			},
+			banner: {
+				text: "Do you want to relax your body and soul in a sauna?",
+				link: "Contact us",
+			},
+		},
 	},
 } as const;
