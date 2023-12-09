@@ -4,7 +4,7 @@ import Benefits from "@/components/Benefits/Benefits";
 import Section from "@/components/Section/Section";
 import { AboutUs, Intro, SectionLg, SectionSm, WhatWeOffer } from "@/components/pages/main";
 
-import { benefit1, benefit2, benefit3, halls, hotel, restaurant, spa1, spa2, spa3, spa4, vats1, vats2, vats3, vats4 } from "@/static/images/main";
+import { benefit1, benefit2, benefit3, halls, hotel, restaurant, spa1, spa2, spa3, spa4, vats1, vats2, vats3, vats4 } from "@/public/images/main";
 
 import { IBenefit, ISectionLg, ISectionSm } from "@/@types/types";
 import Pool from "@/components/pages/main/Pool/Pool";

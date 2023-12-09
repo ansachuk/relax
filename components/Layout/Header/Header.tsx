@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
 
-import { Facebook, Inst, Logo, Phone } from "@/static/svg";
+import { Facebook, Inst, Logo, Phone } from "@/public/svg";
 
 import css from "./Header.module.scss";
 

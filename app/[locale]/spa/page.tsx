@@ -5,7 +5,7 @@ import Offers from "@/components/Offers/Offers";
 import Banner from "@/components/Banner/Banner";
 
 import { getScopedI18n } from "@/locales/server";
-import { about1, about2, about3, benefit1, benefit2, benefit3, offer } from "@/static/images/spa";
+import { about1, about2, about3, benefit1, benefit2, benefit3, offer } from "@/public/images/spa";
 
 import { IAbout, IBenefit, IOffer } from "@/@types/types";
 

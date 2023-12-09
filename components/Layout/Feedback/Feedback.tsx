@@ -4,7 +4,7 @@ import { nothing } from "@/app/[locale]/layout";
 
 import LayoutForm from "../LayoutForm/LayoutForm";
 
-import { Geo, Mail, Phone } from "@/static/svg";
+import { Geo, Mail, Phone } from "@/public/svg";
 
 import css from "./Feedback.module.scss";
 

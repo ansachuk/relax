@@ -1,4 +1,4 @@
-import { ArrowSm } from "@/static/svg";
+import { ArrowSm } from "@/public/svg";
 
 import { IFAQ } from "@/@types/types";
 

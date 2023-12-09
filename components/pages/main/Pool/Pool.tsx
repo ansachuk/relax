@@ -5,8 +5,8 @@ import { nothing } from "@/app/[locale]/layout";
 
 import ImageGrid from "@/components/ImageGrid/ImageGrid";
 
-import { pool1, pool2, pool3 } from "@/static/images/main";
-import { ArrowLg } from "@/static/svg";
+import { pool1, pool2, pool3 } from "@/public/images/main";
+import { ArrowLg } from "@/public/svg";
 
 import css from "./Pool.module.scss";
 

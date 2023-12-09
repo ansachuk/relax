@@ -5,7 +5,7 @@ import { getScopedI18n } from "@/locales/server";
 
 import MainSlider from "@/components/MainSlider/MainSlider";
 
-import { ArrowLg } from "@/static/svg";
+import { ArrowLg } from "@/public/svg";
 
 import css from "./HotelSection.module.scss";
 

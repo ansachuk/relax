@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import MainImage from "../MainImage/MainImage";
 import Benefits from "../Layout/Benefits/Benefits";
 
-import { main, restaurant, hotel, spa, pool, contacts } from "@/static/images/layout/hero";
+import { main, restaurant, hotel, spa, pool, contacts } from "@/public/images/layout/hero";
 
 import css from "./Hero.module.scss";
 

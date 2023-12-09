@@ -3,7 +3,7 @@ import Link from "next/link";
 import { getScopedI18n } from "@/locales/server";
 
 import MainImage from "@/components/MainImage/MainImage";
-import { ArrowLg } from "@/static/svg";
+import { ArrowLg } from "@/public/svg";
 
 import { ISectionSm } from "@/@types/types";
 

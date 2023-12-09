@@ -6,7 +6,7 @@ import { nothing } from "@/app/[locale]/layout";
 
 import MainImage from "@/components/MainImage/MainImage";
 
-import { ArrowLg } from "@/static/svg";
+import { ArrowLg } from "@/public/svg";
 
 import { ISectionLg } from "@/@types/types";
 

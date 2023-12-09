@@ -23,7 +23,7 @@ import {
 	sea1,
 	venetian1,
 	veranda1,
-} from "@/static/images/restaurant";
+} from "@/public/images/restaurant";
 
 import { IAbout, IBenefit, IOffer } from "@/@types/types";
 

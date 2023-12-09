@@ -1,6 +1,6 @@
 import { getScopedI18n } from "@/locales/server";
 
-import { offer1, offer2 } from "@/static/images/main";
+import { offer1, offer2 } from "@/public/images/main";
 
 import MainImage from "@/components/MainImage/MainImage";
 

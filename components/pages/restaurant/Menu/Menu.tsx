@@ -1,11 +1,11 @@
+import Link from "next/link";
 import MainImage from "@/components/MainImage/MainImage";
 
 import { nothing } from "@/app/[locale]/layout";
-import { QR, menu1, menu2, menu3 } from "@/static/images/restaurant";
+import { ArrowLg } from "@/public/svg";
+import { QR, menu1, menu2, menu3 } from "@/public/images/restaurant";
 
 import css from "./Menu.module.scss";
-import { ArrowLg } from "@/static/svg";
-import Link from "next/link";
 
 export default function Menu() {
 	return (

@@ -1,6 +1,6 @@
 import { SwiperClass } from "swiper/react";
 
-import { ArrowLg } from "@/static/svg";
+import { ArrowLg } from "@/public/svg";
 
 import css from "./SliderCtrls.module.scss";
 

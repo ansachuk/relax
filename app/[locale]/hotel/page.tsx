@@ -7,7 +7,7 @@ import Section from "@/components/Section/Section";
 import HotelSection from "@/components/pages/hotel/HotelSection/HotelSection";
 
 import { getScopedI18n } from "@/locales/server";
-import { about1, about2, about3, benefit1, benefit2, benefit3, single1, offer, standart1, suite1, double1, vip1 } from "@/static/images/hotel";
+import { about1, about2, about3, benefit1, benefit2, benefit3, single1, offer, standart1, suite1, double1, vip1 } from "@/public/images/hotel";
 
 import { IAbout, IBenefit, IOffer } from "@/@types/types";
 
