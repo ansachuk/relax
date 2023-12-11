@@ -7,7 +7,41 @@ import Section from "@/components/Section/Section";
 import HotelSection from "@/components/pages/hotel/HotelSection/HotelSection";
 
 import { getScopedI18n } from "@/locales/server";
-import { about1, about2, about3, benefit1, benefit2, benefit3, single1, offer, standart1, suite1, double1, vip1 } from "@/public/images/hotel";
+import {
+	about1,
+	about2,
+	about3,
+	benefit1,
+	benefit2,
+	benefit3,
+	single1,
+	single2,
+	single3,
+	single4,
+	single5,
+	single6,
+	offer,
+	standart1,
+	standart2,
+	standart3,
+	standart4,
+	standart5,
+	standart6,
+	suite1,
+	suite2,
+	suite3,
+	suite4,
+	double1,
+	double2,
+	double3,
+	double4,
+	double5,
+	vip1,
+	vip2,
+	vip3,
+	vip4,
+	vip5,
+} from "@/public/images/hotel";
 
 import { IAbout, IBenefit, IOffer } from "@/@types/types";
 
@@ -33,35 +67,36 @@ export default async function Hotel() {
 			title: t("sections.1.title"),
 			subtitle: t("sections.1.subtitle"),
 			text: t("sections.1.text"),
-			imgs: [single1, single1, single1],
+
+			imgs: [single1, single2, single3, single4, single5, single6],
 			link: "https://www.booking.com/hotel/ua/relax-complex.uk.html",
 		},
 		{
 			title: t("sections.2.title"),
 			subtitle: t("sections.2.subtitle"),
 			text: t("sections.2.text"),
-			imgs: [standart1, standart1, standart1],
+			imgs: [standart1, standart2, standart3, standart4, standart5, standart6],
 			link: "https://www.booking.com/hotel/ua/relax-complex.uk.html",
 		},
 		{
 			title: t("sections.3.title"),
 			subtitle: t("sections.3.subtitle"),
 			text: t("sections.3.text"),
-			imgs: [suite1, suite1, suite1],
+			imgs: [suite1, suite2, suite3, suite4],
 			link: "https://www.booking.com/hotel/ua/relax-complex.uk.html",
 		},
 		{
 			title: t("sections.4.title"),
 			subtitle: t("sections.4.subtitle"),
 			text: t("sections.4.text"),
-			imgs: [double1, double1, double1],
+			imgs: [double1, double2, double3, double4, double5],
 			link: "https://www.booking.com/hotel/ua/relax-complex.uk.html",
 		},
 		{
 			title: t("sections.5.title"),
 			subtitle: t("sections.5.subtitle"),
 			text: t("sections.5.text"),
-			imgs: [vip1, vip1, vip1],
+			imgs: [vip1, vip2, vip3, vip4, vip5],
 			link: "https://www.booking.com/hotel/ua/relax-complex.uk.html",
 		},
 	];

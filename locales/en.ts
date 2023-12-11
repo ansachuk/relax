@@ -192,7 +192,7 @@ export default {
 			},
 			benefits: {
 				title: "BENEFITS OF THE HOTEL",
-				sub1: "Veranda for smoking",
+				sub1: "Calling the staff",
 				sub2: "Cleaning",
 				sub3: "Security system",
 			},
