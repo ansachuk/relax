@@ -241,6 +241,7 @@ export default {
 			},
 		},
 		spa: {
+			vatsTitle: "vats",
 			about: {
 				title: "About spa",
 				p1: "In the our complex  you can relax in the sauna and the tub. Relaxation is offered by the steam bath or  sauna. And what could be pleasanter  for your soul and body than relaxing in a jacuzzi or a steam bath. A qualified bathhouse attendant will 'steer clear' you according to all the rules of his science. ",
@@ -285,7 +286,6 @@ export default {
 					text: "The complex features a traditional Slavic bath with a pool.The relaxation area is decorated in a hunting style. The fireplace adds originality to the atmosphere. At your service are a tea room, comfortable sofas, sun loungers, a relaxation room, a treatment area, and a waterfall.",
 				},
 			},
-			vatsTitle: "vats",
 			additional: {
 				buy: {
 					title: "Можна окремо придбати:",
@@ -303,6 +303,21 @@ export default {
 						2: "халати 150грн",
 					},
 				},
+			},
+		},
+		pool: {
+			galleryTitle: "ГАЛЕРЕЯ",
+			bannerText: "басейн працює лише влітку !",
+			about: {
+				title: "ПРО БАСЕЙН",
+				p1: "Відчути атмосферу справжнього літнього відпочинку можна відвідавши наш відкритий басейн. Його розміри вражають,щоб мати змогу поплавати в басейні 25*10 м, та глибиною 2 м,а водоспад стане приємним доповненням і потішить як дітей, так і дорослих. Шезлонги розраховані на 140 осіб, територія оснащена роздягальнями та душовою,а також розміщено безліч столиків й зонтів,аби сховатись від спеки.",
+				p2: "Для малечі є додатково надувний басейн, глибиною 86см, дитячий майданчик та батут. З нами кожен зможе відчути атмосферу курорту прямо у місті.",
+			},
+			benefits: {
+				title: "ПЕРЕВАГИ літнього басейну",
+				sub1: "Дитячий басейн",
+				sub2: "Закриті  дивани",
+				sub3: "Альтанки та столики ",
 			},
 		},
 	},

@@ -1,0 +1,10 @@
+.gallery {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+
+	.wrapper {
+		display: flex;
+		gap: 40px;
+	}
+}
