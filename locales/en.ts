@@ -253,8 +253,8 @@ export default {
 				sub3: "Good lightning",
 			},
 			offers: {
-				title: "bath and saunas",
-				text: "Our complex has two Old Slavic baths and two saunas. Each one has everything you need for a relaxing and rejuvenating experience, including: A steam room with high heat and humidity A pool or jacuzzi A relaxation room",
+				title: "OLD Slavic bath and saunas",
+				text: "In our complex, there are two Old Slavic baths and two saunas. Each of them has everything you need for a comfortable rest and wellness, namely: a steam room with high temperature and humidity,a pool and a jacuzzi,a relaxation room.",
 				offers: {
 					1: "Bath with pool and jacuzzi",
 					2: "Bath with pool",
@@ -264,6 +264,45 @@ export default {
 			banner: {
 				text: "Do you want to relax your body and soul in a sauna?",
 				link: "Contact us",
+			},
+			sections: {
+				linkText: "Contact us",
+				mainSubtitle: "MINNIMUM STEAMING TIME : 3 HOURS",
+
+				1: {
+					title: "BATH WITH POOL AND JACUZZI",
+					subtitle: "PRICE FOR 4 PEOPLE : 4500 UAH",
+					text: "The complex features a traditional Slavic bath with a pool and jacuzzi. For a comfortable stay, we offer a tea room. Your stay in the sauna will be accompanied by natural background music. You will have access to a waterfall, sun loungers, a massage table for rubbing, a relaxation room, a TV. There is an opportunity to use the restaurant. A surcharge of 500 UAH is charged for each additional person (maximum +2 people).",
+				},
+				2: {
+					title: "BATH WITH vat",
+					subtitle: "PRICE FOR 4 PEOPLE : 3600 UAH",
+					text: "The complex features a traditional Slavic bath with a pool.The relaxation area is decorated in a hunting style. The fireplace adds originality to the atmosphere. At your service are a tea room, comfortable sofas, sun loungers, a relaxation room, a treatment area, and a waterfall.",
+				},
+				3: {
+					title: "finnish sauna",
+					subtitle: "PRICE FOR 6 PEOPLE : 3000 UAH",
+					text: "The complex features a traditional Slavic bath with a pool.The relaxation area is decorated in a hunting style. The fireplace adds originality to the atmosphere. At your service are a tea room, comfortable sofas, sun loungers, a relaxation room, a treatment area, and a waterfall.",
+				},
+			},
+			vatsTitle: "vats",
+			additional: {
+				buy: {
+					title: "Можна окремо придбати:",
+					items: {
+						1: "капці 30грн",
+						2: "шапочки 50грн",
+						3: "віники 150грн",
+						4: "чайний набір 450 грн",
+					},
+				},
+				rent: {
+					title: "Можна  орендувати:",
+					items: {
+						1: "рушники 100грн",
+						2: "халати 150грн",
+					},
+				},
 			},
 		},
 	},
