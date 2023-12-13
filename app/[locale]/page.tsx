@@ -2,12 +2,18 @@ import { getScopedI18n } from "@/locales/server";
 
 import Benefits from "@/components/Benefits/Benefits";
 import Section from "@/components/Section/Section";
-import { AboutUs, Intro, SectionLg, SectionSm, WhatWeOffer } from "@/components/pages/main";
+import Container from "@/components/Container/Container";
+
+import MainBenefits from "@/components/Layout/MainBenefits/MainBenefits";
+import Reviews from "@/components/Layout/Reviews/Reviews";
+import FAQ from "@/components/Layout/FAQ/FAQ";
+import Feedback from "@/components/Layout/Feedback/Feedback";
+
+import { AboutUs, Intro, SectionLg, SectionSm, WhatWeOffer, Pool } from "@/components/pages/main";
 
 import { benefit1, benefit2, benefit3, halls, hotel, restaurant, spa1, spa2, spa3, spa4, vats1, vats2, vats3, vats4 } from "@/public/images/main";
 
 import { IBenefit, ISectionLg, ISectionSm } from "@/@types/types";
-import Pool from "@/components/pages/main/Pool/Pool";
 
 export default async function Home() {
 	const t = await getScopedI18n("pages.main");
@@ -78,27 +84,39 @@ export default async function Home() {
 
 	return (
 		<>
-			<Intro />
-			<AboutUs />
-			<Section title={t("benefits.title")}>
-				<Benefits benefits={benefits} />
-			</Section>
-			<Section title={t("whatWeOffer.title")}>
-				<WhatWeOffer />
-			</Section>
-			{sectionSm.map(el => (
-				<Section key={el.title} title={el.title}>
-					<SectionSm sectionData={el} />
+			<MainBenefits />
+			<Container>
+				<Intro />
+				<AboutUs />
+				<Section title={t("benefits.title")}>
+					<Benefits benefits={benefits} />
 				</Section>
-			))}
-			{sectionLg.map(el => (
-				<Section key={el.title} title={el.title}>
-					<SectionLg sectionData={el} />
+				<Section title={t("whatWeOffer.title")}>
+					<WhatWeOffer />
 				</Section>
-			))}
-			<Section title={t("pool.title")}>
-				<Pool />
-			</Section>
+				{sectionSm.map(el => (
+					<Section key={el.title} title={el.title}>
+						<SectionSm sectionData={el} />
+					</Section>
+				))}
+				{sectionLg.map(el => (
+					<Section key={el.title} title={el.title}>
+						<SectionLg sectionData={el} />
+					</Section>
+				))}
+				<Section title={t("pool.title")}>
+					<Pool />
+				</Section>
+				<Section title={t("titles.reviews")}>
+					<Reviews />
+				</Section>
+				<Section title={t("titles.faq")}>
+					<FAQ />
+				</Section>
+				<Section title={t("titles.feedback")}>
+					<Feedback />
+				</Section>
+			</Container>
 		</>
 	);
 }

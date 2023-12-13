@@ -9,7 +9,7 @@ import css from "./WhatWeOffer.module.scss";
 export default async function WhatWeOffer() {
 	const t = await getScopedI18n("pages.main.whatWeOffer");
 
-	const offers = [t("restaurant"), t("banquet"), t("hotel"), t("spa"), t("pool"), t("vats")];
+	const offers = [t("restaurant"), t("banquet"), t("hotel"), t("spa"), t("vats"), t("pool")];
 
 	return (
 		<div className={css.wrapper}>

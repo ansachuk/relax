@@ -5,6 +5,8 @@ import type { Metadata } from "next";
 
 import Container from "@/components/Container/Container";
 import Hero from "@/components/Hero/Hero";
+import Benefits from "@/components/Layout/MainBenefits/MainBenefits";
+
 import Section from "@/components/Section/Section";
 
 import Header from "@/components/Layout/Header/Header";
@@ -46,7 +48,7 @@ export const metadata: Metadata = {
 };
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
-	const t = await getScopedI18n("titles");
+	const t = await getScopedI18n("pages.main.titles");
 	const locale = await getCurrentLocale();
 
 	return (
@@ -64,17 +66,8 @@ export default async function RootLayout({ children }: { children: React.ReactNo
 				</header>
 				<main>
 					<Hero />
+					{children}
 					<Container>
-						{children}
-						<Section title={t("reviews")}>
-							<Reviews />
-						</Section>
-						<Section title={t("faq")}>
-							<FAQ />
-						</Section>
-						<Section title={t("feedback")}>
-							<Feedback />
-						</Section>
 						<Map />
 					</Container>
 				</main>

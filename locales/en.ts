@@ -13,11 +13,7 @@ export default {
 		tasty: "Tasty food",
 		price: "Pleasant price",
 	},
-	titles: {
-		reviews: "our reviews:",
-		faq: "faq:",
-		feedback: "Do you have any questions?",
-	},
+
 	reviews: {
 		description:
 			"We are always happy to welcome new visitors with sincere smiles and comfortable conditions personally for everyone. Therefore, after rest, they remain in a good mood, satisfied, and support us with warm words:",
@@ -61,6 +57,11 @@ export default {
 	},
 	pages: {
 		main: {
+			titles: {
+				reviews: "our reviews:",
+				faq: "faq:",
+				feedback: "Do you have any questions?",
+			},
 			intro:
 				"we are a modern hotel and restaurant complex that has a spacious area and a large outdoor pool, dry saunas and various baths, open traditional spa-hot tubs",
 			aboutUs: {

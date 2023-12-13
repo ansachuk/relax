@@ -4,7 +4,6 @@ import { StaticImageData } from "next/image";
 import { usePathname } from "next/navigation";
 
 import MainImage from "../MainImage/MainImage";
-import Benefits from "../Layout/Benefits/Benefits";
 
 import { main, restaurant, hotel, spa, pool, contacts } from "@/public/images/layout/hero";
 
@@ -43,8 +42,7 @@ export default function Hero() {
 	img = getHeroImg();
 	return (
 		<>
-			<MainImage priority placeholder="blur" height={712} className={css.heroImg} quality={100} src={img} alt="Complex big image" />
-			<Benefits />
+			<MainImage priority placeholder="blur" height={712} className={css.heroImg} quality={90} src={img} alt="Complex big image" />
 		</>
 	);
 }
