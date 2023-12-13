@@ -23,6 +23,19 @@ export interface IFeedback {
 	message: string;
 }
 
+export interface IContactsForm {
+	name: string;
+	phone: string;
+	questions: string;
+	date: string;
+	hall: string;
+	type: string;
+	quantity: string;
+	host: boolean;
+	zone: boolean;
+	music: boolean;
+}
+
 export interface ISectionSm {
 	img: StaticImageData;
 	title: string;

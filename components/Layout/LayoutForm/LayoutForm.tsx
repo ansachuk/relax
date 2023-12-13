@@ -14,6 +14,7 @@ export function SubForm() {
 	const t = useScopedI18n("feedback");
 
 	const initialValues: IFeedback = { name: "", phone: "", message: "" };
+
 	const validationSchema = object().shape({
 		name: string().required(t("errors.required")).min(2, t("errors.short")).max(32, t("errors.long")),
 		phone: string()

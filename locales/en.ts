@@ -321,5 +321,42 @@ export default {
 				sub3: "Gazebos and tables",
 			},
 		},
+		contacts: {
+			title: "TRUST US WITH YOUR HOLIDAY!",
+			phones: {
+				restaurant: "restaurant, pool",
+				bath: "bath, vats, banquet halls, hotel",
+			},
+			form: {
+				name: "Name",
+				phone: "Phone number",
+				date: "The date of the celebration",
+				hall: "Hall for celebration",
+				type: "Type of the holiday",
+				quantity: "Quantity of people",
+				note: "The menu,decoration of the hall and other organisational details are discussed with the administrator",
+				title: "Additional options",
+				host: "Host services",
+				zone: "Organization of the photo zone",
+				music: "Live music",
+				questions: "Your wishes or questions",
+				btn: "Send message",
+				selects: {
+					hall: {
+						hunting: "Hunting hall",
+						veranda: "Veranda",
+						kolyba: "Kolyba",
+						venetian: "Venetian hall",
+						sea: "Sea hall",
+					},
+					type: {
+						children: "Children's holiday",
+						birthday: "Birthday",
+						christening: "Christening",
+						corporate: "Corporate party",
+					},
+				},
+			},
+		},
 	},
 } as const;

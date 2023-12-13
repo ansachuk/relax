@@ -1,0 +1,188 @@
+@import "@/scss/";
+
+.benefits {
+	width: 100%;
+	padding: 24px 0;
+
+	color: $bgColor;
+	font-size: 20px;
+	background-color: $hoverColor;
+
+	display: flex;
+	justify-content: center;
+
+	margin-bottom: 120px;
+
+	.benefit {
+		display: flex;
+		gap: 16px;
+
+		padding: 12px 50px;
+		&:not(:last-child) {
+			border-right: 1.5px solid $bgColor;
+		}
+	}
+}
+
+.title {
+	font-size: 64px;
+	font-weight: 600;
+	text-align: center;
+	text-transform: uppercase;
+
+	margin-bottom: 100px;
+}
+
+.form {
+	padding: 80px;
+
+	border-radius: 10px;
+	border: 1px solid currentColor;
+
+	margin-bottom: 120px;
+
+	input,
+	select,
+	textarea {
+		font-size: 24px;
+		font-family: inherit;
+		font-weight: 400;
+		line-height: 100%;
+
+		color: $mainFontcolor;
+
+		padding-bottom: 16px;
+		padding-left: 2px;
+
+		background-color: transparent;
+		border: none;
+		border-bottom: 1.5px solid currentColor;
+		outline: none;
+		resize: none;
+
+		&::placeholder {
+			color: $mainFontcolor;
+		}
+
+		transition-property: border-bottom;
+		transition-duration: $trDuration;
+		transition-timing-function: $trTimeFunc;
+
+		&:focus {
+			border-bottom: 1.5px solid $hoverColor;
+		}
+	}
+
+	.wrapper {
+		display: flex;
+		justify-content: space-between;
+
+		margin-bottom: 40px;
+
+		.left,
+		.right {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			gap: 48px;
+
+			input,
+			select {
+				width: 480px;
+			}
+		}
+	}
+
+	.note {
+		width: 420px;
+		margin-bottom: 40px;
+
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 120%;
+	}
+
+	.additional {
+		text-align: center;
+		font-size: 24px;
+		font-weight: 500;
+		line-height: 100%;
+
+		margin-bottom: 80px;
+	}
+
+	.checkboxes {
+		display: flex;
+		justify-content: space-between;
+
+		text-align: center;
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 100%;
+
+		margin-bottom: 80px;
+
+		label {
+			user-select: none;
+			display: flex;
+			align-items: center;
+			gap: 16px;
+
+			cursor: pointer;
+		}
+
+		input {
+			width: 0;
+			display: none;
+
+			&:checked ~ .checkbox {
+				background-color: $hoverColor;
+				border: 1.5px solid $hoverColor;
+			}
+		}
+
+		.checkbox {
+			width: 25px;
+			height: 25px;
+
+			border-radius: 5px;
+			border: 1.5px solid currentColor;
+
+			transition-property: border, background-color;
+			transition-duration: 150ms;
+			transition-timing-function: $trTimeFunc;
+		}
+	}
+
+	.subwrapper {
+		display: flex;
+		justify-content: space-between;
+
+		textarea {
+			width: 500px;
+		}
+
+		button {
+			text-align: center;
+			font-size: 24px;
+			font-weight: 500;
+			line-height: 83.333%;
+
+			padding: 23px 90px;
+
+			border-radius: 10px;
+			border: none;
+			border: 1.5px solid currentColor;
+
+			transition-property: border, color;
+			transition-duration: $trDuration;
+			transition-timing-function: $trTimeFunc;
+
+			&:focus,
+			&:hover {
+				color: $hoverColor;
+				border: 1.5px solid $hoverColor;
+			}
+		}
+	}
+}

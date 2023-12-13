@@ -26,13 +26,13 @@ export default async function MainBenefits() {
 	];
 
 	return (
-		<div className={css.benefits}>
+		<ul className={css.benefits}>
 			{benefits.map(({ title, Icon }) => (
-				<div className={css.benefit} key={title}>
+				<li className={css.benefit} key={title}>
 					{title}
 					<Icon width={24} height={24} className={css.icon} />
-				</div>
+				</li>
 			))}
-		</div>
+		</ul>
 	);
 }
