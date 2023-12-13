@@ -5,13 +5,14 @@
 	justify-content: space-between;
 
 	.subwrapper {
-		width: 410px;
+		width: 450px;
 
 		display: flex;
 		flex-direction: column;
 		gap: 50px;
 
 		font-size: 20px;
+		line-height: normal;
 		.subtitle {
 			font-weight: 600;
 			text-transform: uppercase;
@@ -22,7 +23,6 @@
 		}
 
 		.link {
-			// !=========================================================
 			padding: 10px;
 
 			display: inline-flex;

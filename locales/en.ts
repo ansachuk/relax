@@ -99,7 +99,7 @@ export default {
 				section3: {
 					title: "hotel",
 					subtitle: "10.00-22.00 HOURS",
-					text: "At the Relax hotel, everything speaks of a comfortable rest. Cozy standard and economy class rooms, exquisite LUX rooms, each of which is bright and cozy at the same time. Neutral accents, modern equipment, staff ready to help at any moment when needed. Enjoy a light and peaceful rest in a spacious bed and a comfortable, soft bathrobe, while we make sure that nothing spoils your rest",
+					text: "The Relax Complex Hotel is a modern building with elegant interiors, a restaurant and well-equipped rooms of various categories – Single room, Standard, Suite,  VIP - each of which is equipped with everything necessary for a comfortable stay. Here use electronic lock systems for better security.The Boryspil International Airport is located near the hotel, and for maximum convenience, we recommend using our transfer service.",
 				},
 			},
 			sectionLg: {
@@ -173,7 +173,7 @@ export default {
 				5: {
 					title: "Sea Hall",
 					subtitle: "Quantity of guests : 70 PEOPLE",
-					text: "Restaurant hall in a nautical theme. The hall also has a bar. Atmospheric fireplace. Sound system, light music, projector screen, karaoke.",
+					text: "Restaurant hall in a nautical theme. The hall also has a bar.Our bartender will treat you to the most delicious cocktails at reasonable prices. There are many tables and it is spacious in this hall. There are special tables for children. Atmospheric fireplace. Sound system, light music, projector screen, karaoke.",
 				},
 			},
 			menu: {
@@ -188,7 +188,7 @@ export default {
 		hotel: {
 			about: {
 				title: "ABOUT HOTEL",
-				p1: "The Relax Complex Hotel is a modern building with elegant interiors, a restaurant and well-equipped rooms of various categories – Single room, Standard, Suite,  VIP - each of which is equipped with everything necessary for a comfortable stay. Here use electronic lock systems for better security.",
+				p1: "The Relax Complex Hotel is a modern building with elegant interiors, a restaurant and well-equipped rooms of various categories – Single room, Standard, Suite,  VIP - each of which is equipped with everything necessary for a comfortable stay. Here use electronic lock systems for better security.The Boryspil International Airport is located near the hotel, and for maximum convenience, we recommend using our transfer service.",
 				p2: "The hotel's VIP rooms are equipped with a cozy large bed, decorated in a minimalist style that combines wild tones, natural wood furniture and design elements reminiscent of hunting culture. The room has everything you need for a comfortable stay: a large comfortable bed, a wardrobe, a table with chairs, a TV and a refrigerator. If necessary, it is possible to include an extra bed for a child.",
 			},
 			benefits: {
@@ -258,7 +258,7 @@ export default {
 				title: "OLD Slavic bath and saunas",
 				text: "In our complex, there are two Old Slavic baths and two saunas. Each of them has everything you need for a comfortable rest and wellness, namely: a steam room with high temperature and humidity,a pool and a jacuzzi,a relaxation room.",
 				offers: {
-					1: "Bath with pool and jacuzzi",
+					1: "Bath with jacuzzi",
 					2: "Bath with pool",
 					3: "Finnish sauna",
 				},
@@ -272,53 +272,53 @@ export default {
 				mainSubtitle: "MINNIMUM STEAMING TIME : 3 HOURS",
 
 				1: {
-					title: "BATH WITH POOL AND JACUZZI",
+					title: "OLD SLAVIC BATH WITH JACUZZI",
 					subtitle: "PRICE FOR 4 PEOPLE : 4500 UAH",
-					text: "The complex features a traditional Slavic bath with a pool and jacuzzi. For a comfortable stay, we offer a tea room. Your stay in the sauna will be accompanied by natural background music. You will have access to a waterfall, sun loungers, a massage table for rubbing, a relaxation room, a TV. There is an opportunity to use the restaurant. A surcharge of 500 UAH is charged for each additional person (maximum +2 people).",
+					text: "The complex features a traditional Slavic bath with a jacuzzi. For a comfortable stay, we offer a tea room. Your stay in the sauna will be accompanied by natural background music. You will have access to a waterfall, sun loungers, a massage table for rubbing, a relaxation room, a TV. There is an opportunity to use the restaurant. A surcharge of 500 UAH is charged for each additional person (maximum +2 people).",
 				},
 				2: {
-					title: "BATH WITH vat",
+					title: "OLD SLAVIC BATH WITH vat",
 					subtitle: "PRICE FOR 4 PEOPLE : 3600 UAH",
 					text: "The complex features a traditional Slavic bath with a pool.The relaxation area is decorated in a hunting style. The fireplace adds originality to the atmosphere. At your service are a tea room, comfortable sofas, sun loungers, a relaxation room, a treatment area, and a waterfall.",
 				},
 				3: {
-					title: "finnish sauna",
+					title: "FINNISH SAUNAS",
 					subtitle: "PRICE FOR 6 PEOPLE : 3000 UAH",
-					text: "The complex features a traditional Slavic bath with a pool.The relaxation area is decorated in a hunting style. The fireplace adds originality to the atmosphere. At your service are a tea room, comfortable sofas, sun loungers, a relaxation room, a treatment area, and a waterfall.",
+					text: "For family recreation or a friendly company. You can use the infrared sauna. At your service are a steam room, a waterfall, a tub, a massage table, a relaxation room, billiards and table football. The relaxation zone provides for the celebration of small family holidays or corporate events. For each additional person in the Finnish saunas, an additional charge of  300 UAH is required. (Maximum + 4 people in the first,maximum + 6 people in the second)",
 				},
 			},
 			additional: {
 				buy: {
-					title: "Можна окремо придбати:",
+					title: "BUYING THE ADDITIONAL THINGS:",
 					items: {
-						1: "капці 30грн",
-						2: "шапочки 50грн",
-						3: "віники 150грн",
-						4: "чайний набір 450 грн",
+						1: "slippers 30 uah ",
+						2: "hats 50 uah",
+						3: "brooms 150 uah",
+						4: "tea set 450 uah",
 					},
 				},
 				rent: {
-					title: "Можна  орендувати:",
+					title: "THINGS FOR RENT:",
 					items: {
-						1: "рушники 100грн",
-						2: "халати 150грн",
+						1: "towels 100 uah",
+						2: "robes 150 uah",
 					},
 				},
 			},
 		},
 		pool: {
-			galleryTitle: "ГАЛЕРЕЯ",
-			bannerText: "басейн працює лише влітку !",
+			galleryTitle: "GALLERY",
+			bannerText: "SWIMMING POOL WORKS ONLY IN SUMMER!",
 			about: {
-				title: "ПРО БАСЕЙН",
-				p1: "Відчути атмосферу справжнього літнього відпочинку можна відвідавши наш відкритий басейн. Його розміри вражають,щоб мати змогу поплавати в басейні 25*10 м, та глибиною 2 м,а водоспад стане приємним доповненням і потішить як дітей, так і дорослих. Шезлонги розраховані на 140 осіб, територія оснащена роздягальнями та душовою,а також розміщено безліч столиків й зонтів,аби сховатись від спеки.",
-				p2: "Для малечі є додатково надувний басейн, глибиною 86см, дитячий майданчик та батут. З нами кожен зможе відчути атмосферу курорту прямо у місті.",
+				title: "ABOUT POOL",
+				p1: "Lounging at the large pool 25*10 m and depth of 2 meters is always nice. Water elements are very important in your life, and relaxing around the pool will create a feeling of calm when you are tired of all daily activities.   Near the pools where you can swim, lie on a sun lounger, investing in your mood with ice cocktails. The pool is surrounded by tiles, so you can sit comfortably on sunbeds, that can hold 140 people.",
+				p2: "Also our pool area boasts a waterfall. Children will also have fun, because there is also a separate children's pool with a depth of 86 cm and the children's trampoline. A playground, changing rooms and showers located next to the pool for your comfort",
 			},
 			benefits: {
-				title: "ПЕРЕВАГИ літнього басейну",
-				sub1: "Дитячий басейн",
-				sub2: "Закриті  дивани",
-				sub3: "Альтанки та столики ",
+				title: "benefits of the summer pool",
+				sub1: "Pool for kids",
+				sub2: "Closed sunbeds",
+				sub3: "Gazebos and tables",
 			},
 		},
 	},
