@@ -151,12 +151,17 @@
 			transition-property: border, background-color;
 			transition-duration: 150ms;
 			transition-timing-function: $trTimeFunc;
+
+			.icon {
+				stroke: $bgColor;
+			}
 		}
 	}
 
 	.subwrapper {
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 
 		textarea {
 			width: 500px;
@@ -184,5 +189,11 @@
 				border: 1.5px solid $hoverColor;
 			}
 		}
+	}
+
+	.error {
+		font-size: 12px;
+		font-weight: 500;
+		color: red;
 	}
 }

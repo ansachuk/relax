@@ -5,12 +5,10 @@
 	display: flex;
 	justify-content: center;
 	gap: 50px;
-	// outline: 1px solid red;
 }
 
 .top {
 	composes: nav;
-	// outline: 1px solid red;
 
 	border-top: 1.5px solid $mainFontcolor;
 }

@@ -13,7 +13,6 @@ export default {
 		tasty: "Tasty food",
 		price: "Pleasant price",
 	},
-
 	reviews: {
 		description:
 			"We are always happy to welcome new visitors with sincere smiles and comfortable conditions personally for everyone. Therefore, after rest, they remain in a good mood, satisfied, and support us with warm words:",
@@ -331,8 +330,6 @@ export default {
 				name: "Name",
 				phone: "Phone number",
 				date: "The date of the celebration",
-				hall: "Hall for celebration",
-				type: "Type of the holiday",
 				quantity: "Quantity of people",
 				note: "The menu,decoration of the hall and other organisational details are discussed with the administrator",
 				title: "Additional options",
@@ -355,6 +352,12 @@ export default {
 						christening: "Christening",
 						corporate: "Corporate party",
 					},
+				},
+				errors: {
+					short: "To short!",
+					long: "To long!",
+					required: "*Required",
+					notValid: "Not valid!",
 				},
 			},
 		},

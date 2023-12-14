@@ -1,10 +1,12 @@
 "use client";
 
 import { Formik, Form, Field, ErrorMessage } from "formik";
+import { boolean, date, number, object, string } from "yup";
 
 import { useScopedI18n } from "@/locales/client";
 
 import I18nSubLayout from "@/components/I18nSubLayout/I18nSubLayout";
+import { Checkbox } from "@/public/svg";
 
 import { IContactsForm } from "@/@types/types";
 
@@ -26,14 +28,27 @@ export function SubForm() {
 		music: false,
 	};
 
-	const validationSchema = "";
+	const validationSchema = object().shape({
+		name: string().required(t("errors.required")).min(2, t("errors.short")).max(32, t("errors.long")),
+		phone: string()
+			.matches(/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/, t("errors.notValid"))
+			.required(t("errors.required")),
+		date: string().required(t("errors.required")),
+		questions: string().min(4, t("errors.short")).max(255, t("errors.long")),
+		quantity: number().required(t("errors.required")),
+		hall: string(),
+		type: string(),
+		host: boolean(),
+		zone: boolean(),
+		music: boolean(),
+	});
 
 	const onSubmit = (values: IContactsForm) => {
 		console.log("values", values);
 	};
 
 	return (
-		<Formik onSubmit={(values: IContactsForm) => onSubmit(values)} initialValues={initialValues}>
+		<Formik validationSchema={validationSchema} onSubmit={(values: IContactsForm) => onSubmit(values)} initialValues={initialValues}>
 			<Form className={css.form}>
 				<div className={css.wrapper}>
 					<div className={css.left}>
@@ -45,7 +60,7 @@ export function SubForm() {
 						<ErrorMessage className={css.error} name="date" component="div" />
 					</div>
 					<div className={css.right}>
-						<Field required as="select" name="hall" placeholder={t("hall")}>
+						<Field required as="select" name="hall">
 							<option value="hunting">{t("selects.hall.hunting")}</option>
 							<option value="veranda">{t("selects.hall.veranda")}</option>
 							<option value="kolyba">{t("selects.hall.kolyba")}</option>
@@ -53,7 +68,7 @@ export function SubForm() {
 							<option value="sea">{t("selects.hall.sea")}</option>
 						</Field>
 
-						<Field required as="select" name="type" placeholder={t("type")}>
+						<Field required as="select" name="type">
 							<option value="children">{t("selects.type.children")}</option>
 							<option value="birthday">{t("selects.type.birthday")}</option>
 							<option value="christening">{t("selects.type.christening")}</option>
@@ -68,22 +83,29 @@ export function SubForm() {
 				<div className={css.checkboxes} role="group" aria-labelledby="checkbox-group">
 					<label>
 						<Field type="checkbox" name="host" />
-						<div className={css.checkbox} />
+						<div className={css.checkbox}>
+							<Checkbox width={24} height={24} className={css.icon} />
+						</div>
 						{t("host")}
 					</label>
 					<label>
 						<Field type="checkbox" name="zone" />
-						<div className={css.checkbox} />
+						<div className={css.checkbox}>
+							<Checkbox width={24} height={24} className={css.icon} />
+						</div>
 						{t("zone")}
 					</label>
 					<label>
 						<Field type="checkbox" name="music" />
-						<div className={css.checkbox} />
+						<div className={css.checkbox}>
+							<Checkbox width={24} height={24} className={css.icon} />
+						</div>
 						{t("music")}
 					</label>
 				</div>
 				<div className={css.subwrapper}>
 					<Field autoComplete="off" name="questions" placeholder={t("questions")} as="textarea" />
+					<ErrorMessage className={css.error} name="questions" component="div" />
 					<button type="submit">{t("btn")}</button>
 				</div>
 			</Form>
