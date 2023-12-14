@@ -14,7 +14,7 @@
 
 .ctrls {
 	position: absolute;
-	bottom: 50px;
+	bottom: 110px;
 	left: 50%;
 	transform: translateX(-50%);
 	z-index: 1;
@@ -22,6 +22,10 @@
 	display: flex;
 	gap: 30px;
 	color: $bgColor;
+
+	@include desktop {
+		bottom: 50px;
+	}
 }
 
 .ctrl {

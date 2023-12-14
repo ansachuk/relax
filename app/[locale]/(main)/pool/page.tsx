@@ -5,7 +5,7 @@ import Section from "@/components/Section/Section";
 import { getScopedI18n } from "@/locales/server";
 import { IAbout, IBenefit } from "@/@types/types";
 
-import { about1, about2, about3, benefit2, benefit1, benefit3, gallery1, gallery2, gallery3, gallery4, gallery5 } from "@/public/images/pool";
+import { about1, about2, about3, benefit2, benefit1, benefit3 } from "@/public/images/pool";
 import Gallery from "@/components/pages/pool/Gallery/Gallery";
 import Banner from "@/components/pages/pool/Banner/Banner";
 
@@ -20,15 +20,18 @@ export default async function Pool() {
 		{ img: benefit3, title: t("benefits.sub3") },
 	];
 	return (
-		<>
-			<About data={about} />
-			<Section title={t("benefits.title")}>
-				<Benefits benefits={benefits} />
-			</Section>
-			<Banner />
-			<Section title={t("galleryTitle")}>
-				<Gallery />
-			</Section>
-		</>
+		// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		<div>Pool</div> || (
+			<>
+				<About data={about} />
+				<Section title={t("benefits.title")}>
+					<Benefits benefits={benefits} />
+				</Section>
+				<Banner />
+				<Section title={t("galleryTitle")}>
+					<Gallery />
+				</Section>
+			</>
+		)
 	);
 }

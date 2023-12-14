@@ -1,7 +1,8 @@
 import { Cake, Cup, Dollar, Food } from "@/public/svg";
 
-import css from "./Benefits.module.scss";
 import { getScopedI18n } from "@/locales/server";
+
+import css from "./Benefits.module.scss";
 
 export default async function MainBenefits() {
 	const t = await getScopedI18n("benefits");

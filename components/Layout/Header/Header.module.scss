@@ -1,14 +1,12 @@
+@import "@/scss/";
+
 .header {
 	display: flex;
-	justify-content: space-between;
+
 	align-items: center;
-}
 
-.logo {
-	padding: 8px 0;
-
-	&::after {
-		display: none;
+	@include desktop {
+		justify-content: space-between;
 	}
 }
 
@@ -16,9 +14,45 @@
 	display: flex;
 	gap: 12px;
 
+	margin-right: 150px;
+
+	@include desktop {
+		margin-right: 0;
+	}
+
 	.icon {
+		width: 28px;
+		height: 28px;
+
+		@include desktop {
+			width: 32px;
+			height: 32px;
+
+			margin-right: 0;
+		}
+
 		&::after {
 			width: 0;
 		}
+	}
+}
+
+.logo {
+	padding: 10px 0;
+	width: 170px;
+	height: 90px;
+
+	margin-right: 185px;
+
+	&::after {
+		display: none;
+	}
+
+	@include desktop {
+		width: 170px;
+		height: 86px;
+		padding: 8px 0;
+
+		margin-right: 0;
 	}
 }

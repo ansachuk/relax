@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
+import Burger from "../Burger/Burger";
 
 import { Facebook, Inst, Logo, Phone } from "@/public/svg";
 
@@ -24,6 +25,7 @@ export default function Header() {
 				<Logo width={172} height={91} />
 			</Link>
 			<LanguageSwitcher />
+			<Burger />
 		</div>
 	);
 }

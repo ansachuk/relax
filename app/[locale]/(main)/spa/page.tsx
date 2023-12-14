@@ -69,24 +69,27 @@ export default async function Spa() {
 	];
 
 	return (
-		<>
-			<About data={about} />
-			<Section title={t("benefits.title")}>
-				<Benefits benefits={benefits} />
-			</Section>
-			<Section title={t("offers.title")}>
-				<Offers data={offers} />
-			</Section>
-			<Banner text={t("banner.text")} />
-			{sections.map(({ title, subtitle, text, imgs }) => (
-				<Section key={title} title={title}>
-					<SpaSection subtitle={subtitle} text={text} imgs={imgs} />
+		// !!!!!!!!!!!!!!!!!!!!!!!!!
+		<div>Spa</div> || (
+			<>
+				<About data={about} />
+				<Section title={t("benefits.title")}>
+					<Benefits benefits={benefits} />
 				</Section>
-			))}
-			<Additional />
-			<Section title={t("vatsTitle")}>
-				<Vats />
-			</Section>
-		</>
+				<Section title={t("offers.title")}>
+					<Offers data={offers} />
+				</Section>
+				<Banner text={t("banner.text")} />
+				{sections.map(({ title, subtitle, text, imgs }) => (
+					<Section key={title} title={title}>
+						<SpaSection subtitle={subtitle} text={text} imgs={imgs} />
+					</Section>
+				))}
+				<Additional />
+				<Section title={t("vatsTitle")}>
+					<Vats />
+				</Section>
+			</>
+		)
 	);
 }

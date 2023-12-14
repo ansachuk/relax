@@ -1,20 +1,15 @@
 import { Nothing_You_Could_Do, Montserrat, Cormorant } from "next/font/google";
 import "swiper/css";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import type { Metadata } from "next";
 
 import Container from "@/components/Container/Container";
 import Hero from "@/components/Hero/Hero";
-import Benefits from "@/components/Layout/MainBenefits/MainBenefits";
-
-import Section from "@/components/Section/Section";
 
 import Header from "@/components/Layout/Header/Header";
 import Nav from "@/components/Layout/Nav/Nav";
 import Map from "@/components/Layout/Map/Map";
-import Reviews from "@/components/Layout/Reviews/Reviews";
-import FAQ from "@/components/Layout/FAQ/FAQ";
-import Feedback from "@/components/Layout/Feedback/Feedback";
 
 import { getCurrentLocale, getScopedI18n } from "@/locales/server";
 
@@ -77,6 +72,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
 						<Header />
 					</Container>
 				</footer>
+				<SpeedInsights />
 			</body>
 		</html>
 	);
