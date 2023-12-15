@@ -1,0 +1,48 @@
+@import "@/scss/";
+
+.wrapper {
+	width: 100%;
+
+	display: flex;
+	justify-content: space-between;
+
+	margin-bottom: 50px;
+
+	@include desktop {
+		gap: 23px;
+		align-items: center;
+		margin-bottom: 120px;
+	}
+
+	.title {
+		text-align: center;
+
+		font-size: 28px;
+		font-weight: 400;
+		line-height: normal;
+		user-select: none;
+
+		width: 220px;
+
+		@include desktop {
+			font-size: 45px;
+			width: 350px;
+		}
+	}
+
+	.desc {
+		text-align: center;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 125%;
+
+		max-width: 470px;
+
+		@include desktop {
+			max-width: 900px;
+			font-size: 24px;
+			line-height: 133.333%;
+		}
+	}
+}

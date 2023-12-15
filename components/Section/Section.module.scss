@@ -1,0 +1,26 @@
+@import "@/scss/";
+
+.section {
+	margin-bottom: 80px;
+
+	@include desktop {
+		margin-bottom: 120px;
+	}
+}
+
+.title {
+	font-size: 40px;
+	font-weight: 600;
+	text-transform: uppercase;
+
+	text-align: center;
+
+	margin-bottom: 24px;
+
+	@include desktop {
+		font-size: 56px;
+		text-align: start;
+
+		margin-bottom: 40px;
+	}
+}

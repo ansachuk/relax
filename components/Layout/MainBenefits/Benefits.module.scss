@@ -1,0 +1,50 @@
+@import "@/scss/";
+
+.benefits {
+	width: 100%;
+	padding: 22px 0;
+
+	color: $bgColor;
+	font-size: 16px;
+	background-color: $hoverColor;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	margin-bottom: 50px;
+
+	@include desktop {
+		font-size: 20px;
+
+		padding: 22px 0;
+		margin-bottom: 120px;
+	}
+
+	.benefit {
+		display: flex;
+		gap: 8px;
+
+		padding: 4px 20px;
+		&:not(:last-child) {
+			border-right: 1.5px solid $bgColor;
+		}
+
+		@include desktop {
+			padding: 12px 90px;
+			gap: 16px;
+		}
+
+		.icon {
+			fill: $bgColor;
+
+			width: 16px;
+			height: 16px;
+
+			@include desktop {
+				width: 24px;
+				height: 24px;
+			}
+		}
+	}
+}

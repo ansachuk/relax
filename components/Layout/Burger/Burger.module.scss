@@ -1,0 +1,9 @@
+@import "@/scss/";
+
+.burger {
+	padding: 8px 10px;
+
+	@include desktop {
+		display: none;
+	}
+}

@@ -1,0 +1,15 @@
+@import "@/scss/";
+
+.banner {
+	color: $bgColor;
+	background-color: $attention;
+	text-align: center;
+
+	padding: 140px 200px;
+
+	font-size: 64px;
+	font-weight: 600;
+	text-transform: uppercase;
+
+	margin-bottom: 120px;
+}

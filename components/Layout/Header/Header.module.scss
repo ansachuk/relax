@@ -1,0 +1,58 @@
+@import "@/scss/";
+
+.header {
+	display: flex;
+
+	align-items: center;
+
+	@include desktop {
+		justify-content: space-between;
+	}
+}
+
+.wrapper {
+	display: flex;
+	gap: 12px;
+
+	margin-right: 165px;
+
+	@include desktop {
+		margin-right: 0;
+	}
+
+	.icon {
+		width: 28px;
+		height: 28px;
+
+		@include desktop {
+			width: 32px;
+			height: 32px;
+
+			margin-right: 0;
+		}
+
+		&::after {
+			width: 0;
+		}
+	}
+}
+
+.logo {
+	padding: 10px 0;
+	width: 170px;
+	height: 90px;
+
+	margin-right: 185px;
+
+	&::after {
+		display: none;
+	}
+
+	@include desktop {
+		width: 170px;
+		height: 86px;
+		padding: 8px 0;
+
+		margin-right: 0;
+	}
+}

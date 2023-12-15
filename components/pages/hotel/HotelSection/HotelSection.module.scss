@@ -1,0 +1,49 @@
+@import "@/scss/";
+
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+
+	.subwrapper {
+		width: 450px;
+
+		display: flex;
+		flex-direction: column;
+		gap: 50px;
+
+		font-size: 20px;
+		line-height: normal;
+		.subtitle {
+			font-weight: 600;
+			text-transform: uppercase;
+		}
+
+		.text {
+			font-weight: 400;
+		}
+
+		.link {
+			padding: 10px;
+
+			display: inline-flex;
+			align-items: center;
+			gap: 12px;
+
+			.icon {
+				width: 40px;
+				height: 40px;
+				background-color: currentColor;
+				border-radius: 50%;
+
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				svg {
+					color: $bgColor;
+					transform: rotate(-180deg);
+				}
+			}
+		}
+	}
+}

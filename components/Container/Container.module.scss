@@ -1,0 +1,16 @@
+@import "@/scss/";
+
+.container {
+	padding: 0 20px;
+	margin: 0 auto;
+
+	@include tablet {
+		max-width: 768px;
+		padding: 0 40px;
+	}
+
+	@include desktop {
+		max-width: 1280px;
+		padding: 0 80px;
+	}
+}
