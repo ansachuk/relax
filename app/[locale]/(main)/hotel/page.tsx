@@ -102,23 +102,20 @@ export default async function Hotel() {
 	];
 
 	return (
-		// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-		<div>Hotel</div> || (
-			<>
-				<About data={about} />
-				<Section title={t("benefits.title")}>
-					<Benefits benefits={benefits} />
+		<>
+			<About data={about} />
+			<Section title={t("benefits.title")}>
+				<Benefits benefits={benefits} />
+			</Section>
+			<Section title={t("offers.title")}>
+				<Offers data={offers} />
+			</Section>
+			<Banner text={t("banner.text")} />
+			{sections.map(({ text, title, imgs, subtitle, link }) => (
+				<Section key={title} title={title}>
+					<HotelSection subtitle={subtitle} link={link} text={text} imgs={imgs} />
 				</Section>
-				<Section title={t("offers.title")}>
-					<Offers data={offers} />
-				</Section>
-				<Banner text={t("banner.text")} />
-				{sections.map(({ text, title, imgs, subtitle, link }) => (
-					<Section key={title} title={title}>
-						<HotelSection subtitle={subtitle} link={link} text={text} imgs={imgs} />
-					</Section>
-				))}
-			</>
-		)
+			))}
+		</>
 	);
 }

@@ -32,7 +32,7 @@ export default async function SectionSm({ sectionData: { img, subtitle, phone, t
 					</span>
 				</Link>
 			</div>
-			<MainImage className={css.img} width={630} height={400} src={img} alt={title} />
+			<MainImage sizes="(max-width: 1399px) 100vw, 50vw" className={css.img} width={630} height={400} src={img} alt={title} />
 		</article>
 	);
 }

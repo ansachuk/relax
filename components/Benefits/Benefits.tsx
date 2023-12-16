@@ -13,7 +13,7 @@ export default function Benefits({ benefits }: Props) {
 		<div className={css.wrapper}>
 			{benefits.map(({ title, img }, idx) => (
 				<div className={css.benefit} key={title}>
-					<MainImage className={css.img} width={400} height={500} src={img} alt={title} />
+					<MainImage sizes="33vw" className={css.img} width={400} height={500} src={img} alt={title} />
 					<p className={css.text}>
 						<span className={`${nothing.className} ${css.nothing}`}>{idx + 1 + ")"}</span>
 						{title}

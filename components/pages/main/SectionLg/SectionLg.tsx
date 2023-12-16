@@ -51,13 +51,13 @@ export default async function SectionLg({
 			</div>
 			<div className={css.images}>
 				<div className={css.imagesWrapper}>
-					<MainImage width={630} height={340} src={img1} alt={title} className={css.mid} />
+					<MainImage sizes="(max-width: 1399px) 100vw, 50vw" width={630} height={340} src={img1} alt={title} className={css.mid} />
 					<div className={css.imagesSubwrapper}>
-						<MainImage width={300} height={220} src={img2} alt={title} className={css.small} />
-						<MainImage width={300} height={220} src={img3} alt={title} className={css.small} />
+						<MainImage sizes="(max-width: 1399px) 50vw, 25vw" width={300} height={220} src={img2} alt={title} className={css.small} />
+						<MainImage sizes="(max-width: 1399px) 50vw, 25vw" width={300} height={220} src={img3} alt={title} className={css.small} />
 					</div>
 				</div>
-				<MainImage width={630} height={580} src={img4} alt={title} className={css.big} />
+				<MainImage sizes="(max-width: 1399px) 100vw, 50vw" width={630} height={580} src={img4} alt={title} className={css.big} />
 			</div>
 		</article>
 	);

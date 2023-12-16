@@ -20,18 +20,15 @@ export default async function Pool() {
 		{ img: benefit3, title: t("benefits.sub3") },
 	];
 	return (
-		// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-		<div>Pool</div> || (
-			<>
-				<About data={about} />
-				<Section title={t("benefits.title")}>
-					<Benefits benefits={benefits} />
-				</Section>
-				<Banner />
-				<Section title={t("galleryTitle")}>
-					<Gallery />
-				</Section>
-			</>
-		)
+		<>
+			<About data={about} />
+			<Section title={t("benefits.title")}>
+				<Benefits benefits={benefits} />
+			</Section>
+			<Banner />
+			<Section title={t("galleryTitle")}>
+				<Gallery />
+			</Section>
+		</>
 	);
 }
