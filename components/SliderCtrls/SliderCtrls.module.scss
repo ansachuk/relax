@@ -8,8 +8,12 @@
 	z-index: 1;
 
 	display: flex;
-	gap: 90px;
+	gap: 24px;
 	color: currentColor;
+
+	@include desktop {
+		gap: 90px;
+	}
 }
 
 .ctrls {
@@ -35,6 +39,14 @@
 	transition-duration: $trDuration;
 	transition-timing-function: $trTimeFunc;
 	.icon {
+		width: 28px;
+		height: 28px;
+
+		@include desktop {
+			width: 25px;
+			height: 25px;
+		}
+
 		&.next {
 			transform: rotate(180deg);
 		}

@@ -20,7 +20,7 @@ export function Slider({ imgs }: Props) {
 			<Swiper loop navigation className={css.slider} onSwiper={setSwiper}>
 				{imgs.map(el => (
 					<SwiperSlide key={el.src}>
-						<MainImage width={620} height={400} src={el} alt="restaurant hall image" />
+						<MainImage sizes="(max-width: 1399px) 100vw, 50vw" className={css.image} width={620} height={400} src={el} alt="restaurant hall image" />
 					</SwiperSlide>
 				))}
 			</Swiper>
