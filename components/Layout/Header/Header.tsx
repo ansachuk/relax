@@ -22,7 +22,7 @@ export default function Header() {
 				</a>
 			</div>
 			<Link className={css.logo} href="/#top">
-				<Logo width={172} height={91} />
+				<Logo className={css.logoIcon} width={172} height={91} />
 			</Link>
 			<LanguageSwitcher />
 			<Burger />

@@ -3,9 +3,9 @@ import css from "./Burger.module.scss";
 
 export default function Burger() {
 	return (
-		<div className={css.burger}>
-			<button>
-				<BurgerIcon width={32} height={32} />
+		<div className={css.wrapper}>
+			<button className={css.burgerOpen}>
+				<BurgerIcon className={css.icon} width={32} height={32} />
 			</button>
 		</div>
 	);

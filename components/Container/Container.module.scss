@@ -1,8 +1,15 @@
 @import "@/scss/";
 
 .container {
-	padding: 0 20px;
 	margin: 0 auto;
+
+	width: 100%;
+	padding: 0 12px;
+
+	@include mobile {
+		width: 343px;
+		padding: 0 16px;
+	}
 
 	@include tablet {
 		width: 688px;

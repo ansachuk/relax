@@ -1,33 +1,73 @@
 @import "@/scss/";
 
 .benefits {
-	width: 100%;
-	padding: 22px 0;
+	padding: 10px 56px;
 
 	color: $bgColor;
-	font-size: 16px;
 	background-color: $hoverColor;
 
+	font-size: 10px;
+
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 	align-items: center;
-	justify-content: center;
+	column-gap: 50px;
 
 	margin-bottom: 50px;
+
+	@include small-mobile {
+		column-gap: 20%;
+		font-size: 6px;
+	}
+
+	@include tablet {
+		width: 100%;
+		padding: 22px 0;
+
+		font-size: 16px;
+
+		column-gap: 0;
+		justify-content: center;
+		flex-wrap: nowrap;
+	}
 
 	@include desktop {
 		font-size: 20px;
 
-		padding: 22px 0;
 		margin-bottom: 120px;
 	}
 
 	.benefit {
 		display: flex;
-		gap: 8px;
+		align-items: center;
+		gap: 4px;
 
-		padding: 4px 20px;
-		&:not(:last-child) {
-			border-right: 1.5px solid $bgColor;
+		padding: 5px 2px;
+
+		&:first-child {
+			border-bottom: 1px solid $bgColor;
+		}
+
+		&:last-child {
+			border-top: 1px solid $bgColor;
+		}
+
+		@include tablet {
+			padding: 4px 20px;
+			gap: 8px;
+
+			&:first-child {
+				border-bottom: none;
+			}
+
+			&:last-child {
+				border-top: none;
+			}
+
+			&:not(:last-child) {
+				border-right: 1.5px solid $bgColor;
+			}
 		}
 
 		@include desktop {
@@ -38,8 +78,13 @@
 		.icon {
 			fill: $bgColor;
 
-			width: 16px;
-			height: 16px;
+			width: 12px;
+			height: 12px;
+
+			@include tablet {
+				width: 16px;
+				height: 16px;
+			}
 
 			@include desktop {
 				width: 24px;
