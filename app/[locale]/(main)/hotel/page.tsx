@@ -51,9 +51,6 @@ export async function generateMetadata(): Promise<Metadata> {
 	const t = await getScopedI18n("navigation");
 	return {
 		title: t("hotel"),
-		openGraph: {
-			images: "https://relax-1i64hwcrg-ansachuks-projects.vercel.app/images/layout/og/hotel.webp",
-		},
 	};
 }
 
