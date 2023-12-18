@@ -4,7 +4,7 @@ import Benefits from "@/components/pages/contacts/Benefits/Benefits";
 import Form from "@/components/pages/contacts/Form/Form";
 import Container from "@/components/Container/Container";
 
-import { getCurrentLocale, getScopedI18n } from "@/locales/server";
+import { getScopedI18n } from "@/locales/server";
 import { cormorant } from "@/public/constatnts";
 
 import css from "@/components/pages/contacts/Contacts.module.scss";
@@ -12,15 +12,12 @@ import css from "@/components/pages/contacts/Contacts.module.scss";
 // eslint-disable-next-line react-refresh/only-export-components
 export async function generateMetadata(): Promise<Metadata> {
 	const t = await getScopedI18n("navigation");
-	const locale = await getCurrentLocale();
 	return {
 		title: t("contacts"),
 		openGraph: {
 			title: t("contacts"),
-			url: `https://relax-tan.vercel.app/${locale}/contacts`,
 		},
 		twitter: {
-			images: ["https://relax-1i64hwcrg-ansachuks-projects.vercel.app/images/layout/og/restaurant.jpg"],
 			card: "summary_large_image",
 		},
 	};

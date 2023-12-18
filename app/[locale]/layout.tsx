@@ -32,10 +32,20 @@ export async function generateMetadata(): Promise<Metadata> {
 		openGraph: {
 			title: "Relax Complex",
 			description: "Spa-Relax Complex",
-			images: ["https://relax-4mj3w3fey-ansachuks-projects.vercel.app/images/layout/og/main.jpg"],
 			siteName: "Relax Complex",
 			url: `https://relax-tan.vercel.app/${locale}`,
 			type: "website",
+			images: [
+				{
+					url: "https://nextjs.org/og.png",
+					width: 800,
+					height: 600,
+				},
+			],
+		},
+		twitter: {
+			title: "Relax Complex",
+			description: "Spa-Relax Complex",
 		},
 	};
 }
