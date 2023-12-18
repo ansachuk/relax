@@ -2,63 +2,94 @@
 
 .benefits {
 	width: 100%;
-	padding: 24px 0;
+	padding: 16px 0;
 
 	color: $bgColor;
-	font-size: 20px;
+	font-size: 16px;
 	background-color: $hoverColor;
 
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
+	align-items: center;
+	gap: 12px;
 
-	margin-bottom: 120px;
+	margin-bottom: 80px;
+
+	@include desktop {
+		padding: 24px 0;
+
+		font-size: 20px;
+
+		flex-direction: row;
+		align-items: flex-start;
+		gap: 0;
+
+		margin-bottom: 120px;
+	}
 
 	.benefit {
-		display: flex;
-		gap: 16px;
-
-		padding: 12px 50px;
-		&:not(:last-child) {
-			border-right: 1.5px solid $bgColor;
+		@include desktop {
+			padding: 12px 50px;
+			&:not(:last-child) {
+				border-right: 1.5px solid $bgColor;
+			}
 		}
 	}
 }
 
 .title {
-	font-size: 64px;
+	font-size: 40px;
 	font-weight: 600;
-	text-align: center;
 	text-transform: uppercase;
+	text-align: center;
 
-	margin-bottom: 100px;
+	margin-bottom: 40px;
+
+	@include desktop {
+		font-size: 64px;
+		margin-bottom: 100px;
+	}
 }
 
 .form {
-	padding: 80px;
+	padding: 40px 20px;
 
 	border-radius: 10px;
 	border: 1px solid currentColor;
 
-	margin-bottom: 120px;
+	margin-bottom: 80px;
+
+	@include desktop {
+		padding: 80px;
+
+		margin-bottom: 120px;
+	}
 
 	input,
 	select,
 	textarea {
-		font-size: 24px;
+		font-size: 16px;
 		font-family: inherit;
 		font-weight: 400;
-		line-height: 100%;
+		line-height: 150%;
 
 		color: $mainFontcolor;
 
 		padding-bottom: 16px;
-		padding-left: 2px;
 
 		background-color: transparent;
 		border: none;
 		border-bottom: 1.5px solid currentColor;
 		outline: none;
 		resize: none;
+
+		@include desktop {
+			padding-left: 2px;
+
+			font-size: 24px;
+			line-height: 100%;
+		}
 
 		&::placeholder {
 			color: $mainFontcolor;
@@ -83,32 +114,53 @@
 		.right {
 			display: flex;
 			flex-direction: column;
-			justify-content: space-between;
 			gap: 48px;
 
 			input,
 			select {
-				max-width: 480px;
+				width: 300px;
+
+				@include desktop {
+					width: 480px;
+				}
 			}
 		}
 	}
 
 	.note {
-		width: 420px;
-		margin-bottom: 40px;
+		width: 330px;
+		margin: 0 auto 50px;
 
-		font-size: 20px;
+		font-size: 16px;
 		font-weight: 400;
-		line-height: 120%;
+		line-height: 150%;
+		text-align: center;
+
+		@include desktop {
+			width: 420px;
+
+			font-size: 20px;
+			line-height: 120%;
+			text-align: start;
+
+			margin: 0 0 40px;
+		}
 	}
 
 	.additional {
 		text-align: center;
-		font-size: 24px;
+		font-size: 20px;
 		font-weight: 500;
-		line-height: 100%;
+		line-height: 120%;
 
-		margin-bottom: 80px;
+		margin-bottom: 40px;
+
+		@include desktop {
+			font-size: 24px;
+			line-height: 100%;
+
+			margin-bottom: 80px;
+		}
 	}
 
 	.checkboxes {
@@ -116,11 +168,18 @@
 		justify-content: space-between;
 
 		text-align: center;
-		font-size: 24px;
+		font-size: 16px;
 		font-weight: 400;
-		line-height: 100%;
+		line-height: 150%;
 
-		margin-bottom: 80px;
+		margin-bottom: 40px;
+
+		@include desktop {
+			font-size: 24px;
+			line-height: 100%;
+
+			margin-bottom: 80px;
+		}
 
 		label {
 			user-select: none;
@@ -160,20 +219,33 @@
 
 	.subwrapper {
 		display: flex;
+		flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
+		gap: 40px;
+
+		@include desktop {
+			flex-direction: row;
+			gap: 0;
+		}
 
 		textarea {
-			width: 500px;
+			width: 400px;
+			padding: 0;
+
+			@include desktop {
+				width: 500px;
+				padding-bottom: 16px;
+			}
 		}
 
 		button {
 			text-align: center;
-			font-size: 24px;
+			font-size: 20px;
 			font-weight: 500;
-			line-height: 83.333%;
+			line-height: 100%;
 
-			padding: 23px 90px;
+			padding: 20px 70px;
 
 			border-radius: 10px;
 			border: none;
@@ -182,6 +254,14 @@
 			transition-property: border, color;
 			transition-duration: $trDuration;
 			transition-timing-function: $trTimeFunc;
+
+			@include desktop {
+				font-size: 24px;
+				font-weight: 500;
+				line-height: 83.333%;
+
+				padding: 23px 90px;
+			}
 
 			&:focus,
 			&:hover {
@@ -195,5 +275,9 @@
 		font-size: 12px;
 		font-weight: 500;
 		color: red;
+
+		@include desktop {
+			font-size: 10px;
+		}
 	}
 }

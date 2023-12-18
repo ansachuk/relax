@@ -5,11 +5,20 @@
 	background-color: $attention;
 	text-align: center;
 
-	padding: 140px 200px;
+	padding: 120px 40px;
 
-	font-size: 64px;
-	font-weight: 600;
+	font-size: 40px;
+	font-weight: 500;
 	text-transform: uppercase;
 
-	margin-bottom: 120px;
+	margin-bottom: 80px;
+
+	@include desktop {
+		padding: 140px 200px;
+
+		font-size: 64px;
+		font-weight: 600;
+
+		margin-bottom: 120px;
+	}
 }

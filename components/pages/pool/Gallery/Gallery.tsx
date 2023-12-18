@@ -7,13 +7,13 @@ export default function Gallery() {
 	return (
 		<div className={css.gallery}>
 			<div className={css.wrapper}>
-				<MainImage src={gallery1} width={620} height={420} alt="Swimming pool" />
-				<MainImage src={gallery2} width={620} height={420} alt="Swimming pool" />
+				<MainImage src={gallery1} className={css.big} sizes="50vw" width={620} height={420} alt="Swimming pool" />
+				<MainImage src={gallery2} className={css.big} sizes="50vw" width={620} height={420} alt="Swimming pool" />
 			</div>
 			<div className={css.wrapper}>
-				<MainImage src={gallery3} width={400} height={420} alt="Swimming pool" />
-				<MainImage src={gallery4} width={400} height={420} alt="Swimming pool" />
-				<MainImage src={gallery5} width={400} height={420} alt="Swimming pool" />
+				<MainImage src={gallery3} className={css.small} sizes="33vw" width={400} height={420} alt="Swimming pool" />
+				<MainImage src={gallery4} className={css.small} sizes="33vw" width={400} height={420} alt="Swimming pool" />
+				<MainImage src={gallery5} className={css.small} sizes="33vw" width={400} height={420} alt="Swimming pool" />
 			</div>
 		</div>
 	);
