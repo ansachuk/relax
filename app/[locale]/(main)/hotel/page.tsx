@@ -7,7 +7,7 @@ import Section from "@/components/Section/Section";
 
 import HotelSection from "@/components/pages/hotel/HotelSection/HotelSection";
 
-import { getScopedI18n } from "@/locales/server";
+import { getCurrentLocale, getScopedI18n } from "@/locales/server";
 import {
 	about1,
 	about2,
@@ -49,8 +49,15 @@ import { IAbout, IBenefit, IOffer } from "@/@types/types";
 // eslint-disable-next-line react-refresh/only-export-components
 export async function generateMetadata(): Promise<Metadata> {
 	const t = await getScopedI18n("navigation");
+
+	const locale = await getCurrentLocale();
 	return {
 		title: t("hotel"),
+		openGraph: {
+			title: "we have hotel",
+			description: "bla hotel",
+			url: `https://relax-tan.vercel.app/${locale}`,
+		},
 	};
 }
 
