@@ -28,7 +28,7 @@ export default async function Additional() {
 					</ul>
 				</div>
 			</div>
-			<MainImage src={additional} height={585} alt="spa image" className={css.image} />
+			<MainImage src={additional} width={1280} height={585} alt="spa image" className={css.image} />
 		</section>
 	);
 }

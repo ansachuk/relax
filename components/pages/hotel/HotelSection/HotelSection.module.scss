@@ -2,24 +2,46 @@
 
 .wrapper {
 	display: flex;
+	flex-direction: column-reverse;
 	justify-content: space-between;
+	align-items: center;
+
+	text-align: center;
+
+	@include desktop {
+		align-items: flex-start;
+		flex-direction: row;
+		text-align: start;
+	}
 
 	.subwrapper {
-		width: 450px;
+		width: 570px;
 
 		display: flex;
 		flex-direction: column;
-		gap: 50px;
+
+		gap: 40px;
 
 		font-size: 20px;
 		line-height: normal;
+
+		@include desktop {
+			width: 450px;
+			gap: 50px;
+		}
+
 		.subtitle {
 			font-weight: 600;
 			text-transform: uppercase;
 		}
 
 		.text {
+			font-size: 16px;
 			font-weight: 400;
+
+			@include desktop {
+				font-size: inherit;
+			}
 		}
 
 		.link {
@@ -28,6 +50,13 @@
 			display: inline-flex;
 			align-items: center;
 			gap: 12px;
+
+			margin: 0 auto;
+
+			@include desktop {
+				margin: 0 auto 0 0;
+				font-size: inherit;
+			}
 
 			.icon {
 				width: 40px;

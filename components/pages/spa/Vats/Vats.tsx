@@ -13,14 +13,14 @@ export default async function Vats() {
 			<p className={css.text}>{t("sectionLg.section2.text")}</p>
 
 			<div className={css.images}>
-				<div className={css.wrapper}>
-					<MainImage width={630} height={340} src={vats1} alt="vats image" />
-					<div className={css.subwrapper}>
-						<MainImage width={300} height={220} src={vats2} alt="vats image" />
-						<MainImage width={300} height={220} src={vats3} alt="vats image" />
+				<div className={css.imagesWrapper}>
+					<MainImage sizes="(max-width: 1399px) 100vw, 50vw" width={630} height={340} src={vats1} alt="vats image" className={css.mid} />
+					<div className={css.imagesSubwrapper}>
+						<MainImage sizes="(max-width: 1399px) 50vw, 25vw" width={300} height={220} src={vats2} alt="vats image" className={css.small} />
+						<MainImage sizes="(max-width: 1399px) 50vw, 25vw" width={300} height={220} src={vats3} alt="vats image" className={css.small} />
 					</div>
 				</div>
-				<MainImage width={630} height={580} src={vats4} alt="vats image" />
+				<MainImage sizes="(max-width: 1399px) 100vw, 50vw" width={630} height={580} src={vats4} alt="vats image" className={css.big} />
 			</div>
 		</article>
 	);
