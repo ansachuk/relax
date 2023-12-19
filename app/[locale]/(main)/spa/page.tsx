@@ -20,11 +20,16 @@ import {
 	jacuzzi2,
 	jacuzzi3,
 	jacuzzi4,
+	jacuzzi5,
 	vat1,
 	vat2,
 	vat3,
 	vat4,
-	jacuzzi5,
+	finnish1,
+	finnish2,
+	finnish3,
+	finnish4,
+	finnish5,
 	offer,
 } from "@/public/images/spa";
 
@@ -64,7 +69,7 @@ export default async function Spa() {
 			title: t("sections.3.title"),
 			subtitle: t("sections.3.subtitle"),
 			text: t("sections.3.text"),
-			imgs: [jacuzzi1, jacuzzi1, jacuzzi1, jacuzzi1, jacuzzi1],
+			imgs: [finnish1, finnish2, finnish3, finnish4, finnish5],
 		},
 	];
 

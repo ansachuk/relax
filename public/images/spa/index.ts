@@ -20,3 +20,9 @@ export { default as vat1 } from "./vat1.webp";
 export { default as vat2 } from "./vat2.webp";
 export { default as vat3 } from "./vat3.webp";
 export { default as vat4 } from "./vat4.webp";
+
+export { default as finnish1 } from "./finnish1.webp";
+export { default as finnish2 } from "./finnish2.webp";
+export { default as finnish3 } from "./finnish3.webp";
+export { default as finnish4 } from "./finnish4.webp";
+export { default as finnish5 } from "./finnish5.webp";
