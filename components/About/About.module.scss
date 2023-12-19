@@ -1,0 +1,90 @@
+@import "@/scss/";
+
+.article {
+	display: flex;
+	flex-direction: column;
+	gap: 56px;
+
+	margin-bottom: 80px;
+
+	@include desktop {
+		flex-direction: row;
+		gap: 65px;
+
+		margin-bottom: 120px;
+	}
+
+	.images {
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+
+		@include desktop {
+			gap: 20px;
+		}
+
+		.big {
+			width: 100%;
+			height: auto;
+
+			@include desktop {
+				width: 740px;
+				height: 420px;
+			}
+		}
+
+		.small {
+			width: 332px;
+			height: 216px;
+
+			@include desktop {
+				width: 350px;
+				height: 260px;
+			}
+		}
+
+		.wrapper {
+			display: flex;
+			gap: 24px;
+
+			@include desktop {
+				gap: 40px;
+			}
+		}
+	}
+
+	.main {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+
+		text-align: center;
+		width: 600px;
+		margin: 0 auto;
+
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 140%;
+
+		@include desktop {
+			margin: 0;
+			gap: 40px;
+
+			width: 475px;
+			text-align: start;
+		}
+
+		.title {
+			color: var(--text-color, #282828);
+			font-size: 40px;
+			font-weight: 600;
+			line-height: normal;
+			text-transform: uppercase;
+
+			@include desktop {
+				font-size: 64px;
+				line-height: normal;
+			}
+		}
+	}
+}

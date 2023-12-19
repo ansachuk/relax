@@ -1,0 +1,25 @@
+@import "@/scss/";
+
+.container {
+	margin: 0 auto;
+	// !===================
+	outline: 1.5px dotted blue;
+
+	width: 100%;
+	padding: 0 12px;
+
+	@include mobile {
+		width: 343px;
+		padding: 0 16px;
+	}
+
+	@include tablet {
+		width: 688px;
+		padding: 0 40px;
+	}
+
+	@include desktop {
+		width: 1280px;
+		padding: 0 80px;
+	}
+}

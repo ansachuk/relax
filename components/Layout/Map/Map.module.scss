@@ -1,0 +1,15 @@
+@import "@/scss/";
+
+.map {
+	border: none;
+
+	margin-bottom: 80px;
+
+	width: 100%;
+	height: 585px;
+
+	@include desktop {
+		height: 635px;
+		margin-bottom: 120px;
+	}
+}
