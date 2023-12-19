@@ -46,6 +46,8 @@ import {
 
 import { IAbout, IBenefit, IOffer } from "@/@types/types";
 
+import ogImage from "./opengraph-image.jpg";
+
 // eslint-disable-next-line react-refresh/only-export-components
 export async function generateMetadata(): Promise<Metadata> {
 	const t = await getScopedI18n("navigation");
@@ -55,6 +57,22 @@ export async function generateMetadata(): Promise<Metadata> {
 		openGraph: {
 			title: "we have hotel",
 			description: "bla hotel",
+			images: [
+				{
+					url: ogImage.src,
+					width: ogImage.width,
+					height: ogImage.height,
+				},
+			],
+		},
+		twitter: {
+			images: [
+				{
+					url: ogImage.src,
+					width: ogImage.width,
+					height: ogImage.height,
+				},
+			],
 		},
 	};
 }
