@@ -14,7 +14,7 @@
 	align-items: center;
 	column-gap: 50px;
 
-	margin-bottom: 50px;
+	margin-bottom: 40px;
 
 	@include small-mobile {
 		column-gap: 20%;
@@ -30,6 +30,8 @@
 		column-gap: 0;
 		justify-content: center;
 		flex-wrap: nowrap;
+
+		margin-bottom: 50px;
 	}
 
 	@include desktop {

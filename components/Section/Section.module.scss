@@ -1,7 +1,11 @@
 @import "@/scss/";
 
 .section {
-	margin-bottom: 80px;
+	margin-bottom: 40px;
+
+	@include tablet {
+		margin-bottom: 80px;
+	}
 
 	@include desktop {
 		margin-bottom: 120px;
@@ -9,13 +13,17 @@
 }
 
 .title {
-	font-size: 40px;
+	font-size: 32px;
 	font-weight: 600;
 	text-transform: uppercase;
 
 	text-align: center;
 
 	margin-bottom: 24px;
+
+	@include tablet {
+		font-size: 40px;
+	}
 
 	@include desktop {
 		font-size: 56px;

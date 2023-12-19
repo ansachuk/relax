@@ -13,7 +13,7 @@ export default async function WhatWeOffer() {
 
 	return (
 		<div className={css.wrapper}>
-			<MainImage sizes="33vw" className={css.imgTop} src={offer1} alt={t("restaurant")} width={400} height={500} />
+			<MainImage sizes="(max-width: 768,98px) 100vw, 33vw" className={css.imgTop} src={offer1} alt={t("restaurant")} width={400} height={500} />
 			<ul className={css.list}>
 				{offers.map(el => (
 					<li key={el} className={css.item}>
@@ -21,7 +21,7 @@ export default async function WhatWeOffer() {
 					</li>
 				))}
 			</ul>
-			<MainImage className={css.imgBottom} src={offer2} alt={t("restaurant")} width={400} height={500} />
+			<MainImage sizes="(max-width: 768,98px) 100vw, 33vw" className={css.imgBottom} src={offer2} alt={t("restaurant")} width={400} height={500} />
 		</div>
 	);
 }

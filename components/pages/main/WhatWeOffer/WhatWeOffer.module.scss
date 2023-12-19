@@ -2,10 +2,17 @@
 
 .wrapper {
 	display: flex;
-	justify-content: space-between;
+	flex-direction: column-reverse;
 	align-items: flex-start;
+	gap: 24px;
 
-	height: 400px;
+	@include tablet {
+		flex-direction: row;
+		justify-content: space-between;
+		gap: 0;
+
+		height: 400px;
+	}
 
 	@include desktop {
 		height: 780px;
@@ -13,12 +20,24 @@
 
 	.imgTop,
 	.imgBottom {
-		width: 210px;
-		height: 240px;
+		width: 100%;
+		height: auto;
+
+		@include tablet {
+			width: 210px;
+			height: 240px;
+		}
 
 		@include desktop {
 			width: 400px;
 			height: 500px;
+		}
+	}
+
+	.imgTop {
+		display: none;
+		@include tablet {
+			display: block;
 		}
 	}
 
@@ -41,7 +60,11 @@
 
 		border-bottom: 1px solid currentColor;
 
-		margin-bottom: 20px;
+		margin-bottom: 10px;
+
+		@include tablet {
+			margin-bottom: 20px;
+		}
 
 		@include desktop {
 			padding: 0 28px 10px;
