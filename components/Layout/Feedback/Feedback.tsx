@@ -19,19 +19,19 @@ export default async function Feedback() {
 					<ul className={css.list}>
 						<li className={css.item}>
 							<span>
-								<Mail width={24} height={24} />
+								<Mail className={css.icon} width={24} height={24} />
 							</span>
 							relaxcomplex@ukr.net
 						</li>
 						<li className={css.item}>
 							<span>
-								<Geo width={24} height={24} />
+								<Geo className={css.icon} width={24} height={24} />
 							</span>
 							{t("address")}
 						</li>
 						<li className={css.item}>
 							<span>
-								<Phone width={24} height={24} />
+								<Phone className={css.icon} width={24} height={24} />
 							</span>
 							098 333 77 00 ({t("phone_pool")})
 							<br />

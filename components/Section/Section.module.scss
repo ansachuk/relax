@@ -13,13 +13,16 @@
 }
 
 .title {
-	font-size: 32px;
 	font-weight: 600;
 	text-transform: uppercase;
 
 	text-align: center;
 
 	margin-bottom: 24px;
+
+	@include mobile {
+		font-size: 32px;
+	}
 
 	@include tablet {
 		font-size: 40px;

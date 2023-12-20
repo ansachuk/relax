@@ -223,6 +223,10 @@
 		height: 187px;
 		object-fit: cover;
 
+		@include small-mobile {
+			width: 45%;
+		}
+
 		@include tablet {
 			object-fit: none;
 			width: 332px;

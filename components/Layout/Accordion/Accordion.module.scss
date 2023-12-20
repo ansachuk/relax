@@ -21,16 +21,27 @@
 	flex-direction: column;
 	gap: 4px;
 
-	font-size: 14px;
+	font-size: 12px;
 	font-weight: 500;
-	line-height: 142.857%;
+	line-height: 133.333%;
+
+	width: 280px;
+
 	text-align: start;
 
 	padding: 8px;
 
-	width: 100%;
-
 	cursor: pointer;
+
+	@include small-mobile {
+		width: 90%;
+	}
+
+	@include tablet {
+		width: 100%;
+		font-size: 14px;
+		line-height: 142.857%;
+	}
 
 	@include desktop {
 		font-size: 16px;
@@ -53,9 +64,9 @@
 	}
 
 	.content {
-		font-size: 14px;
+		font-size: 12px;
 		font-weight: 400;
-		line-height: 142.857%;
+		line-height: 133.333%;
 
 		display: inline-block;
 
@@ -65,6 +76,11 @@
 		transition-property: max-height, padding;
 		transition-duration: 500ms;
 		transition-timing-function: ease;
+
+		@include desktop {
+			font-size: 14px;
+			line-height: 142.857%;
+		}
 
 		@include desktop {
 			font-size: 16px;

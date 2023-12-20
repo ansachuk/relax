@@ -41,6 +41,10 @@
 			width: 163px;
 			height: 187px;
 
+			@include small-mobile {
+				width: 45%;
+			}
+
 			@include tablet {
 				width: 300px;
 				height: 330px;
@@ -55,6 +59,10 @@
 		.sm {
 			width: 163px;
 			height: 187px;
+
+			@include small-mobile {
+				width: 45%;
+			}
 
 			@include tablet {
 				width: 200px;
