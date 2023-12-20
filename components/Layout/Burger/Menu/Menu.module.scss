@@ -1,0 +1,105 @@
+@import "@/scss/";
+
+.menu {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+
+	background-color: $bgColor;
+	left: 0;
+
+	&.top {
+		top: 0;
+	}
+	&.bottom {
+		bottom: 0;
+	}
+
+	.line {
+		width: 100%;
+		height: 1.5px;
+		background-color: currentColor;
+	}
+
+	.header {
+		width: 60%;
+		margin-left: auto;
+
+		display: flex;
+		justify-content: space-between;
+
+		padding: 7px 16px;
+
+		.logo {
+			@include tablet {
+				width: 172px;
+				height: 86px;
+			}
+		}
+	}
+
+	.main {
+		margin: 40px auto;
+	}
+
+	.footer {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+
+		width: 100%;
+		padding: 24px 0;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 24px;
+
+		@include tablet {
+			padding: 40px 0;
+		}
+
+		.rights {
+			color: #c4c1c3;
+			font-size: 12px;
+			font-weight: 400;
+			line-height: 133.333%;
+
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 12px;
+		}
+	}
+
+	.nav {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 32px;
+	}
+
+	.link {
+		font-size: 20px;
+		font-weight: 500;
+
+		@include tablet {
+			font-size: 32px;
+		}
+	}
+
+	.currentLink {
+		font-size: 20px;
+		font-weight: 500;
+		color: $hoverColor;
+
+		@include tablet {
+			font-size: 32px;
+		}
+
+		&::after {
+			background-color: $hoverColor;
+			width: 100%;
+		}
+	}
+}

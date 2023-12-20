@@ -1,10 +1,18 @@
 @import "@/scss/";
 
 .switcher {
-	display: none;
-
 	font-size: 16px;
 	font-weight: 500;
+
+	&.header {
+		display: none;
+
+		@include desktop {
+			display: flex;
+			align-items: center;
+			gap: 5px;
+		}
+	}
 
 	@include desktop {
 		display: flex;

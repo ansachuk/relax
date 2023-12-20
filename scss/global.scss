@@ -16,6 +16,10 @@ body {
 	background-color: $bgColor;
 	color: $mainFontcolor;
 
+	&.menu-open {
+		overflow: hidden;
+	}
+
 	// !========================================
 	outline: 1px solid red;
 }

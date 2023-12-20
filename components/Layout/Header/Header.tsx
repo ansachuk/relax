@@ -6,8 +6,13 @@ import Burger from "../Burger/Burger";
 import { Facebook, Inst, Logo, Phone } from "@/public/svg";
 
 import css from "./Header.module.scss";
+import { Position } from "@/@types/types";
 
-export default function Header() {
+type Props = {
+	pos: Position;
+};
+
+export default function Header({ pos }: Props) {
 	return (
 		<div className={css.header}>
 			<div className={css.wrapper}>
@@ -24,8 +29,8 @@ export default function Header() {
 			<Link className={css.logo} href="/#top">
 				<Logo className={css.logoIcon} width={172} height={91} />
 			</Link>
-			<LanguageSwitcher />
-			<Burger />
+			<LanguageSwitcher header />
+			<Burger pos={pos} />
 		</div>
 	);
 }

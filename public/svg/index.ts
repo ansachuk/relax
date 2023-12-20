@@ -12,3 +12,4 @@ export { default as ArrowSm } from "./arrowSm.svg";
 export { default as ArrowLg } from "./arrowLg.svg";
 export { default as Checkbox } from "./checkbox.svg";
 export { default as Burger } from "./burger.svg";
+export { default as Cross } from "./cross.svg";

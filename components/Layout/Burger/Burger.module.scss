@@ -7,6 +7,19 @@
 	.burgerOpen {
 		padding: 8px 10px;
 
+		transition-property: color;
+		transition-duration: $trDuration;
+		transition-timing-function: $trTimeFunc;
+
+		&:hover,
+		&:focus {
+			color: $hoverColor;
+		}
+
+		&:active {
+			color: $activeColor;
+		}
+
 		@include small-mobile {
 			width: 100%;
 			height: 100%;

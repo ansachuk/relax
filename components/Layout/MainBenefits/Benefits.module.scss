@@ -21,13 +21,16 @@
 		font-size: 6px;
 	}
 
+	@media screen and (min-width: 473.98px) {
+		gap: 0;
+	}
+
 	@include tablet {
 		width: 100%;
 		padding: 22px 0;
 
 		font-size: 16px;
 
-		column-gap: 0;
 		justify-content: center;
 		flex-wrap: nowrap;
 
@@ -55,10 +58,7 @@
 			border-top: 1px solid $bgColor;
 		}
 
-		@include tablet {
-			padding: 4px 20px;
-			gap: 8px;
-
+		@media screen and (min-width: 473.98px) {
 			&:first-child {
 				border-bottom: none;
 			}
@@ -66,6 +66,11 @@
 			&:last-child {
 				border-top: none;
 			}
+		}
+
+		@include tablet {
+			padding: 4px 20px;
+			gap: 8px;
 
 			&:not(:last-child) {
 				border-right: 1.5px solid $bgColor;

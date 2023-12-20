@@ -1,6 +1,6 @@
 import { Nothing_You_Could_Do, Montserrat, Cormorant } from "next/font/google";
-import "swiper/css";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import "swiper/css";
 
 import type { Metadata } from "next";
 
@@ -55,7 +55,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
 			<body className={montserrat.className}>
 				<header>
 					<Container>
-						<Header />
+						<Header pos="top" />
 					</Container>
 					<Nav position="top" />
 				</header>
@@ -69,7 +69,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
 				<footer>
 					<Nav position="bottom" />
 					<Container>
-						<Header />
+						<Header pos="bottom" />
 					</Container>
 				</footer>
 				<SpeedInsights />
