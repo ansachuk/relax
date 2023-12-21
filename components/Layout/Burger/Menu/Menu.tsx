@@ -9,14 +9,16 @@ import { useScopedI18n } from "@/locales/client";
 
 import { Cross, Logo } from "@/public/svg";
 import css from "./Menu.module.scss";
+import { Dispatch, SetStateAction } from "react";
 
 type Props = {
 	isOpen: boolean;
 	top: boolean;
+	setIsOpen: (value: SetStateAction<boolean>) => void;
 	toggleMenu: () => void;
 };
 
-export function SubMenu({ isOpen, top, toggleMenu }: Props) {
+export function SubMenu({ isOpen, top, toggleMenu, setIsOpen }: Props) {
 	const t = useScopedI18n("navigation");
 	const fullPath = usePathname();
 
@@ -66,7 +68,7 @@ export function SubMenu({ isOpen, top, toggleMenu }: Props) {
 			<div className={css.main}>
 				<nav className={css.nav}>
 					{NavLinks.map(({ path, label }) => (
-						<Link scroll={false} className={pathname === path ? css.currentLink : css.link} key={path} href={path}>
+						<Link onClick={() => setIsOpen(false)} scroll={false} className={pathname === path ? css.currentLink : css.link} key={path} href={path}>
 							{label}
 						</Link>
 					))}
@@ -84,10 +86,10 @@ export function SubMenu({ isOpen, top, toggleMenu }: Props) {
 	);
 }
 
-export default function Menu({ isOpen, top, toggleMenu }: Props) {
+export default function Menu({ isOpen, top, toggleMenu, setIsOpen }: Props) {
 	return (
 		<I18nSubLayout>
-			<SubMenu isOpen={isOpen} top={top} toggleMenu={toggleMenu} />
+			<SubMenu setIsOpen={setIsOpen} isOpen={isOpen} top={top} toggleMenu={toggleMenu} />
 		</I18nSubLayout>
 	);
 }

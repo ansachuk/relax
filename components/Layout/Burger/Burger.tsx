@@ -32,7 +32,7 @@ export default function Burger({ pos }: Props) {
 			<button onClick={toggleMenu} className={css.burgerOpen}>
 				<BurgerIcon className={css.icon} width={32} height={32} />
 			</button>
-			<Menu top={pos === "top"} isOpen={isOpen} toggleMenu={toggleMenu} />
+			<Menu setIsOpen={setIsOpen} top={pos === "top"} isOpen={isOpen} toggleMenu={toggleMenu} />
 		</div>
 	);
 }
