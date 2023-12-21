@@ -1,0 +1,68 @@
+@import "@/scss/";
+
+.mainCtrls {
+	position: absolute;
+	bottom: -40px;
+	left: 50%;
+	transform: translateX(-40%);
+	z-index: 1;
+
+	display: flex;
+	gap: 24px;
+	color: currentColor;
+
+	@include desktop {
+		gap: 90px;
+	}
+}
+
+.ctrls {
+	position: absolute;
+	left: 50%;
+	bottom: 20px;
+	transform: translateX(-50%);
+	z-index: 1;
+
+	display: flex;
+	gap: 20px;
+	color: $bgColor;
+
+	@include tablet {
+		gap: 30px;
+		bottom: 110px;
+	}
+
+	@include desktop {
+		bottom: 50px;
+	}
+}
+
+.ctrl {
+	color: currentColor;
+
+	transition-property: color;
+	transition-duration: $trDuration;
+	transition-timing-function: $trTimeFunc;
+	.icon {
+		width: 20px;
+		height: 20px;
+
+		@include tablet {
+			width: 28px;
+			height: 28px;
+		}
+
+		@include desktop {
+			width: 25px;
+			height: 25px;
+		}
+
+		&.next {
+			transform: rotate(180deg);
+		}
+	}
+
+	&:hover {
+		color: $hoverColor;
+	}
+}

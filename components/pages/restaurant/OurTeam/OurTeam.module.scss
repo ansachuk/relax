@@ -1,0 +1,41 @@
+@import "@/scss/";
+
+.wrapper {
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+	gap: 24px;
+
+	@include tablet {
+		gap: 40px;
+	}
+
+	@include desktop {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 45px;
+	}
+}
+
+.text {
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 133.333%;
+
+	text-align: center;
+
+	@include tablet {
+		width: 550px;
+
+		font-size: 16px;
+		line-height: 150%;
+	}
+
+	@include desktop {
+		width: 600px;
+
+		font-size: 20px;
+		line-height: 140%;
+		text-align: start;
+	}
+}

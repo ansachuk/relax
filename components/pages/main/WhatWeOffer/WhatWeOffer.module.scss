@@ -1,0 +1,74 @@
+@import "@/scss/";
+
+.wrapper {
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: flex-start;
+	gap: 24px;
+
+	@include tablet {
+		flex-direction: row;
+		justify-content: space-between;
+		gap: 0;
+
+		height: 400px;
+	}
+
+	@include desktop {
+		height: 780px;
+	}
+
+	.imgTop,
+	.imgBottom {
+		width: 100%;
+		height: auto;
+
+		@include tablet {
+			width: 210px;
+			height: 240px;
+		}
+
+		@include desktop {
+			width: 400px;
+			height: 500px;
+		}
+	}
+
+	.imgTop {
+		display: none;
+		@include tablet {
+			display: block;
+		}
+	}
+
+	.imgBottom {
+		align-self: flex-end;
+	}
+}
+
+.list {
+	align-self: center;
+
+	.item {
+		padding: 0 30px 10px;
+
+		font-size: 16px;
+
+		font-weight: 500;
+		text-transform: capitalize;
+		text-align: center;
+
+		border-bottom: 1px solid currentColor;
+
+		margin-bottom: 10px;
+
+		@include tablet {
+			margin-bottom: 20px;
+		}
+
+		@include desktop {
+			padding: 0 28px 10px;
+			font-size: 28px;
+		}
+	}
+}

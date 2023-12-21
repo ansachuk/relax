@@ -1,0 +1,89 @@
+@import "@/scss/";
+
+.wrapper {
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: space-between;
+
+	@include desktop {
+		flex-direction: row;
+	}
+
+	.subwrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 24px;
+		margin: 0 auto;
+
+		font-size: 16px;
+
+		@include tablet {
+			width: 535px;
+			gap: 40px;
+
+			font-size: 20px;
+		}
+
+		@include desktop {
+			margin: 0;
+			align-items: flex-start;
+			width: 500px;
+			gap: 50px;
+		}
+
+		.subtitle {
+			text-align: center;
+			font-weight: 500;
+
+			text-transform: uppercase;
+
+			@include desktop {
+				text-align: start;
+				font-weight: 600;
+			}
+		}
+
+		.text {
+			font-size: 12px;
+			font-weight: 400;
+			line-height: 133.333%;
+			text-align: center;
+
+			@include tablet {
+				font-size: 16px;
+				line-height: 150%;
+			}
+
+			@include desktop {
+				text-align: start;
+				font-size: 20px;
+			}
+		}
+
+		.link {
+			width: 150px;
+			font-size: 12px;
+			font-weight: 500;
+			line-height: 166.667%;
+
+			text-align: center;
+
+			padding: 12px 16px;
+
+			border-radius: 10px;
+			border: 1px solid currentColor;
+
+			@include tablet {
+				width: 220px;
+
+				font-size: 16px;
+				line-height: 125%;
+			}
+
+			&::after {
+				width: 0;
+			}
+		}
+	}
+}

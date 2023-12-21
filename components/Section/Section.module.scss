@@ -1,0 +1,37 @@
+@import "@/scss/";
+
+.section {
+	margin-bottom: 40px;
+
+	@include tablet {
+		margin-bottom: 80px;
+	}
+
+	@include desktop {
+		margin-bottom: 120px;
+	}
+}
+
+.title {
+	font-weight: 600;
+	text-transform: uppercase;
+
+	text-align: center;
+
+	margin-bottom: 24px;
+
+	@include mobile {
+		font-size: 32px;
+	}
+
+	@include tablet {
+		font-size: 40px;
+	}
+
+	@include desktop {
+		font-size: 56px;
+		text-align: start;
+
+		margin-bottom: 40px;
+	}
+}

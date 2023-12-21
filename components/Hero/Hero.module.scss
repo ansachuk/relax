@@ -1,0 +1,18 @@
+@import "@/scss/";
+
+.heroImg {
+	width: 100%;
+	height: auto;
+
+	@include tablet {
+		width: 768px;
+		height: 428px;
+	}
+
+	@include desktop {
+		width: 1440px;
+		height: 712px;
+	}
+
+	margin: 0 auto;
+}
