@@ -19,11 +19,12 @@ export default function Burger({ pos }: Props) {
 	const toggleMenu = () => {
 		if (isOpen) {
 			document.body.classList.remove("menu-open");
+			setIsOpen(prev => !prev);
+			window.scrollTo({ top: 0, behavior: "smooth" });
 		} else {
 			document.body.classList.add("menu-open");
+			setIsOpen(prev => !prev);
 		}
-
-		setIsOpen(prev => !prev);
 	};
 
 	return (

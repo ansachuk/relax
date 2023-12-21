@@ -6,7 +6,8 @@
 	height: 100%;
 
 	background-color: $bgColor;
-	left: 0;
+	right: 0;
+	opacity: 0;
 
 	&.top {
 		top: 0;
@@ -15,25 +16,49 @@
 		bottom: 0;
 	}
 
+	transform: translateX(100%);
+
+	transition-property: transform, opacity;
+	transition-duration: 300ms;
+	transition-timing-function: linear;
+
 	.line {
 		width: 100%;
 		height: 1.5px;
 		background-color: currentColor;
 	}
 
-	.header {
-		width: 60%;
-		margin-left: auto;
+	&.isOpen {
+		opacity: 1;
+		transform: translateX(0);
+	}
 
+	.header {
 		display: flex;
 		justify-content: space-between;
 
 		padding: 7px 16px;
 
+		@include tablet {
+			padding: 7px 32px;
+		}
+
+		.empty {
+			width: 24px;
+			height: 24px;
+		}
+
 		.logo {
 			@include tablet {
 				width: 172px;
 				height: 86px;
+			}
+		}
+
+		.cross {
+			@include tablet {
+				width: 32px;
+				height: 32px;
 			}
 		}
 	}
