@@ -1,3 +1,5 @@
+import React from "react";
+
 import Container from "@/components/Container/Container";
 import MainBenefits from "@/components/Layout/MainBenefits/MainBenefits";
 import FAQ from "@/components/Layout/FAQ/FAQ";

@@ -1,4 +1,5 @@
 import { I18nProviderClient, useCurrentLocale } from "@/locales/client";
+import React from "react";
 
 export default function I18nSubLayout({ children }: { children: React.ReactNode }) {
 	const currentLocale = useCurrentLocale();

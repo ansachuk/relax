@@ -1,7 +1,6 @@
-import { cormorant } from "@/app/[locale]/layout";
-
 import { getScopedI18n } from "@/locales/server";
 import { aboutUs } from "@/public/images/main";
+import { cormorant } from "@/public/constatnts";
 import MainImage from "@/components/MainImage/MainImage";
 
 import css from "./AboutUs.module.scss";

@@ -1,6 +1,5 @@
-import { nothing } from "@/app/[locale]/layout";
-
 import { getScopedI18n } from "@/locales/server";
+import { nothing } from "@/public/constatnts";
 
 import css from "./Intro.module.scss";
 

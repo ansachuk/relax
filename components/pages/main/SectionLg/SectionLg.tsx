@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import { getScopedI18n } from "@/locales/server";
 
-import { nothing } from "@/app/[locale]/layout";
+import { nothing } from "@/public/constatnts";
 
 import MainImage from "@/components/MainImage/MainImage";
 

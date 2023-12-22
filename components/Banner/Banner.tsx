@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import { getScopedI18n } from "@/locales/server";
-import { cormorant } from "@/app/[locale]/layout";
+import { cormorant } from "@/public/constatnts";
 
 import css from "./Banner.module.scss";
 

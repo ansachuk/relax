@@ -1,7 +1,7 @@
 import Link from "next/link";
 import MainImage from "@/components/MainImage/MainImage";
 
-import { nothing } from "@/app/[locale]/layout";
+import { nothing } from "@/public/constatnts";
 import { QR, menu1, menu2, menu3 } from "@/public/images/restaurant";
 import { ArrowLg } from "@/public/svg";
 

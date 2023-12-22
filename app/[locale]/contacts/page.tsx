@@ -3,7 +3,7 @@ import Form from "@/components/pages/contacts/Form/Form";
 import Container from "@/components/Container/Container";
 
 import { getScopedI18n } from "@/locales/server";
-import { cormorant } from "../layout";
+import { cormorant } from "@/public/constatnts";
 
 import css from "@/components/pages/contacts/Contacts.module.scss";
 

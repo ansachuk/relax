@@ -2,7 +2,7 @@ import { IAbout } from "@/@types/types";
 
 import MainImage from "../MainImage/MainImage";
 
-import { cormorant } from "@/app/[locale]/layout";
+import { cormorant } from "@/public/constatnts";
 
 import css from "./About.module.scss";
 

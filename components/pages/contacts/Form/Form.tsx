@@ -1,13 +1,11 @@
 "use client";
 
 import { Formik, Form, Field, ErrorMessage } from "formik";
-import { boolean, date, number, object, string } from "yup";
+import { boolean, number, object, string } from "yup";
 
 import { useScopedI18n } from "@/locales/client";
-
 import I18nSubLayout from "@/components/I18nSubLayout/I18nSubLayout";
 import { Checkbox } from "@/public/svg";
-
 import { IContactsForm } from "@/@types/types";
 
 import css from "../Contacts.module.scss";
@@ -31,7 +29,7 @@ export function SubForm() {
 	const validationSchema = object().shape({
 		name: string().required(t("errors.required")).min(2, t("errors.short")).max(32, t("errors.long")),
 		phone: string()
-			.matches(/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/, t("errors.notValid"))
+			.matches(/^[\\+]?[(]?[0-9]{3}[)]?[-\s\\.]?[0-9]{3}[-\s\\.]?[0-9]{4,6}$/, t("errors.notValid"))
 			.required(t("errors.required")),
 		date: string().required(t("errors.required")),
 		questions: string().min(4, t("errors.short")).max(255, t("errors.long")),

@@ -1,7 +1,5 @@
 import MainImage from "../MainImage/MainImage";
 
-import { getScopedI18n } from "@/locales/server";
-
 import { IOffer } from "@/@types/types";
 
 import css from "./Offers.module.scss";
@@ -9,8 +7,6 @@ import css from "./Offers.module.scss";
 type Props = { data: IOffer };
 
 export default async function Offers({ data: { text, img, offers } }: Props) {
-	const t = await getScopedI18n("pages.restaurant.offers");
-
 	return (
 		<article className={css.article}>
 			<p className={css.text}>{text}</p>

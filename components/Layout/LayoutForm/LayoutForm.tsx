@@ -18,7 +18,7 @@ export function SubForm() {
 	const validationSchema = object().shape({
 		name: string().required(t("errors.required")).min(2, t("errors.short")).max(32, t("errors.long")),
 		phone: string()
-			.matches(/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/, t("errors.notValid"))
+			.matches(/^[\\+]?[(]?[0-9]{3}[)]?[-\s\\.]?[0-9]{3}[-\s\\.]?[0-9]{4,6}$/, t("errors.notValid"))
 			.required(t("errors.required")),
 		message: string().required(t("errors.required")).min(5, t("errors.short")).max(255, t("errors.long")),
 	});

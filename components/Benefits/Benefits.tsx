@@ -1,7 +1,6 @@
-import { nothing } from "@/app/[locale]/layout";
-
 import MainImage from "../MainImage/MainImage";
 
+import { nothing } from "@/public/constatnts";
 import { IBenefit } from "@/@types/types";
 
 import css from "./Benefits.module.scss";

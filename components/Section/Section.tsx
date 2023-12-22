@@ -1,5 +1,5 @@
-import { cormorant } from "@/app/[locale]/layout";
-
+import React from "react";
+import { cormorant } from "@/public/constatnts";
 import css from "./Section.module.scss";
 
 type Props = {

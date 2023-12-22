@@ -1,9 +1,10 @@
 import MainImage from "@/components/MainImage/MainImage";
+
 import { additional } from "@/public/images/spa";
+import { cormorant } from "@/public/constatnts";
+import { getScopedI18n } from "@/locales/server";
 
 import css from "./Additional.module.scss";
-import { getScopedI18n } from "@/locales/server";
-import { cormorant } from "@/app/[locale]/layout";
 
 export default async function Additional() {
 	const t = await getScopedI18n("pages.spa.additional");

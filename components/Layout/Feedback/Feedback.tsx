@@ -1,6 +1,6 @@
 import { getScopedI18n } from "@/locales/server";
 
-import { nothing } from "@/app/[locale]/layout";
+import { nothing } from "@/public/constatnts";
 
 import LayoutForm from "../LayoutForm/LayoutForm";
 
