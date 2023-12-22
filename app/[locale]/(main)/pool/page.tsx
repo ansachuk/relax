@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import About from "@/components/About/About";
 import Benefits from "@/components/Benefits/Benefits";
 import Section from "@/components/Section/Section";
@@ -8,6 +9,14 @@ import { IAbout, IBenefit } from "@/@types/types";
 import { about1, about2, about3, benefit2, benefit1, benefit3 } from "@/public/images/pool";
 import Gallery from "@/components/pages/pool/Gallery/Gallery";
 import Banner from "@/components/pages/pool/Banner/Banner";
+
+// eslint-disable-next-line react-refresh/only-export-components
+export async function generateMetadata(): Promise<Metadata> {
+	const t = await getScopedI18n("navigation");
+	return {
+		title: t("pool"),
+	};
+}
 
 export default async function Pool() {
 	const t = await getScopedI18n("pages.pool");

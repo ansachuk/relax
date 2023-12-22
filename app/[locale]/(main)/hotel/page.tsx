@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import About from "@/components/About/About";
 import Banner from "@/components/Banner/Banner";
 import Benefits from "@/components/Benefits/Benefits";
@@ -44,6 +45,14 @@ import {
 } from "@/public/images/hotel";
 
 import { IAbout, IBenefit, IOffer } from "@/@types/types";
+
+// eslint-disable-next-line react-refresh/only-export-components
+export async function generateMetadata(): Promise<Metadata> {
+	const t = await getScopedI18n("navigation");
+	return {
+		title: t("hotel"),
+	};
+}
 
 export default async function Hotel() {
 	const t = await getScopedI18n("pages.hotel");

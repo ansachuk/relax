@@ -1,3 +1,5 @@
+import { Metadata } from "next";
+
 import About from "@/components/About/About";
 import Benefits from "@/components/Benefits/Benefits";
 import Section from "@/components/Section/Section";
@@ -34,6 +36,14 @@ import {
 } from "@/public/images/spa";
 
 import { IAbout, IBenefit, IOffer } from "@/@types/types";
+
+// eslint-disable-next-line react-refresh/only-export-components
+export async function generateMetadata(): Promise<Metadata> {
+	const t = await getScopedI18n("navigation");
+	return {
+		title: t("spa"),
+	};
+}
 
 export default async function Spa() {
 	const t = await getScopedI18n("pages.spa");
