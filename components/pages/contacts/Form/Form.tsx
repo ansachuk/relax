@@ -35,7 +35,7 @@ export function SubForm() {
 			.required(t("errors.required")),
 		date: string().required(t("errors.required")),
 		questions: string().min(4, t("errors.short")).max(255, t("errors.long")),
-		quantity: number().required(t("errors.required")),
+		quantity: number().min(1, "min").max(32, "max").required(t("errors.required")),
 		hall: string(),
 		type: string(),
 		host: boolean(),

@@ -1,17 +1,26 @@
 @import "@/scss/";
 
 .banner {
-	color: $bgColor;
 	background-color: $attention;
+
+	padding: 135px 20px;
+
+	color: $bgColor;
 	text-align: center;
-
-	padding: 120px 40px;
-
-	font-size: 40px;
+	font-size: 32px;
 	font-weight: 500;
+	line-height: normal;
 	text-transform: uppercase;
 
-	margin-bottom: 80px;
+	margin-bottom: 40px;
+
+	@include tablet {
+		padding: 120px 40px;
+
+		font-size: 40px;
+
+		margin-bottom: 80px;
+	}
 
 	@include desktop {
 		padding: 140px 200px;
