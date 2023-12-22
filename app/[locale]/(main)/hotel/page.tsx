@@ -7,7 +7,7 @@ import Section from "@/components/Section/Section";
 
 import HotelSection from "@/components/pages/hotel/HotelSection/HotelSection";
 
-import { getScopedI18n } from "@/locales/server";
+import { getCurrentLocale, getScopedI18n } from "@/locales/server";
 import {
 	about1,
 	about2,
@@ -46,33 +46,20 @@ import {
 
 import { IAbout, IBenefit, IOffer } from "@/@types/types";
 
-import ogImage from "./opengraph-image.jpg";
-
 // eslint-disable-next-line react-refresh/only-export-components
 export async function generateMetadata(): Promise<Metadata> {
-	const t = await getScopedI18n("navigation");
-
+	const locale = await getCurrentLocale();
+	const title = await getScopedI18n("navigation");
+	const t = await getScopedI18n("pages.hotel.about");
 	return {
-		title: t("hotel"),
+		title: title("hotel"),
 		openGraph: {
-			title: "we have hotel",
-			description: "bla hotel",
-			images: [
-				{
-					url: ogImage.src,
-					width: ogImage.width,
-					height: ogImage.height,
-				},
-			],
-		},
-		twitter: {
-			images: [
-				{
-					url: ogImage.src,
-					width: ogImage.width,
-					height: ogImage.height,
-				},
-			],
+			title: title("hotel"),
+			description: t("title"),
+			siteName: "Relax Complex",
+			url: `https://relax-tan.vercel.app/${locale}/hotel`,
+			images: "/images/layout/og/hotel.jpg",
+			type: "website",
 		},
 	};
 }

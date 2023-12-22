@@ -48,18 +48,18 @@ import { IAbout, IBenefit, IOffer } from "@/@types/types";
 
 // eslint-disable-next-line react-refresh/only-export-components
 export async function generateMetadata(): Promise<Metadata> {
-	const t = await getScopedI18n("navigation");
-	const locale = getCurrentLocale();
+	const locale = await getCurrentLocale();
+	const title = await getScopedI18n("navigation");
+	const t = await getScopedI18n("pages.restaurant.about");
 	return {
-		title: t("restaurant"),
+		title: title("restaurant"),
 		openGraph: {
-			title: t("restaurant"),
+			title: title("restaurant"),
+			description: t("title"),
+			siteName: "Relax Complex",
 			url: `https://relax-tan.vercel.app/${locale}/restaurant`,
-			images: "https://relax-1i64hwcrg-ansachuks-projects.vercel.app/images/layout/og/restaurant.jpg",
-		},
-		twitter: {
-			images: ["https://relax-1i64hwcrg-ansachuks-projects.vercel.app/images/layout/og/restaurant.jpg"],
-			card: "summary_large_image",
+			images: "/images/layout/og/restaurant.jpg",
+			type: "website",
 		},
 	};
 }

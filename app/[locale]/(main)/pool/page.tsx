@@ -3,7 +3,7 @@ import About from "@/components/About/About";
 import Benefits from "@/components/Benefits/Benefits";
 import Section from "@/components/Section/Section";
 
-import { getScopedI18n } from "@/locales/server";
+import { getCurrentLocale, getScopedI18n } from "@/locales/server";
 import { IAbout, IBenefit } from "@/@types/types";
 
 import { about1, about2, about3, benefit2, benefit1, benefit3 } from "@/public/images/pool";
@@ -12,9 +12,19 @@ import Banner from "@/components/pages/pool/Banner/Banner";
 
 // eslint-disable-next-line react-refresh/only-export-components
 export async function generateMetadata(): Promise<Metadata> {
-	const t = await getScopedI18n("navigation");
+	const locale = await getCurrentLocale();
+	const title = await getScopedI18n("navigation");
+	const t = await getScopedI18n("pages.pool.about");
 	return {
-		title: t("pool"),
+		title: title("pool"),
+		openGraph: {
+			title: title("pool"),
+			description: t("title"),
+			siteName: "Relax Complex",
+			url: `https://relax-tan.vercel.app/${locale}/pool`,
+			images: "/images/layout/og/pool.jpg",
+			type: "website",
+		},
 	};
 }
 

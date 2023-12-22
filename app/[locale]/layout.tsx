@@ -23,6 +23,14 @@ export async function generateMetadata(): Promise<Metadata> {
 		title: "Relax Complex",
 		description: "Spa-Relax Complex",
 		manifest: "/site.webmanifest",
+		metadataBase: new URL("https://relax-tan.vercel.app/"),
+		alternates: {
+			canonical: "/",
+			languages: {
+				uk: "/uk",
+				en: "/en",
+			},
+		},
 		icons: [
 			{ rel: "apple-touch-icon", type: "image/png", url: "/favicon/apple-icon.png", sizes: "180x180" },
 			{ rel: "icon", type: "image/png", url: "/favicon/favicon-32x32.png", sizes: "32x32" },
@@ -34,18 +42,8 @@ export async function generateMetadata(): Promise<Metadata> {
 			description: "Spa-Relax Complex",
 			siteName: "Relax Complex",
 			url: `https://relax-tan.vercel.app/${locale}`,
+			images: "/images/layout/og/main.jpg",
 			type: "website",
-			images: [
-				{
-					url: "https://nextjs.org/og.png",
-					width: 800,
-					height: 600,
-				},
-			],
-		},
-		twitter: {
-			title: "Relax Complex",
-			description: "Spa-Relax Complex",
 		},
 	};
 }

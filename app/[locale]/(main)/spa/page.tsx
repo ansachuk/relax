@@ -40,13 +40,17 @@ import { IAbout, IBenefit, IOffer } from "@/@types/types";
 // eslint-disable-next-line react-refresh/only-export-components
 export async function generateMetadata(): Promise<Metadata> {
 	const locale = await getCurrentLocale();
-	const t = await getScopedI18n("navigation");
+	const title = await getScopedI18n("navigation");
+	const t = await getScopedI18n("pages.spa.about");
 	return {
-		title: t("spa"),
+		title: title("spa"),
 		openGraph: {
-			title: t("spa"),
+			title: title("spa"),
+			description: t("title"),
+			siteName: "Relax Complex",
 			url: `https://relax-tan.vercel.app/${locale}/spa`,
 			images: "/images/layout/og/spa.jpg",
+			type: "website",
 		},
 	};
 }
