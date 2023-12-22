@@ -22,6 +22,7 @@ export async function generateMetadata(): Promise<Metadata> {
 		},
 		twitter: {
 			images: ["https://relax-1i64hwcrg-ansachuks-projects.vercel.app/images/layout/og/restaurant.jpg"],
+			card: "summary_large_image",
 		},
 	};
 }
