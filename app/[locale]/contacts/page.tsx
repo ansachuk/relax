@@ -15,7 +15,7 @@ export async function generateMetadata(): Promise<Metadata> {
 	return {
 		title: t("contacts"),
 		openGraph: {
-			images: "https://relax-1i64hwcrg-ansachuks-projects.vercel.app/images/layout/og/contacts.webp",
+			images: "https://relax-4mj3w3fey-ansachuks-projects.vercel.app/images/layout/og/contacts.jpg",
 		},
 	};
 }
