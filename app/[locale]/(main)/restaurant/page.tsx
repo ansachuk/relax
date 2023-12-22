@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { getScopedI18n } from "@/locales/server";
+import { getCurrentLocale, getScopedI18n } from "@/locales/server";
 
 import Benefits from "@/components/Benefits/Benefits";
 import Offers from "@/components/Offers/Offers";
@@ -49,10 +49,16 @@ import { IAbout, IBenefit, IOffer } from "@/@types/types";
 // eslint-disable-next-line react-refresh/only-export-components
 export async function generateMetadata(): Promise<Metadata> {
 	const t = await getScopedI18n("navigation");
+	const locale = getCurrentLocale();
 	return {
 		title: t("restaurant"),
 		openGraph: {
-			images: "https://relax-1i64hwcrg-ansachuks-projects.vercel.app/images/layout/og/restaurant.webp",
+			title: t("restaurant"),
+			url: `https://relax-tan.vercel.app/${locale}/restaurant`,
+			images: "https://relax-1i64hwcrg-ansachuks-projects.vercel.app/images/layout/og/restaurant.jpg",
+		},
+		twitter: {
+			images: ["https://relax-1i64hwcrg-ansachuks-projects.vercel.app/images/layout/og/restaurant.jpg"],
 		},
 	};
 }

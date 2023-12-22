@@ -18,7 +18,10 @@ export async function generateMetadata(): Promise<Metadata> {
 		openGraph: {
 			title: t("contacts"),
 			url: `https://relax-tan.vercel.app/${locale}/contacts`,
-			images: "https://relax-4mj3w3fey-ansachuks-projects.vercel.app/images/layout/og/contacts.jpg",
+			images: ["https://relax-4mj3w3fey-ansachuks-projects.vercel.app/images/layout/og/contacts.jpg"],
+		},
+		twitter: {
+			images: ["https://relax-1i64hwcrg-ansachuks-projects.vercel.app/images/layout/og/restaurant.jpg"],
 		},
 	};
 }
