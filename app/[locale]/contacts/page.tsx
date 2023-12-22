@@ -12,7 +12,7 @@ import css from "@/components/pages/contacts/Contacts.module.scss";
 // eslint-disable-next-line react-refresh/only-export-components
 export async function generateMetadata(): Promise<Metadata> {
 	const t = await getScopedI18n("navigation");
-	const locale = getCurrentLocale();
+	const locale = await getCurrentLocale();
 	return {
 		title: t("contacts"),
 		openGraph: {

@@ -10,7 +10,7 @@ import Vats from "@/components/pages/spa/Vats/Vats";
 import Additional from "@/components/pages/spa/Additional/Additional";
 import SpaSection from "@/components/pages/spa/SpaSection/SpaSection";
 
-import { getScopedI18n } from "@/locales/server";
+import { getCurrentLocale, getScopedI18n } from "@/locales/server";
 import {
 	about1,
 	about2,
@@ -39,11 +39,13 @@ import { IAbout, IBenefit, IOffer } from "@/@types/types";
 
 // eslint-disable-next-line react-refresh/only-export-components
 export async function generateMetadata(): Promise<Metadata> {
+	const locale = await getCurrentLocale();
 	const t = await getScopedI18n("navigation");
 	return {
 		title: t("spa"),
 		openGraph: {
 			title: t("spa"),
+			url: `https://relax-tan.vercel.app/${locale}/spa`,
 			images: "/images/layout/og/spa.jpg",
 		},
 	};
