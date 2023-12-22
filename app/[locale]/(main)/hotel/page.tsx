@@ -55,7 +55,7 @@ export async function generateMetadata(): Promise<Metadata> {
 		title: title("hotel"),
 		openGraph: {
 			title: title("hotel"),
-			description: t("title"),
+			description: t("p1"),
 			siteName: "Relax Complex",
 			url: `https://relax-tan.vercel.app/${locale}/hotel`,
 			images: "/images/layout/og/hotel.jpg",
