@@ -52,7 +52,7 @@ export async function generateMetadata(): Promise<Metadata> {
 	return {
 		title: t("hotel"),
 		openGraph: {
-			images: "/images/layout/og/hotel.webp",
+			images: "https://relax-1i64hwcrg-ansachuks-projects.vercel.app/images/layout/og/hotel.webp",
 		},
 	};
 }

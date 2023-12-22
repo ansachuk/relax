@@ -43,7 +43,7 @@ export async function generateMetadata(): Promise<Metadata> {
 	return {
 		title: t("spa"),
 		openGraph: {
-			images: "/images/layout/og/spa.webp",
+			images: "https://relax-1i64hwcrg-ansachuks-projects.vercel.app/images/layout/og/spa.webp",
 		},
 	};
 }

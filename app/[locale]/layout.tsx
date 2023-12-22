@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 	openGraph: {
 		title: "Relax Complex",
 		description: "Spa-Relax Complex",
-		images: "/images/layout/og/main.webp",
+		images: "https://relax-1i64hwcrg-ansachuks-projects.vercel.app/images/layout/og/main.webp",
 		siteName: "Relax Complex",
 		url: "https://relax-tan.vercel.app/",
 		type: "website",

@@ -16,7 +16,7 @@ export async function generateMetadata(): Promise<Metadata> {
 	return {
 		title: t("pool"),
 		openGraph: {
-			images: "/images/layout/og/pool.webp",
+			images: "https://relax-1i64hwcrg-ansachuks-projects.vercel.app/images/layout/og/pool.webp",
 		},
 	};
 }
