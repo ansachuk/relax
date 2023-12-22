@@ -16,6 +16,7 @@ export async function generateMetadata(): Promise<Metadata> {
 	return {
 		title: t("contacts"),
 		openGraph: {
+			title: t("contacts"),
 			url: `https://relax-tan.vercel.app/${locale}/contacts`,
 			images: "https://relax-4mj3w3fey-ansachuks-projects.vercel.app/images/layout/og/contacts.jpg",
 		},
