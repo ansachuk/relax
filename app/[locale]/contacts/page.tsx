@@ -24,6 +24,13 @@ export async function generateMetadata(): Promise<Metadata> {
 			images: "/images/layout/og/contacts.jpg",
 			type: "website",
 		},
+
+		twitter: {
+			card: "summary_large_image",
+			title: title("contacts"),
+			description: t("title"),
+			images: "/images/layout/og/contacts.jpg",
+		},
 	};
 }
 

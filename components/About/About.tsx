@@ -19,7 +19,7 @@ export default function About({ data: { title, p1, p2, img1, img2, img3 } }: Pro
 				</div>
 			</div>
 			<div className={css.main}>
-				<h2 className={`${cormorant.className} ${css.title}`}>{title}</h2>
+				<h1 className={`${cormorant.className} ${css.title}`}>{title}</h1>
 				<p>{p1}</p>
 				<p>{p2}</p>
 			</div>

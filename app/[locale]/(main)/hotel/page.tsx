@@ -61,6 +61,13 @@ export async function generateMetadata(): Promise<Metadata> {
 			images: "/images/layout/og/hotel.jpg",
 			type: "website",
 		},
+
+		twitter: {
+			card: "summary_large_image",
+			title: title("hotel"),
+			description: t("p1"),
+			images: "/images/layout/og/hotel.jpg",
+		},
 	};
 }
 
