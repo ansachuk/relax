@@ -42,6 +42,9 @@ export async function generateMetadata(): Promise<Metadata> {
 	const t = await getScopedI18n("navigation");
 	return {
 		title: t("spa"),
+		openGraph: {
+			images: "/images/layout/og/spa.webp",
+		},
 	};
 }
 

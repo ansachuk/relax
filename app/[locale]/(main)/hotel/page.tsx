@@ -51,6 +51,9 @@ export async function generateMetadata(): Promise<Metadata> {
 	const t = await getScopedI18n("navigation");
 	return {
 		title: t("hotel"),
+		openGraph: {
+			images: "/images/layout/og/hotel.webp",
+		},
 	};
 }
 
