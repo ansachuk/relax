@@ -52,6 +52,12 @@ export async function generateMetadata(): Promise<Metadata> {
 			images: "/images/layout/og/spa.jpg",
 			type: "website",
 		},
+		twitter: {
+			card: "summary_large_image",
+			title: title("spa"),
+			description: t("p1"),
+			images: "/images/layout/og/spa.jpg",
+		},
 	};
 }
 

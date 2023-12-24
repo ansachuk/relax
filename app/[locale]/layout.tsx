@@ -18,7 +18,6 @@ import "@/scss/global.scss";
 
 // eslint-disable-next-line react-refresh/only-export-components
 export async function generateMetadata(): Promise<Metadata> {
-	const locale = await getCurrentLocale();
 	return {
 		title: "Relax Complex",
 		description: "Spa-Relax Complex",
@@ -37,14 +36,6 @@ export async function generateMetadata(): Promise<Metadata> {
 			{ rel: "icon", type: "image/png", url: "/favicon/favicon-16x16.png", sizes: "16x16" },
 			{ rel: "mask-icon", type: "image/png", url: "/favicon/safari-pinned-tab.svg", color: "#5bbad5" },
 		],
-		openGraph: {
-			title: "Relax Complex",
-			description: "Spa-Relax Complex",
-			siteName: "Relax Complex",
-			url: `https://relax-tan.vercel.app/${locale}`,
-			images: "/images/layout/og/main.jpg",
-			type: "website",
-		},
 	};
 }
 

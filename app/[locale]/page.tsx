@@ -1,4 +1,5 @@
-import { getScopedI18n } from "@/locales/server";
+import { Metadata } from "next";
+import { getCurrentLocale, getScopedI18n } from "@/locales/server";
 
 import Benefits from "@/components/Benefits/Benefits";
 import Section from "@/components/Section/Section";
@@ -14,6 +15,27 @@ import { AboutUs, Intro, SectionLg, SectionSm, WhatWeOffer, Pool } from "@/compo
 import { benefit1, benefit2, benefit3, halls, hotel, restaurant, spa1, spa2, spa3, spa4, vats1, vats2, vats3, vats4 } from "@/public/images/main";
 
 import { IBenefit, ISectionLg, ISectionSm } from "@/@types/types";
+
+// eslint-disable-next-line react-refresh/only-export-components
+export async function generateMetadata(): Promise<Metadata> {
+	const locale = await getCurrentLocale();
+	return {
+		openGraph: {
+			title: "Relax Complex",
+			description: "Spa-Relax Complex",
+			siteName: "Relax Complex",
+			url: `https://relax-tan.vercel.app/${locale}`,
+			images: "/images/layout/og/main.jpg",
+			type: "website",
+		},
+		twitter: {
+			card: "summary_large_image",
+			title: "Relax Complex",
+			description: "Spa-Relax Complex",
+			images: "/images/layout/og/main.jpg",
+		},
+	};
+}
 
 export default async function Home() {
 	const t = await getScopedI18n("pages.main");
