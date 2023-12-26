@@ -45,8 +45,8 @@ export default async function RootLayout({ children }: { children: React.ReactNo
 	return (
 		<html lang={locale}>
 			<head>
-				<meta name="msapplication-TileColor" content="#da532c" />
-				<meta name="theme-color" content="#CDA075" />
+				<meta name="msapplication-TileColor" content="#bb824c" />
+				<meta name="theme-color" content="#bb824c" />
 			</head>
 			<body className={montserrat.className}>
 				<header>

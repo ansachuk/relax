@@ -52,8 +52,6 @@ export function SubMenu({ isOpen, top, toggleMenu }: Props) {
 	const currentYear = new Date().getFullYear();
 
 	return (
-		// isOpen && (
-
 		<div className={`${css.menu} ${top ? css.top : css.bottom}  ${isOpen ? css.isOpen : ""}`}>
 			<div className={css.header}>
 				<div className={css.empty}></div>
@@ -62,7 +60,7 @@ export function SubMenu({ isOpen, top, toggleMenu }: Props) {
 					<Cross className={css.cross} width={24} height={24} />
 				</button>
 			</div>
-			<div className={css.line} />
+
 			<div className={css.main}>
 				<nav className={css.nav}>
 					{NavLinks.map(({ path, label }) => (
@@ -73,7 +71,6 @@ export function SubMenu({ isOpen, top, toggleMenu }: Props) {
 				</nav>
 			</div>
 			<div className={css.footer}>
-				<div className={css.line} />
 				<LanguageSwitcher />
 				<div className={css.rights}>
 					<p>© All Rights Reserved</p>
