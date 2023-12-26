@@ -41,7 +41,7 @@ export default async function SectionLg({
 				</div>
 				<div className={css.side}>
 					<h3 className={`${nothing.className} ${css.nothing}`}>{nothingTitle}</h3>
-					<Link href={`${link}#top`} className={css.link}>
+					<Link href={link} className={css.link}>
 						{t("linkText")}
 						<span className={css.icon}>
 							<ArrowLg width={18} />

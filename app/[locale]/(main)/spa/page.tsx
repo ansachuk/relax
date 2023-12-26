@@ -115,7 +115,7 @@ export default async function Spa() {
 				</Section>
 			))}
 			<Additional />
-			<Section title={t("vatsTitle")}>
+			<Section id="vats" title={t("vatsTitle")}>
 				<Vats />
 			</Section>
 		</>

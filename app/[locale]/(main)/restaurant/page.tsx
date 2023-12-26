@@ -126,7 +126,7 @@ export default async function Restaurant() {
 			<Section title={t("benefits.title")}>
 				<Benefits benefits={benefits} />
 			</Section>
-			<Section title={t("offers.title")}>
+			<Section id="halls" title={t("offers.title")}>
 				<Offers data={offers} />
 			</Section>
 			<Banner text={t("banner.text")} />

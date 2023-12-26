@@ -53,7 +53,7 @@ export default async function Home() {
 			subtitle: t("sectionSm.section1.subtitle"),
 			text: t("sectionSm.section1.text"),
 			phone: "098 333 77 00",
-			link: "/restaurant",
+			link: "/restaurant#top",
 		},
 		{
 			img: halls,
@@ -61,7 +61,7 @@ export default async function Home() {
 			subtitle: t("sectionSm.section2.subtitle"),
 			text: t("sectionSm.section2.text"),
 			phone: "096 000 54 54",
-			link: "/restaurant",
+			link: "/restaurant#halls",
 		},
 		{
 			img: hotel,
@@ -69,7 +69,7 @@ export default async function Home() {
 			subtitle: t("sectionSm.section3.subtitle"),
 			text: t("sectionSm.section3.text"),
 			phone: "096 000 54 54",
-			link: "/hotel",
+			link: "/hotel#top",
 		},
 	];
 
@@ -80,7 +80,7 @@ export default async function Home() {
 			text: t("sectionLg.section1.text"),
 			phone: "096 000 54 54",
 			nothingTitle: "time to warm up",
-			link: "/spa",
+			link: "/spa#top",
 			images: {
 				img1: spa1,
 				img2: spa2,
@@ -94,7 +94,7 @@ export default async function Home() {
 			text: t("sectionLg.section2.text"),
 			phone: "096 000 54 54",
 			nothingTitle: "time to relax",
-			link: "/spa",
+			link: "/spa#vats",
 			images: {
 				img1: vats1,
 				img2: vats2,

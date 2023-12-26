@@ -25,7 +25,7 @@ export default async function SectionSm({ sectionData: { img, subtitle, phone, t
 					</Link>
 				</div>
 				<p className={css.text}>{text}</p>
-				<Link href={`${link}#top`} className={css.link}>
+				<Link href={link} className={css.link}>
 					{t("linkText")}
 					<span className={css.icon}>
 						<ArrowLg width={18} />

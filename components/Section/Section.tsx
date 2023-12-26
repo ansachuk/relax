@@ -5,11 +5,12 @@ import css from "./Section.module.scss";
 type Props = {
 	title: string;
 	children: React.ReactNode;
+	id?: string;
 };
 
-export default function Section({ title, children }: Props) {
+export default function Section({ title, children, id }: Props) {
 	return (
-		<section className={css.section}>
+		<section id={id} className={css.section}>
 			<h2 className={`${cormorant.className} ${css.title}`}>{title}</h2>
 			{children}
 		</section>
