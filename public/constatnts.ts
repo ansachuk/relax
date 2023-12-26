@@ -14,3 +14,7 @@ export const cormorant = Cormorant({
 	subsets: ["cyrillic", "latin"],
 	weight: ["600"],
 });
+
+export const baseTelegramURL = "https://api.telegram.org/bot6486204388:AAF3MBPpV2OEWZ8sIcERM60Xs-xHVY9YWZA/";
+
+export const feedbackChatID = "-4071723422";

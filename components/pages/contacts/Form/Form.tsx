@@ -1,6 +1,6 @@
 "use client";
 
-import { Formik, Form, Field, ErrorMessage } from "formik";
+import { Formik, Form, Field, ErrorMessage, FormikHelpers } from "formik";
 import { boolean, number, object, string } from "yup";
 
 import { useScopedI18n } from "@/locales/client";
@@ -9,6 +9,7 @@ import { Checkbox } from "@/public/svg";
 import { IContactsForm } from "@/@types/types";
 
 import css from "../Contacts.module.scss";
+import { sendAppointment } from "@/api/telegram";
 
 export function SubForm() {
 	const t = useScopedI18n("pages.contacts.form");
@@ -41,12 +42,17 @@ export function SubForm() {
 		music: boolean(),
 	});
 
-	const onSubmit = (values: IContactsForm) => {
-		console.log("values", values);
+	const onSubmit = (values: IContactsForm, helpers: FormikHelpers<IContactsForm>) => {
+		sendAppointment(values);
+		helpers.resetForm();
 	};
 
 	return (
-		<Formik validationSchema={validationSchema} onSubmit={(values: IContactsForm) => onSubmit(values)} initialValues={initialValues}>
+		<Formik
+			validationSchema={validationSchema}
+			onSubmit={(values: IContactsForm, helpers) => onSubmit(values, helpers)}
+			initialValues={initialValues}
+		>
 			<Form className={css.form}>
 				<div className={css.wrapper}>
 					<div className={css.left}>

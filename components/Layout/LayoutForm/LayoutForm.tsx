@@ -1,10 +1,11 @@
 "use client";
 
-import { ErrorMessage, Field, Form, Formik } from "formik";
+import { ErrorMessage, Field, Form, Formik, FormikHelpers } from "formik";
 import { object, string } from "yup";
 
 import I18nSubLayout from "@/components/I18nSubLayout/I18nSubLayout";
 import { useScopedI18n } from "@/locales/client";
+import { sendFeedback } from "@/api/telegram";
 
 import { IFeedback } from "@/@types/types";
 
@@ -23,13 +24,13 @@ export function SubForm() {
 		message: string().required(t("errors.required")).min(5, t("errors.short")).max(255, t("errors.long")),
 	});
 
-	const onSubmit = (values: IFeedback) => {
-		const feedback = values;
-		console.log("feedback", feedback);
+	const onSubmit = (values: IFeedback, helpers: FormikHelpers<IFeedback>) => {
+		sendFeedback(values);
+		helpers.resetForm();
 	};
 
 	return (
-		<Formik onSubmit={(values: IFeedback) => onSubmit(values)} validationSchema={validationSchema} initialValues={initialValues}>
+		<Formik onSubmit={(values: IFeedback, helpers) => onSubmit(values, helpers)} validationSchema={validationSchema} initialValues={initialValues}>
 			<Form className={css.form}>
 				<Field name="name" placeholder={t("namePl")} autoComplete="off" />
 				<ErrorMessage className={css.error} name="name" component="div" />
