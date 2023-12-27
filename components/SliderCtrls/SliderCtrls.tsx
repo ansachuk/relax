@@ -14,9 +14,11 @@ export default function SliderCtrls({ swiper, main }: Props) {
 		<div className={main ? css.mainCtrls : css.ctrls}>
 			<button className={css.ctrl} onClick={() => swiper.slidePrev()}>
 				<ArrowLg width={25} height={25} className={`${css.icon} ${css.prev}`} />
+				<span className={css.hidden}>Previous slide</span>
 			</button>
 			<button className={css.ctrl} onClick={() => swiper.slideNext()}>
 				<ArrowLg width={25} height={25} className={`${css.icon} ${css.next}`} />
+				<span className={css.hidden}>Next slide</span>
 			</button>
 		</div>
 	) : (

@@ -84,7 +84,7 @@ export default {
 				vats: "vats",
 			},
 			sectionSm: {
-				linkText: "Learn more",
+				linkText: "Get more info",
 				section1: {
 					title: "restaurant",
 					subtitle: "10.00-22.00 HOURS",
@@ -114,7 +114,7 @@ export default {
 				},
 			},
 			pool: {
-				linkText: "Learn more",
+				linkText: "Get more info",
 				title: "summer pool",
 				subtitle: "works only in summer!",
 				text: "Lounging at the large pool 25*10 m and depth of 2 meters is always nice. Water elements are very important in your life, and relaxing around the pool will create a feeling of calm when you are tired of all daily activities.   Near the pools where you can swim, lie on a sun lounger, investing in your mood with ice cocktails. The pool is surrounded by tiles, so you can sit comfortably on sunbeds, that can hold 140 people. Also our pool area boasts a waterfall.",

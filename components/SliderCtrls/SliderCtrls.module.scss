@@ -37,6 +37,15 @@
 	}
 }
 
+.hidden {
+	user-select: none;
+	pointer-events: none;
+	font-size: 0px;
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+
 .ctrl {
 	color: currentColor;
 

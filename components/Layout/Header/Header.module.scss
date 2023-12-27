@@ -10,6 +10,16 @@
 	}
 }
 
+.hidden {
+	position: absolute;
+	user-select: none;
+	pointer-events: none;
+	font-size: 0px;
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+
 .wrapper {
 	display: flex;
 	gap: 6px;
