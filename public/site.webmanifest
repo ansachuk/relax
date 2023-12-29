@@ -1,6 +1,7 @@
 {
 	"name": "Relax Complex",
-	"short_name": "Relax",
+	"short_name": "Relax Complex",
+	"descriptions": "Relax Complex - we are a modern hotel and restaurant complex that has a spacious area and a large outdoor pool, dry saunas and various baths, open traditional spa-hot tubs",
 	"icons": [
 		{
 			"src": "./favicon/android-chrome-192x192.png",
@@ -13,7 +14,12 @@
 			"type": "image/png"
 		}
 	],
-	"theme_color": "#ffffff",
-	"background_color": "#ffffff",
-	"display": "standalone"
+	"theme_color": "#bb824c",
+	"background_color": "#bb824c",
+	"display": "standalone",
+	"related_applications": [
+		{
+			"platform": "web"
+		}
+	]
 }

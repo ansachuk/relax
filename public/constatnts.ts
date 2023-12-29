@@ -18,3 +18,5 @@ export const cormorant = Cormorant({
 export const baseTelegramURL = "https://api.telegram.org/bot6486204388:AAF3MBPpV2OEWZ8sIcERM60Xs-xHVY9YWZA/";
 
 export const feedbackChatID = "-4071723422";
+
+export const baseSiteURL = "";
