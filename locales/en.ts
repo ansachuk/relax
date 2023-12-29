@@ -200,7 +200,7 @@ export default {
 				title: "APARTMENTS",
 				text: "At the Relax hotel, everything speaks of comfortable relaxation.Cozy standard and economy class rooms, sophisticated LUX rooms, each of which is bright and cozy at the same time. Enjoy a relaxing break on a spacious bed and in a pleasant-to-the-body, soft bathrobe, and we will take care of everything so that nothing spoils your vacation.",
 				offers: {
-					1: "SINGLE ROOM",
+					1: "Single room",
 					2: "Standart room",
 					3: "Suite",
 					4: "Double suite",
@@ -215,7 +215,7 @@ export default {
 				linkText: "Booking",
 				1: {
 					title: "single room",
-					subtitle: "price : 1600 uah",
+					subtitle: "price : 1300 uah",
 					text: "A light single room is to accommodate one guest. For your comfort, the room has a comfortable bed,  a bedside night  table, a table, a chair, a frige, a bathroom, a shower cabin and availability of toiletries. Free WiFi. Single bed: 1,4*2,0m",
 				},
 				2: {

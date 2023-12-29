@@ -19,8 +19,7 @@
 		],
 		"paths": {
 			"@/*": ["./*"]
-		},
-		"allowJs": true
+		}
 	},
 	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "next-i18next.config.js", "next.config.js"],
 	"exclude": ["node_modules"]

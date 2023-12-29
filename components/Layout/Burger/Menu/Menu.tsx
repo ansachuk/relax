@@ -57,6 +57,7 @@ export function SubMenu({ isOpen, top, toggleMenu }: Props) {
 				<div className={css.empty}></div>
 				<Logo className={css.logo} width={110} height={50} />
 				<button onClick={toggleMenu}>
+					<span className={css.hidden}>Open burger menu</span>
 					<Cross className={css.cross} width={24} height={24} />
 				</button>
 			</div>

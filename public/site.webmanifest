@@ -16,10 +16,5 @@
 	],
 	"theme_color": "#bb824c",
 	"background_color": "#bb824c",
-	"display": "standalone",
-	"related_applications": [
-		{
-			"platform": "web"
-		}
-	]
+	"display": "standalone"
 }

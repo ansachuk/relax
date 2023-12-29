@@ -62,12 +62,15 @@
 
 .text {
 	color: $bgColor;
-	width: 294px;
 
 	text-align: center;
 	font-size: 12px;
 	font-weight: 400;
 	line-height: 16px;
+
+	@include mobile {
+		width: 294px;
+	}
 
 	@include tablet {
 		width: 600px;

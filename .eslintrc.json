@@ -7,6 +7,9 @@
 	"plugins": ["react-refresh"],
 	"rules": {
 		"react-refresh/only-export-components": ["warn", { "allowConstantExport": true }],
-		"no-console": "off"
+		"no-console": "error",
+		"no-inline-comments": "error",
+		"no-warning-comments": "error",
+		"no-duplicate-imports": "error"
 	}
 }

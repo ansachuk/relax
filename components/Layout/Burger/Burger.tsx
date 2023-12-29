@@ -30,6 +30,7 @@ export default function Burger({ pos }: Props) {
 	return (
 		<div className={css.wrapper}>
 			<button onClick={toggleMenu} className={css.burgerOpen}>
+				<span className={css.hidden}>Open burger menu</span>
 				<BurgerIcon className={css.icon} width={32} height={32} />
 			</button>
 			<Menu top={pos === "top"} isOpen={isOpen} toggleMenu={toggleMenu} />
