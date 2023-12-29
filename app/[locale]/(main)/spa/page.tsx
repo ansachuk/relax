@@ -34,10 +34,10 @@ import {
 	finnish5,
 	offer,
 } from "@/public/images/spa";
+import { baseSiteURL } from "@/public/constatnts";
 
 import { IAbout, IBenefit, IOffer } from "@/@types/types";
 
-// eslint-disable-next-line react-refresh/only-export-components
 export async function generateMetadata(): Promise<Metadata> {
 	const locale = await getCurrentLocale();
 	const title = await getScopedI18n("navigation");
@@ -48,7 +48,7 @@ export async function generateMetadata(): Promise<Metadata> {
 			title: title("spa"),
 			description: t("p1"),
 			siteName: "Relax Complex",
-			url: `https://relax-tan.vercel.app/${locale}/spa`,
+			url: `${baseSiteURL}${locale}/spa`,
 			images: "/images/layout/og/spa.jpg",
 			type: "website",
 		},

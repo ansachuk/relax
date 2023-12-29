@@ -43,10 +43,10 @@ import {
 	veranda3,
 	veranda4,
 } from "@/public/images/restaurant";
+import { baseSiteURL } from "@/public/constatnts";
 
 import { IAbout, IBenefit, IOffer } from "@/@types/types";
 
-// eslint-disable-next-line react-refresh/only-export-components
 export async function generateMetadata(): Promise<Metadata> {
 	const locale = await getCurrentLocale();
 	const title = await getScopedI18n("navigation");
@@ -57,7 +57,7 @@ export async function generateMetadata(): Promise<Metadata> {
 			title: title("restaurant"),
 			description: t("p1"),
 			siteName: "Relax Complex",
-			url: `https://relax-tan.vercel.app/${locale}/restaurant`,
+			url: `${baseSiteURL}${locale}/restaurant`,
 			images: "/images/layout/og/restaurant.jpg",
 			type: "website",
 		},

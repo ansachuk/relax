@@ -12,19 +12,17 @@ import Nav from "@/components/Layout/Nav/Nav";
 import Map from "@/components/Layout/Map/Map";
 
 import { getCurrentLocale } from "@/locales/server";
-import { montserrat } from "@/public/constatnts";
+import { baseSiteURL, montserrat } from "@/public/constatnts";
 
 import "@/scss/global.scss";
 
-// eslint-disable-next-line react-refresh/only-export-components
 export async function generateMetadata(): Promise<Metadata> {
 	return {
 		title: "Relax Complex",
 		description: "Spa-Relax Complex",
-		manifest: "/site.webmanifest",
-		metadataBase: new URL("https://relax-tan.vercel.app/"),
+		metadataBase: new URL(baseSiteURL),
 		alternates: {
-			canonical: "/",
+			canonical: baseSiteURL,
 			languages: {
 				uk: "/uk",
 				en: "/en",

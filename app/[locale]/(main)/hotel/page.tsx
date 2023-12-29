@@ -43,10 +43,10 @@ import {
 	vip4,
 	vip5,
 } from "@/public/images/hotel";
+import { baseSiteURL } from "@/public/constatnts";
 
 import { IAbout, IBenefit, IOffer } from "@/@types/types";
 
-// eslint-disable-next-line react-refresh/only-export-components
 export async function generateMetadata(): Promise<Metadata> {
 	const locale = await getCurrentLocale();
 	const title = await getScopedI18n("navigation");
@@ -57,7 +57,7 @@ export async function generateMetadata(): Promise<Metadata> {
 			title: title("hotel"),
 			description: t("p1"),
 			siteName: "Relax Complex",
-			url: `https://relax-tan.vercel.app/${locale}/hotel`,
+			url: `${baseSiteURL}${locale}/hotel`,
 			images: "/images/layout/og/hotel.jpg",
 			type: "website",
 		},

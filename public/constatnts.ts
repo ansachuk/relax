@@ -19,4 +19,4 @@ export const baseTelegramURL = "https://api.telegram.org/bot6486204388:AAF3MBPpV
 
 export const feedbackChatID = "-4071723422";
 
-export const baseSiteURL = "";
+export const baseSiteURL = "https://relax-tan.vercel.app/";

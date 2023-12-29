@@ -13,10 +13,10 @@ import Feedback from "@/components/Layout/Feedback/Feedback";
 import { AboutUs, Intro, SectionLg, SectionSm, WhatWeOffer, Pool } from "@/components/pages/main";
 
 import { benefit1, benefit2, benefit3, halls, hotel, restaurant, spa1, spa2, spa3, spa4, vats1, vats2, vats3, vats4 } from "@/public/images/main";
+import { baseSiteURL } from "@/public/constatnts";
 
 import { IBenefit, ISectionLg, ISectionSm } from "@/@types/types";
 
-// eslint-disable-next-line react-refresh/only-export-components
 export async function generateMetadata(): Promise<Metadata> {
 	const locale = await getCurrentLocale();
 	return {
@@ -24,7 +24,7 @@ export async function generateMetadata(): Promise<Metadata> {
 			title: "Relax Complex",
 			description: "Spa-Relax Complex",
 			siteName: "Relax Complex",
-			url: `https://relax-tan.vercel.app/${locale}`,
+			url: `${baseSiteURL}${locale}`,
 			images: "/images/layout/og/main.jpg",
 			type: "website",
 		},
