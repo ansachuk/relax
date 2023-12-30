@@ -1,5 +1,5 @@
 import { IContactsForm, IFeedback } from "@/@types/types";
-import { baseTelegramURL, feedbackChatID } from "@/public/constatnts";
+import { appointmentChatID, baseTelegramURL, feedbackChatID } from "@/public/constatnts";
 
 export const sendFeedback = async (values: IFeedback) => {
 	const { message: userMessage, name, phone } = values;
@@ -68,7 +68,7 @@ export const sendAppointment = async (values: IContactsForm) => {
 		host ? "Так" : "Ні"
 	}. Музика: ${music ? "Так" : "Ні"}. Фотозона: ${zone ? "Так" : "Ні"}. Додатково: ${questions || "-"}.`;
 
-	const url = `${baseTelegramURL}sendMessage?chat_id=${feedbackChatID}&text=${message}`;
+	const url = `${baseTelegramURL}sendMessage?chat_id=${appointmentChatID}&text=${message}`;
 
 	await fetch(url);
 };

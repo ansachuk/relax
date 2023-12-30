@@ -15,8 +15,9 @@ export const cormorant = Cormorant({
 	weight: ["600"],
 });
 
-export const baseTelegramURL = "https://api.telegram.org/bot6486204388:AAF3MBPpV2OEWZ8sIcERM60Xs-xHVY9YWZA/";
+export const baseTelegramURL = "https://api.telegram.org/bot6962030130:AAFwi4ismANTeSV75HWTPle-XrDzxfR8C-4/";
 
-export const feedbackChatID = "-4071723422";
+export const feedbackChatID = "-4028357216";
+export const appointmentChatID = "-4028357216";
 
 export const baseSiteURL = "https://relax-tan.vercel.app/";
